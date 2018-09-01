@@ -1,0 +1,6 @@
+author = IceCoffe
+version = 2.7
+homepage = https://forums.terraria.org/index.php?threads/removed-nerfs-of-items.71134/
+displayName = Removed nerfs of items [i:149]
+hideCode = true
+hideResources = true

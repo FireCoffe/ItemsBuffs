@@ -73,6 +73,5 @@ namespace ItemsBuffs.Items.Tools
             recipe.SetResult(ItemID.Starfury, 1);
             recipe.AddRecipe();
         }
-        //-----------------------------------------------StarWrath projectile style----------------------------------------------
 	}
 }

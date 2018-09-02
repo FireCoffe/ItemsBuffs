@@ -12,7 +12,7 @@ namespace ItemsBuffs.Items.Tools
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Rod of Discord");
+            DisplayName.SetDefault("Rod of Discord"); 
             Tooltip.SetDefault("on use it doesnt give chaos state");
             Item.staff[item.type] = true;
         }

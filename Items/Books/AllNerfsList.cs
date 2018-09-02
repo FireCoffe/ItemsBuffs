@@ -7,7 +7,7 @@ using Terraria.ModLoader;
 
 namespace ItemsBuffs.Items.Books
 {
-    public class AllNerfsList : ModItem
+    public class AllNerfsList : ModItem //all of these book are based on lunar event expect for book of nerfs thrown
     {
        // public int Frame;
         //public int FrameCounter;
@@ -27,6 +27,7 @@ namespace ItemsBuffs.Items.Books
             "IF ANY NERF WILL BE FOUND, IT WILL BE ADDED HERE\n");
             //Main.RegisterItemAnimation(item.type, new DrawAnimationVertical(30, 8));
         }
+        //this was cancelled too
         /*  public override bool CanRightClick()
           {
               return true;
@@ -54,9 +55,10 @@ namespace ItemsBuffs.Items.Books
                 return true;
             }
         }
+        //this was used for new sprite of book of nerfs but it was cancelled , the sprite is in mod icon of mod
        /* public override void ModifyTooltips(List<TooltipLine> tooltips)
         {
-            foreach (TooltipLine line5 in tooltips) //do today !!!
+            foreach (TooltipLine line5 in tooltips) 
             {
                 if (line5.mod == "Terraria" && line5.Name == "ItemName")
                 {

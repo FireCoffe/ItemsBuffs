@@ -35,8 +35,8 @@ doesnt give chaos state debuff
 -Vampire knifes Weapon and Heal nerf completly Removed !
 -Spectre Hood Nerf completly Removed !
 
-v2.7
--added github repo
+v2.8
+
 
 
 full changelog is in mod homepage

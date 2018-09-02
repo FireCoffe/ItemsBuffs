@@ -57,11 +57,6 @@ namespace ItemsBuffs
             recipe.AddIngredient(null, "ThrowBook");
             recipe.SetResult(ItemType<Items.Books.AllNerfsList>());
             recipe.AddRecipe();
-            // recipe = new ModRecipe(this);
-            // recipe.AddIngredient(ItemID.BlueBerries, 20);
-            // recipe.AddTile(TileID.WorkBenches);
-            // recipe.SetResult(ItemID.PumpkinPie, 2);
-            // recipe.AddRecipe();
         }
     }
 }

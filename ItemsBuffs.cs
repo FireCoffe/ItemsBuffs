@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using Terraria.Graphics.Effects;
 using Terraria.Graphics.Shaders;
 using Terraria.Localization;
-using ItemsBuffs.Items.Tiles;
+using ItemsBuffs.Tiles;
 using ItemsBuffs.Items;
 using Terraria.ModLoader;
 using Microsoft.Xna.Framework;

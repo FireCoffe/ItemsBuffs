@@ -24,7 +24,7 @@ namespace ItemsBuffs.Items.Books
         public override void SetDefaults()
         {
             item.width = 28;
-            item.height = 30;
+            item.height = 29;
             item.maxStack = 999; 
             item.value = 0;
             item.rare = 0;

@@ -7,7 +7,7 @@ namespace ItemsBuffs.Buffs
 	{
 		public override void SetDefaults()
 		{
-			DisplayName.SetDefault("Mana Protection");
+			DisplayName.SetDefault("[c/00cc66:Mana Protection]");
             Description.SetDefault("the magic damage dont go down");
         }
 

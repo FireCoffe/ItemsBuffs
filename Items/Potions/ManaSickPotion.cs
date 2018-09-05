@@ -21,7 +21,7 @@ namespace ItemsBuffs.Items.Potions
 			item.width = 20;
 			item.height = 30;
 			item.maxStack = 30;
-			item.rare = 7;
+			item.rare = 0;
             item.value = Item.sellPrice(0, 0, 2, 0);
             item.useAnimation = 15;
 			item.useTime = 15;
@@ -29,8 +29,11 @@ namespace ItemsBuffs.Items.Potions
 			item.UseSound = SoundID.Item3;
 			item.consumable = true;
 		}
-
-		public override void SetStaticDefaults()
+        public override void ModifyTooltips(List<TooltipLine> tooltips)
+        {
+            tooltips[0].overrideColor = new Color(0, 204, 102);
+        }
+        public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Mana Shield Potion");
             Tooltip.SetDefault("immune to mana sickness\n" +

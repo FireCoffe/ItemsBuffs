@@ -18,7 +18,8 @@ namespace ItemsBuffs.Items.Tools
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Starfury");
-            Tooltip.SetDefault("shot slow falling stars");
+            Tooltip.SetDefault("Causes stars to rain from the moon" +
+                "\n'Forged by Celestial Creatures'");
         }
         public override void SetDefaults()
         {
@@ -60,6 +61,15 @@ namespace ItemsBuffs.Items.Tools
             }
             return false;
         }
+        /* i tried to find starfury dust type but i didnt find it
+        public override void MeleeEffects(Player player, Rectangle hitbox)
+        {
+            if (Main.rand.Next(3) == 0)
+            {
+                //Emit dusts when swing the sword
+                Dust.NewDust(new Vector2(hitbox.X, hitbox.Y), hitbox.Width, hitbox.Height, (264));
+            }
+        } */
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);

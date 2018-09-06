@@ -42,5 +42,6 @@ renamed mana shield potion to magic shield potion
 Fixed Tooltip of items
 Fixed rarity of items
 Fixed other things 
-
+v2.9
+hopefully fixed update bug
 full changelog is in mod homepage

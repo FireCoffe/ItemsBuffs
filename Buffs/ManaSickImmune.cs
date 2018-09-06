@@ -7,8 +7,8 @@ namespace ItemsBuffs.Buffs
 	{
 		public override void SetDefaults()
 		{
-			DisplayName.SetDefault("[c/00cc66:Mana Protection]");
-            Description.SetDefault("the magic damage dont go down");
+			DisplayName.SetDefault("[c/00cc66:Magic Protection]");
+            Description.SetDefault("immunity to Mana Sickness");
         }
 
 		public override void Update(Player player, ref int buffIndex)

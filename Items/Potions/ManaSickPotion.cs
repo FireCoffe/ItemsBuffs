@@ -35,8 +35,8 @@ namespace ItemsBuffs.Items.Potions
         }
         public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Mana Shield Potion");
-            Tooltip.SetDefault("immune to mana sickness\n" +
+			DisplayName.SetDefault("Magic Shield Potion");
+            Tooltip.SetDefault("Grants immunity to Mana Sickness\n" +
             "8 Minutes duration\n");
         }
 

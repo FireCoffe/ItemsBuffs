@@ -37,9 +37,10 @@ doesnt give chaos state debuff
 -Spectre Hood Nerf completly Removed !
 
 v2.8
-book of nerfs vol. Ranged have new sprite
+improved sprites of some items
+renamed mana shield potion to magic shield potion
 Fixed Tooltip of items
-fixed rarity of items
+Fixed rarity of items
 Fixed other things 
 
 full changelog is in mod homepage

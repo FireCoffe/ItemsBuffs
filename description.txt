@@ -36,12 +36,5 @@ doesnt give chaos state debuff
 -Vampire knifes Weapon and Heal nerf completly Removed !
 -Spectre Hood Nerf completly Removed !
 
-v2.8
-improved sprites of some items
-renamed mana shield potion to magic shield potion
-Fixed Tooltip of items
-Fixed rarity of items
-Fixed other things 
 v2.9
-hopefully fixed update bug
-full changelog is in mod homepage
+propably mod config will be added

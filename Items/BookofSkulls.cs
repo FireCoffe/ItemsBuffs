@@ -8,7 +8,7 @@ namespace ItemsBuffs.Items
 	{
 		public override void SetDefaults(Item item)
 		{
-			if (item.type == ItemID.BookofSkulls)
+			if (item.type == ItemID.BookofSkulls & Config.BookofSkulls)
 			{
                 item.knockBack = 6f;
                 item.damage = 35;

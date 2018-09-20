@@ -8,7 +8,7 @@ namespace ItemsBuffs.Items
 	{
 		public override void SetDefaults(Item item)
 		{
-			if (item.type == 3287)
+			if (item.type == 3287 & Config.RedsThrow)
 
             {
                 item.damage = 180;

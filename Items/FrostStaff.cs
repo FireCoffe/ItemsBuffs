@@ -8,7 +8,7 @@ namespace ItemsBuffs.Items
 	{
 		public override void SetDefaults(Item item)
 		{
-			if (item.type == ItemID.FrostStaff)
+			if (item.type == ItemID.FrostStaff & Config.FrostStaff)
 			{
                 item.damage = 53;
                 item.mana = 10;

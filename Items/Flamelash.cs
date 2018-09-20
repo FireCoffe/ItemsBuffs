@@ -8,7 +8,7 @@ namespace ItemsBuffs.Items
 	{
 		public override void SetDefaults(Item item)
 		{
-			if (item.type == ItemID.Flamelash)
+			if (item.type == ItemID.Flamelash & Config.Flamelash)
 			{
                 item.damage = 47;
 			}

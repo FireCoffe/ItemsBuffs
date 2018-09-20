@@ -8,7 +8,7 @@ namespace ItemsBuffs.Items
 	{
 		public override void SetDefaults(Item item)
 		{
-			if (item.type == ItemID.VortexBeater)
+			if (item.type == ItemID.VortexBeater & Config.VortexBeater)
 			{
                 item.damage = 70;
 			}

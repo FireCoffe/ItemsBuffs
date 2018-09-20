@@ -5,7 +5,6 @@ using System.Collections.Generic;
 using Terraria.Graphics.Effects;
 using Terraria.Graphics.Shaders;
 using Terraria.Localization;
-using ItemsBuffs.Tiles;
 using ItemsBuffs.Items;
 using Terraria.ModLoader;
 using Microsoft.Xna.Framework;
@@ -21,10 +20,27 @@ namespace ItemsBuffs
 {
 	class ItemsBuffs : Mod
 	{
-		public ItemsBuffs()
-		{
+        public static string ConfigFileRelativePath
+        {
+            get { return "Mod Configs/My Mod's Config.json"; }
         }
-
+        public static void ReloadConfigFromFile()
+        {
+            // Define implementation to reload your mod's config data from file
+        }
+        public ItemsBuffs()
+        {
+            Properties = new ModProperties()
+            {
+                Autoload = true,
+                AutoloadGores = true,
+                AutoloadSounds = true
+            };
+        }
+        public override void Load()
+        {
+            Config.Load();
+        }
 
         public override void AddRecipes()
         {

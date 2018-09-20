@@ -8,7 +8,7 @@ namespace ItemsBuffs.Items
 	{
 		public override void SetDefaults(Item item)
 		{
-			if (item.type == ItemID.Muramasa)
+			if (item.type == ItemID.Muramasa & Config.Muramasa)
 			{
                 item.knockBack = 3f;
                 item.damage = 22;

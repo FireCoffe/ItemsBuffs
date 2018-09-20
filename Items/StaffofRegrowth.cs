@@ -8,7 +8,7 @@ namespace ItemsBuffs.Items
 	{
 		public override void SetDefaults(Item item)
 		{
-			if (item.type == ItemID.StaffofRegrowth)
+			if (item.type == ItemID.StaffofRegrowth & Config.StaffofRegrowth)
 			{
                 item.damage = 20;
 			}

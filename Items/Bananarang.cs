@@ -8,7 +8,7 @@ namespace ItemsBuffs.Items
 	{
 		public override void SetDefaults(Item item)
 		{
-			if (item.type == ItemID.Bananarang)
+			if (item.type == ItemID.Bananarang & Config.Bananarang)
 			{
                 item.useTime = 7;
                 item.useAnimation = 7;

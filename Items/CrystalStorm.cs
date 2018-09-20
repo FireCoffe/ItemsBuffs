@@ -8,7 +8,7 @@ namespace ItemsBuffs.Items
 	{
 		public override void SetDefaults(Item item)
 		{
-			if (item.type == ItemID.CrystalStorm)
+			if (item.type == ItemID.CrystalStorm & Config.CrystalStorm)
 			{
                 item.damage = 26;
 			}

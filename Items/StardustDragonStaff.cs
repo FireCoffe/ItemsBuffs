@@ -8,7 +8,7 @@ namespace ItemsBuffs.Items
 	{
 		public override void SetDefaults(Item item)
 		{
-			if (item.type == ItemID.StardustDragonStaff)
+			if (item.type == ItemID.StardustDragonStaff & Config.StardustDragonStaff)
 			{
 				item.damage = 60;
 			}

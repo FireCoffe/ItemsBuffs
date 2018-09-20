@@ -8,7 +8,7 @@ namespace ItemsBuffs.Items
 	{
 		public override void SetDefaults(Item item)
 		{
-			if (item.type == ItemID.Sunfury)
+			if (item.type == ItemID.Sunfury & Config.Sunfury)
 			{
 				item.damage = 40;
 			}

@@ -8,7 +8,7 @@ namespace ItemsBuffs.Items
 	{
 		public override void SetDefaults(Item item)
 		{
-			if (item.type == ItemID.VampireKnives)
+			if (item.type == ItemID.VampireKnives & Config.VampireKnives)
 			{
                 item.shoot = mod.ProjectileType("VampProj");
                 item.useTime = 12;

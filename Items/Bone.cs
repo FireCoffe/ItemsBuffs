@@ -8,7 +8,7 @@ namespace ItemsBuffs.Items
 	{
 		public override void SetDefaults(Item item)
 		{
-			if (item.type == ItemID.Bone)
+			if (item.type == ItemID.Bone & Config.Bone)
 			{
                 item.knockBack = 4f;
                 item.damage = 22;

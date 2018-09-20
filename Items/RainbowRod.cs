@@ -8,7 +8,7 @@ namespace ItemsBuffs.Items
 	{
 		public override void SetDefaults(Item item)
 		{
-			if (item.type == ItemID.RainbowRod)
+			if (item.type == ItemID.RainbowRod & Config.RainbowRod)
 			{
                 item.mana = 10;
 			}

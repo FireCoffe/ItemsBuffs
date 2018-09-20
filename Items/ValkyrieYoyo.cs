@@ -8,7 +8,7 @@ namespace ItemsBuffs.Items
 	{
 		public override void SetDefaults(Item item)
 		{
-			if (item.type == ItemID.ValkyrieYoyo)
+			if (item.type == ItemID.ValkyrieYoyo & Config.ValkyrieYoyo)
 
             {
                 item.damage = 180;

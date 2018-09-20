@@ -8,7 +8,7 @@ namespace ItemsBuffs.Items
 	{
 		public override void SetDefaults(Item item)
 		{
-			if (item.type == ItemID.PoisonedKnife)
+			if (item.type == ItemID.PoisonedKnife & Config.PoisonedKnife)
 			{
 				item.damage = 15;
 			}

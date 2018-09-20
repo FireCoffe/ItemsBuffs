@@ -8,7 +8,7 @@ namespace ItemsBuffs.Items
 	{
 		public override void SetDefaults(Item item)
 		{
-			if (item.type == ItemID.SlimeStaff)
+			if (item.type == ItemID.SlimeStaff & Config.SlimeStaff)
 			{
                 item.mana = 0;
 			}

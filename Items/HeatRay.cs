@@ -8,7 +8,7 @@ namespace ItemsBuffs.Items
 	{
 		public override void SetDefaults(Item item)
 		{
-			if (item.type == ItemID.HeatRay)
+			if (item.type == ItemID.HeatRay & Config.HeatRay)
 			{
                 item.mana = 0;
 			}

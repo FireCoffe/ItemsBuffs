@@ -8,7 +8,7 @@ namespace ItemsBuffs.Items
 	{
 		public override void SetDefaults(Item item)
 		{
-			if (item.type == ItemID.FlowerofFire)
+			if (item.type == ItemID.FlowerofFire & Config.FlowerofFire)
 			{
                 item.mana = 10;	
 			}

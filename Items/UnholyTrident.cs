@@ -8,7 +8,7 @@ namespace ItemsBuffs.Items
 	{
 		public override void SetDefaults(Item item)
 		{
-			if (item.type == 683)
+			if (item.type == 683 & Config.UnholyTrident)
 			{
                 item.mana = 14;
 			}

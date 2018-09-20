@@ -8,7 +8,7 @@ namespace ItemsBuffs.Items
 	{
 		public override void SetDefaults(Item item)
 		{
-			if (item.type == ItemID.MagicMissile)
+			if (item.type == ItemID.MagicMissile & Config.MagicMissile)
 			{
                 item.damage = 32;
 			}

@@ -8,7 +8,7 @@ namespace ItemsBuffs.Items
 	{
 		public override void SetDefaults(Item item)
 		{
-			if (item.type == ItemID.ChlorophyteBullet)
+			if (item.type == ItemID.ChlorophyteBullet & Config.ChlorophyteBullet)
 			{
 				item.damage = 15;
 			}

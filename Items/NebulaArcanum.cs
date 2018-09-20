@@ -8,7 +8,7 @@ namespace ItemsBuffs.Items
 	{
 		public override void SetDefaults(Item item)
 		{
-			if (item.type == ItemID.NebulaArcanum)
+			if (item.type == ItemID.NebulaArcanum & Config.NebulaArcanum)
 			{
                 item.damage = 80;
 			}

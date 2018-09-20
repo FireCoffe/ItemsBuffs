@@ -9,13 +9,14 @@ namespace ItemsBuffs.Buffs
 	{
 		public override void SetDefaults()
 		{
-			DisplayName.SetDefault("[c/F7FE2E:Light Charm]");
-            Description.SetDefault("chaos State dont longer affect you");
+			DisplayName.SetDefault("parallel dimensions"); //[c/808080:parallel dimensions]
+            Description.SetDefault(
+            "immunity to chaos State");
         }
 
         public override void Update(Player player, ref int buffIndex)
         {
-            player.buffImmune[BuffID.ChaosState] = true;
+            player.buffImmune[BuffID.ChaosState] = true; //buff name
         }
     }
 }

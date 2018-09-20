@@ -8,7 +8,7 @@ namespace ItemsBuffs.Items
 	{
 		public override void SetDefaults(Item item)
 		{
-			if (item.type == ItemID.ImpStaff)
+			if (item.type == ItemID.ImpStaff & Config.ImpStaff)
 			{
                 item.mana = 0;
 			}

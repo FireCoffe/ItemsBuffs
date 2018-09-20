@@ -8,7 +8,7 @@ namespace ItemsBuffs.Items
 	{
 		public override void SetDefaults(Item item)
 		{
-			if (item.type == ItemID.MoltenPickaxe)
+			if (item.type == ItemID.MoltenPickaxe & Config.MoltenPickaxe)
 			{
                 item.damage = 18;
 			}

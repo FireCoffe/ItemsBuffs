@@ -8,7 +8,7 @@ namespace ItemsBuffs.Items
 	{
 		public override void SetDefaults(Item item)
 		{
-			if (item.type == ItemID.Phantasm)
+			if (item.type == ItemID.Phantasm & Config.Phantasm)
 			{
 				item.damage = 70;
 			}

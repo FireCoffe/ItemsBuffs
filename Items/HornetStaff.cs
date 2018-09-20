@@ -8,7 +8,7 @@ namespace ItemsBuffs.Items
 	{
 		public override void SetDefaults(Item item)
 		{
-			if (item.type == ItemID.HornetStaff)
+			if (item.type == ItemID.HornetStaff & Config.HornetStaff)
 			{
                 item.mana = 0;
 			}

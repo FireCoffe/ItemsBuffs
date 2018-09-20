@@ -8,7 +8,7 @@ namespace ItemsBuffs.Items
 	{
 		public override void SetDefaults(Item item)
 		{
-			if (item.type == ItemID.BlizzardStaff)
+			if (item.type == ItemID.BlizzardStaff & Config.BlizzardStaff)
 			{
                 item.mana = 5;
 			}

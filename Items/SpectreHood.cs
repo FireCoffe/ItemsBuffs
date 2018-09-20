@@ -17,7 +17,7 @@ namespace ItemsBuffs.Items
 	{
         public override void ModifyTooltips(Item item, List<TooltipLine> tooltips)
         {
-            if (item.type == ItemID.SpectreHood)
+            if (item.type == ItemID.SpectreHood & Config.SpectreHood)
             {
                 //remove the tooltip
              //   tooltips.RemoveAll(x => x.Name == "Tooltip0" && x.mod == "Terraria");
@@ -34,7 +34,7 @@ namespace ItemsBuffs.Items
 
         public override void UpdateEquip(Item item, Player player)
         {
-            if (item.type == ItemID.SpectreHood)
+            if (item.type == ItemID.SpectreHood & Config.SpectreHood)
             {
             player.magicDamage += 0.50f; // old was 0.40f
             player.magicCrit += 10;

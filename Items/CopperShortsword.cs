@@ -8,7 +8,7 @@ namespace ItemsBuffs.Items
 	{
 		public override void SetDefaults(Item item)
 		{
-			if (item.type == ItemID.CopperShortsword)
+			if (item.type == ItemID.CopperShortsword & Config.CopperShortsword)
 			{
                 item.damage = 7;
 			}

@@ -8,7 +8,7 @@ namespace ItemsBuffs.Items
 	{
 		public override void SetDefaults(Item item)
 		{
-			if (item.type == ItemID.LeafBlower)
+			if (item.type == ItemID.LeafBlower & Config.LeafBlower)
 			{
                 item.mana = 0;
 			}

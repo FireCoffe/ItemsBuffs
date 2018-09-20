@@ -8,7 +8,7 @@ namespace ItemsBuffs.Items
 	{
 		public override void SetDefaults(Item item)
 		{
-			if (item.type == 1947)
+			if (item.type == 1947 & Config.NorthPole)
 			{
 				item.damage = 75;
 			}

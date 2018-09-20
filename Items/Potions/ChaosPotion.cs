@@ -17,9 +17,9 @@ namespace ItemsBuffs.Items.Potions
         public override void SetDefaults()
 		{
 			item.width = 20;
-			item.height = 40;
+			item.height = 30;
 			item.maxStack = 30;
-			item.rare = 0;
+			item.rare = 1;
             item.value = Item.sellPrice(0, 0, 2, 0);
             item.useAnimation = 15;
 			item.useTime = 15;
@@ -27,13 +27,13 @@ namespace ItemsBuffs.Items.Potions
 			item.UseSound = SoundID.Item3;
 			item.consumable = true;
 		}
-        public override void ModifyTooltips(List<TooltipLine> tooltips)
+       /* public override void ModifyTooltips(List<TooltipLine> tooltips)
         {
-            tooltips[0].overrideColor = new Color(255, 255, 0);
-        }
+            tooltips[0].overrideColor = new Color(128, 128, 128);
+        } */
         public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Light Charm Potion");
+			DisplayName.SetDefault("parallel dimensions Potion");
             Tooltip.SetDefault("immune to chaos State\n" +
             "8 Minutes duration\n");
         }

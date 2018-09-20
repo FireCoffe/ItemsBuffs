@@ -8,7 +8,7 @@ namespace ItemsBuffs.Items
 	{
 		public override void SetDefaults(Item item)
 		{
-			if (item.type == ItemID.Razorpine)
+			if (item.type == ItemID.Razorpine & Config.Razorpine)
 			{
                 item.damage = 58;
                 item.mana = 3;

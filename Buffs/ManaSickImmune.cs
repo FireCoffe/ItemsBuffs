@@ -7,7 +7,7 @@ namespace ItemsBuffs.Buffs
 	{
 		public override void SetDefaults()
 		{
-			DisplayName.SetDefault("[c/00cc66:Magic Protection]");
+			DisplayName.SetDefault("Mana sickness immunity"); //[c/00cc66:Magic Protection]
             Description.SetDefault("immunity to Mana Sickness");
         }
 

@@ -8,7 +8,7 @@ namespace ItemsBuffs.Items
 	{
 		public override void SetDefaults(Item item)
 		{
-			if (item.type == ItemID.ShadowbeamStaff)
+			if (item.type == ItemID.ShadowbeamStaff & Config.ShadowbeamStaff)
 			{
                 item.damage = 55;
                 item.mana = 6;

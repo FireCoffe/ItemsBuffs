@@ -8,7 +8,7 @@ namespace ItemsBuffs.Items
 	{
 		public override void SetDefaults(Item item)
 		{
-			if (item.type == ItemID.MolotovCocktail)
+			if (item.type == ItemID.MolotovCocktail & Config.MolotovCocktail)
 			{
                 item.damage = 40;
 			}

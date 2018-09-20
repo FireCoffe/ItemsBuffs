@@ -8,7 +8,7 @@ namespace ItemsBuffs.Items
 	{
 		public override void SetDefaults(Item item)
 		{
-			if (item.type == ItemID.Vilethorn)
+			if (item.type == ItemID.Vilethorn & Config.Vilethorn)
 			{
                 item.mana = 5;
 			}

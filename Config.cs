@@ -1,3 +1,4 @@
+
 using System;
 using System.IO;
 using Terraria;
@@ -6,6 +7,7 @@ using Terraria.ModLoader;
 
 public static class Config
 {
+    public static bool DefaltBossOrbHeartSpawn = false;
     public static bool AquaScepter = true;
     public static bool Bananarang = true;
     public static bool BlizzardStaff = true;
@@ -58,24 +60,25 @@ public static class Config
     public static bool VortexBeater = true;
 
 
-    private static string ConfigPath = Path.Combine(Main.SavePath, "Mod Configs", "Removed Nerfs of items v2.9.json");
+    private static string ConfigPath = Path.Combine(Main.SavePath, "Mod Configs", "Removed Nerfs of items v3.0.json");
 
-	private static Preferences Configuration = new Preferences(Config.ConfigPath, false, false);
+    private static Preferences Configuration = new Preferences(Config.ConfigPath, false, false);
 
-	public static void Load()
-	{
-		if (!Config.ReadConfig())
-		{
-			ErrorLogger.Log("Failed to read Removed nerfs of items config file! Recreating config...");
-			Config.CreateConfig();
-		}
-	}
+    public static void Load()
+    {
+        if (!Config.ReadConfig())
+        {
+            ErrorLogger.Log("Failed to read Removed nerfs of items config file! Recreating config...");
+            Config.CreateConfig();
+        }
+    }
 
-	private static bool ReadConfig()
-	{
-		bool result;
-		if (Config.Configuration.Load())
-		{
+    private static bool ReadConfig()
+    {
+        bool result;
+        if (Config.Configuration.Load())
+        {
+            Config.Configuration.Get<bool>("DefaltBossOrbHeartSpawn", ref Config.DefaltBossOrbHeartSpawn);
             Config.Configuration.Get<bool>("AquaScepter", ref Config.AquaScepter);
             Config.Configuration.Get<bool>("Bananarang", ref Config.Bananarang);
             Config.Configuration.Get<bool>("BlizzardStaff", ref Config.BlizzardStaff);
@@ -127,17 +130,18 @@ public static class Config
             Config.Configuration.Get<bool>("Vilethorn", ref Config.Vilethorn);
             Config.Configuration.Get<bool>("VortexBeater", ref Config.VortexBeater);
             result = true;
-		}
-		else
-		{
-			result = false;
-		}
-		return result;
-	}
+        }
+        else
+        {
+            result = false;
+        }
+        return result;
+    }
 
-	private static void CreateConfig()
-	{
-		Config.Configuration.Clear();
+    private static void CreateConfig()
+    {
+        Config.Configuration.Clear();
+        Config.Configuration.Put("DefaltBossOrbHeartSpawn", Config.DefaltBossOrbHeartSpawn);
         Config.Configuration.Put("AquaScepter", Config.AquaScepter);
         Config.Configuration.Put("Bananarang", Config.Bananarang);
         Config.Configuration.Put("BlizzardStaff", Config.BlizzardStaff);
@@ -189,5 +193,5 @@ public static class Config
         Config.Configuration.Put("Vilethorn", Config.Vilethorn);
         Config.Configuration.Put("VortexBeater", Config.VortexBeater);
         Config.Configuration.Save(true);
-	}
+    }
 }

@@ -2,7 +2,6 @@ items that was nerfed are now have same stats before nerf
 The mod removing ALL NERFS that was made in terraria 
 and can be disabled or enabled in mod config
 
-Mod Category: Vanilla Tweaks
 
 the mod giving the nerfed weapons stats that have when added
 
@@ -39,9 +38,13 @@ doesnt give chaos state debuff
 -Vampire knifes Weapon and Heal nerf completly Removed !
 -Spectre Hood Nerf completly Removed !
 
-v2.9
-mod renamed to Removed nerfs of items
-added mod config !
-renamed:magic shield potion to sickness immunity Potion and sprite updated,
-renamed light charm potion to parallel dimensions potion and sprite updated
-potions now have normal rarity
+v3.0
+changes and additions
+
+-added heart of life (currently unobtaible ,will have use to craft worm food and bloody spine later)
+-minor fixes
+-added beta testing feature to mod config called "DefaltBossOrbHeartSpawn" it will have use later
+-mod icon changed to next major update of mod
+
+
+Merry christmas !

@@ -22,7 +22,7 @@ namespace ItemsBuffs
 	{
         public static string ConfigFileRelativePath
         {
-            get { return "Mod Configs/My Mod's Config.json"; }
+            get { return "Mod Configs/Removed Nerfs of items v3.0.json"; }
         }
         public static void ReloadConfigFromFile()
         {

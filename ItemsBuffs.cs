@@ -73,6 +73,24 @@ namespace ItemsBuffs
             recipe.AddIngredient(null, "ThrowBook");
             recipe.SetResult(ItemType<Items.Books.AllNerfsList>());
             recipe.AddRecipe();
+
+            recipe = new ModRecipe(this);
+            recipe.AddIngredient(1225, 18);
+            recipe.AddTile(134);
+            recipe.SetResult(990, 1);
+            recipe.AddRecipe();
+
+            recipe = new ModRecipe(this);
+            recipe.AddIngredient(null, "HeartofLife", 15);
+            recipe.AddTile(null, "CorruptedAnvil");
+            recipe.SetResult(ItemID.WormFood, 1);
+            recipe.AddRecipe();
+
+            recipe = new ModRecipe(this);
+            recipe.AddIngredient(null, "HeartofLife", 15);
+            recipe.AddTile(null, "CorruptedAnvil");
+            recipe.SetResult(ItemID.BloodySpine, 1);
+            recipe.AddRecipe();
         }
     }
 }

@@ -12,8 +12,7 @@ namespace ItemsBuffs.Items.Tools
 		public override void SetStaticDefaults()
 		{
             DisplayName.SetDefault("Heart of Life");
-            Tooltip.SetDefault("it pulse with depression and hope" +
-                "n/ currently dont have use until 1.3.6 will arrive");
+            Tooltip.SetDefault("no matter how it pulse, one day it will end");
            // Main.RegisterItemAnimation(item.type, new DrawAnimationVertical(5, 4));
       //      ItemID.Sets.AnimatesAsSoul[item.type] = true;
           ItemID.Sets.ItemIconPulse[item.type] = true;

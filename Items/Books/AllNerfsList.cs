@@ -20,7 +20,7 @@ namespace ItemsBuffs.Items.Books
              "Golden Shower, Heat Ray, Hornet Staff, Chlorophyte Bulllet, Imp Staff, Iron Hammer\n" +
              "Leaf Blower,Magic Missile, Medusa Head, Molotow Cocktail\n" +
              "Molten Pickaxe, Muramasa, Nebula Arcanum, Nightmare Pickaxe, North Pole, Phantasm\n" +
-             "Phoenix Blaster, Poisoned Knife, Poison Staff, Possessed Hatchet\n" +
+             "Phoenix Blaster, Poisoned Knife,Pickaxe Axe, Poison Staff, Possessed Hatchet\n" +
              "Rainbow Rod, Rod of Discord, Razorpine, Reds Throw\n" +
              "Shadowbeam Staff, Slime Staff, Spectre Hood, Staff of Regrowth, Star Canon, Stardust Dragon staff, Sunfury\n" +
              "StarFury, Unholy Trident, Valkyrie Yoyo, Vampire Knifes, Vilethorn, Vortex Beater\n" +

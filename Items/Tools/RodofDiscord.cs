@@ -6,8 +6,6 @@ using Terraria;
 using Terraria.Localization;
 using Terraria.DataStructures;
 
-using Microsoft.Xna.Framework;
-
 namespace ItemsBuffs.Items.Tools
 {
     public class RodofDiscord : ModItem

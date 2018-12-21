@@ -17,7 +17,7 @@ namespace ItemsBuffs.Items.Books
              "Copper Shortsword, Cuttlass, Flamarang\n" +
              "Iron Hammer\n" +
              "Molten Pickaxe, Muramasa, Nightmare Pickaxe, North Pole\n" +
-             "Possessed Hatchet\n" +
+             "Possessed Hatchet, Pickaxe Axe\n" +
              "Rainbow Rod, Rod of Discord, Reds Throw\n" +
              "Staff of Regrowth, Sunfury, StarFury\n" +
              "Valkyrie Yoyo, Vampire Knifes\n" +

@@ -38,16 +38,7 @@ doesnt give chaos state debuff
 -Vampire knifes Weapon and Heal nerf completly Removed !
 -Spectre Hood Nerf completly Removed !
 
-v3.1
+v3.2
 Pre-major update
 
--removed pickaxe axe crafting nerf
--heart of life placeholder sprite replaced with new sprite
-and new tooltip
--added pickaxe axe to book of nerfs and book of nerfs melee
--tweaked mod icon
--added new tile corrupted anvil doesnt have any use currently until 1.3.6 (added to config to beta feature"DefaltBossOrbHeartSpawn")
-
-
-
-Merry christmas !
+-minor fixes

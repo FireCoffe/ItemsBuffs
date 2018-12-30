@@ -17,14 +17,15 @@ namespace ItemsBuffs.Items.Books
             Tooltip.SetDefault("THIS BOOK SHOW ALL NERFS THAT MOD REMOVED\n" +
              "Aqua Scepter, Bananarang, Blizzard Staff, Blue Moon, Bone, Book of Skulls\n" +
              "Copper Shortsword, Crystal Storm, Cuttlass, Demon Scythe, Diamond Staff, Flamarang, Flamelash, Flower of Fire, Frost Staff\n" +
-             "Golden Shower, Heat Ray, Hornet Staff, Chlorophyte Bulllet, Imp Staff, Iron Hammer\n" +
+             "Golden Shower, Heat Ray, Hornet Staff, Chlorophyte Bulllet, Chlorophyte Drill, Imp Staff, Iron Hammer\n" +
              "Leaf Blower,Magic Missile, Medusa Head, Molotow Cocktail\n" +
              "Molten Pickaxe, Muramasa, Nebula Arcanum, Nightmare Pickaxe, North Pole, Phantasm\n" +
              "Phoenix Blaster, Poisoned Knife,Pickaxe Axe, Poison Staff, Possessed Hatchet\n" +
              "Rainbow Rod, Rod of Discord, Razorpine, Reds Throw\n" +
              "Shadowbeam Staff, Slime Staff, Spectre Hood, Staff of Regrowth, Star Canon, Stardust Dragon staff, Sunfury\n" +
              "StarFury, Unholy Trident, Valkyrie Yoyo, Vampire Knifes, Vilethorn, Vortex Beater\n" +
-            "IF ANY NERF WILL BE FOUND, IT WILL BE ADDED HERE\n");
+       //     "IF ANY NERF WILL BE FOUND, IT WILL BE ADDED HERE\n");
+       "ALL NERFS HAS BEEN REMOVED !\n");
             //Main.RegisterItemAnimation(item.type, new DrawAnimationVertical(30, 8));
         }
         //this was cancelled too
@@ -43,9 +44,9 @@ namespace ItemsBuffs.Items.Books
         {
             item.width = 28;
             item.height = 30;
-            item.maxStack = 999; 
+            item.maxStack = 999999999; 
             item.value = 0;
-            item.rare = (-12);
+            item.rare = 1;
         }
 
         public override bool CloneNewInstances
@@ -55,7 +56,7 @@ namespace ItemsBuffs.Items.Books
                 return true;
             }
         }
-        //this was used for new sprite of book of nerfs but it was cancelled , the sprite is in mod icon of mod
+        //this was used for new sprite of book of nerfs but it was cancelled
        /* public override void ModifyTooltips(List<TooltipLine> tooltips)
         {
             foreach (TooltipLine line5 in tooltips) 
@@ -95,8 +96,8 @@ namespace ItemsBuffs.Items.Books
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(9, 5);
-            recipe.AddTile(18);
+            recipe.AddIngredient(2, 1);
+            recipe.AddTile(TileID.WorkBenches);
             recipe.SetResult(this);
             recipe.AddRecipe();
         }

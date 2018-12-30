@@ -15,7 +15,7 @@ namespace ItemsBuffs.Items.Books
             Tooltip.SetDefault("THIS BOOK SHOW ALL MELEE WEAPONS NERFS THAT MOD REMOVED\n" +
              "Bananarang, Blue moon\n" +
              "Copper Shortsword, Cuttlass, Flamarang\n" +
-             "Iron Hammer\n" +
+             "Iron Hammer, Chlorophyte Drill\n" +
              "Molten Pickaxe, Muramasa, Nightmare Pickaxe, North Pole\n" +
              "Possessed Hatchet, Pickaxe Axe\n" +
              "Rainbow Rod, Rod of Discord, Reds Throw\n" +

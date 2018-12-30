@@ -6,7 +6,7 @@ using Terraria.ModLoader;
 
 public static class Config
 {
-    public static bool DefaltBossOrbHeartSpawn = false;
+    public static bool OrbHeartBossSpawn = false;
     public static bool AquaScepter = true;
     public static bool Bananarang = true;
     public static bool BlizzardStaff = true;
@@ -26,6 +26,7 @@ public static class Config
     public static bool HeatRay = true;
     public static bool HornetStaff = true;
     public static bool ChlorophyteBullet = true;
+    public static bool ChlorophyteDrill = false;
     public static bool ImpStaff = true;
     public static bool IronHammer = true;
     public static bool LeafBlower = true;
@@ -59,7 +60,7 @@ public static class Config
     public static bool VortexBeater = true;
 
 
-    private static string ConfigPath = Path.Combine(Main.SavePath, "Mod Configs", "Removed Nerfs of items v3.0.json");
+    private static string ConfigPath = Path.Combine(Main.SavePath, "Mod Configs", "Removed Nerfs of items v3.3.json");
 
     private static Preferences Configuration = new Preferences(Config.ConfigPath, false, false);
 
@@ -77,7 +78,7 @@ public static class Config
         bool result;
         if (Config.Configuration.Load())
         {
-            Config.Configuration.Get<bool>("DefaltBossOrbHeartSpawn", ref Config.DefaltBossOrbHeartSpawn);
+            Config.Configuration.Get<bool>("OrbHeartBossSpawn", ref Config.OrbHeartBossSpawn);
             Config.Configuration.Get<bool>("AquaScepter", ref Config.AquaScepter);
             Config.Configuration.Get<bool>("Bananarang", ref Config.Bananarang);
             Config.Configuration.Get<bool>("BlizzardStaff", ref Config.BlizzardStaff);
@@ -97,6 +98,7 @@ public static class Config
             Config.Configuration.Get<bool>("HeatRay", ref Config.HeatRay);
             Config.Configuration.Get<bool>("HornetStaff", ref Config.HornetStaff);
             Config.Configuration.Get<bool>("ChlorophyteBullet", ref Config.ChlorophyteBullet);
+            Config.Configuration.Get<bool>("ChlorophyteDrill", ref Config.ChlorophyteDrill);
             Config.Configuration.Get<bool>("ImpStaff", ref Config.ImpStaff);
             Config.Configuration.Get<bool>("IronHammer", ref Config.IronHammer);
             Config.Configuration.Get<bool>("LeafBlower", ref Config.LeafBlower);
@@ -140,7 +142,7 @@ public static class Config
     private static void CreateConfig()
     {
         Config.Configuration.Clear();
-        Config.Configuration.Put("DefaltBossOrbHeartSpawn", Config.DefaltBossOrbHeartSpawn);
+        Config.Configuration.Put("OrbHeartBossSpawn", Config.OrbHeartBossSpawn);
         Config.Configuration.Put("AquaScepter", Config.AquaScepter);
         Config.Configuration.Put("Bananarang", Config.Bananarang);
         Config.Configuration.Put("BlizzardStaff", Config.BlizzardStaff);
@@ -160,6 +162,7 @@ public static class Config
         Config.Configuration.Put("HeatRay", Config.HeatRay);
         Config.Configuration.Put("HornetStaff", Config.HornetStaff);
         Config.Configuration.Put("ChlorophyteBullet", Config.ChlorophyteBullet);
+        Config.Configuration.Put("ChlorophyteDrill", Config.ChlorophyteDrill);
         Config.Configuration.Put("ImpStaff", Config.ImpStaff);
         Config.Configuration.Put("IronHammer", Config.IronHammer);
         Config.Configuration.Put("LeafBlower", Config.LeafBlower);

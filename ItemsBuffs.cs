@@ -22,7 +22,7 @@ namespace ItemsBuffs
 	{
         public static string ConfigFileRelativePath
         {
-            get { return "Mod Configs/Removed Nerfs of items v3.0.json"; }
+            get { return "Mod Configs/Removed Nerfs of items v3.3.json"; }
         }
         public static void ReloadConfigFromFile()
         {
@@ -81,14 +81,12 @@ namespace ItemsBuffs
             recipe.AddRecipe();
 
             recipe = new ModRecipe(this);
-            recipe.AddIngredient(null, "HeartofLife", 15);
-            recipe.AddTile(null, "CorruptedAnvil");
+            recipe.AddIngredient(null, "Bar", 1);
             recipe.SetResult(ItemID.WormFood, 1);
             recipe.AddRecipe();
 
             recipe = new ModRecipe(this);
-            recipe.AddIngredient(null, "HeartofLife", 15);
-            recipe.AddTile(null, "CorruptedAnvil");
+            recipe.AddIngredient(null, "Bar", 1);
             recipe.SetResult(ItemID.BloodySpine, 1);
             recipe.AddRecipe();
         }

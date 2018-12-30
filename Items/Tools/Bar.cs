@@ -11,60 +11,29 @@ using Terraria.DataStructures;
 
 namespace ItemsBuffs.Items.Tools
 {
-	public class HeartofLife : ModItem
+	public class Bar : ModItem
 	{
-        int stack;
+       
         public override void SetStaticDefaults()
 		{
             DisplayName.SetDefault("Democrimtane bar");
-            Tooltip.SetDefault("collect 15 to craft bloody spine or worm food");
+            Tooltip.SetDefault("the dark energy of the two evil worlds has been synced");
             Main.RegisterItemAnimation(item.type, new DrawAnimationVertical(13, 2));
       //      ItemID.Sets.AnimatesAsSoul[item.type] = true;
        //   ItemID.Sets.ItemIconPulse[item.type] = true;
             //  Main.RegisterItemAnimation(item.type, new DrawAnimationVertical(30, 2));
         }
 
-
-        public override bool PreDrawInInventory(SpriteBatch spriteBatch, Vector2 position, Rectangle frame, Color drawColor, Color itemColor, Vector2 origin, float scale) //THIS CODE IS FROM VAMPIRE KNIFES MOD ALL RIGHTS BELONG TO THE AUTHOR OF THE VAMPIRE KNIFES EXPANDED
-        {
-            if (stack == 5)
-            {
-                return true;
-            }
-            if (stack == 10)
-            {
-                Texture2D texture = mod.GetTexture("Items/Tools/HeartofLife1");
-                spriteBatch.Draw(texture, position, null, Color.White, 0, origin, scale, SpriteEffects.None, 0f);
-                return false;
-            }
-            if (stack >= 15)
-            {
-                Item.NewItem(Main.LocalPlayer.getRect(), mod.ItemType("Bar"));
-
-                return false;
-            }
-            else
-                return true;
-        }
-        public override void UpdateInventory(Player player)
-        {
-            stack = item.stack;
-            if (item.stack == 15)
-            {
-                item.SetDefaults(mod.ItemType("Bar"));
-            }
-            base.UpdateInventory(player);
-        }
         public override void SetDefaults()
 		{
             item.width = 30;
             item.height = 24;
-            item.maxStack = 15;
+            item.maxStack = 9999999;
 			item.value = 0;
-			item.rare = -1;
+			item.rare = 1;
 		}
 
-		public override void AddRecipes()
+        public override void AddRecipes()
 		{
 
 

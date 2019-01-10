@@ -11,7 +11,7 @@ namespace ItemsBuffs.Items.Books
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Book of nerfs Vol.Melee");
+            DisplayName.SetDefault("Book of nerfs, volume of swords");
             Tooltip.SetDefault("THIS BOOK SHOW ALL MELEE WEAPONS NERFS THAT MOD REMOVED\n" +
              "Bananarang, Blue moon\n" +
              "Copper Shortsword, Cuttlass, Flamarang\n" +

@@ -11,8 +11,8 @@ namespace ItemsBuffs.Items.Books
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Book of nerfs vol.thrown");
-            Tooltip.SetDefault("THIS BOOK SHOW ALL Thrown Weapons NERFS THAT MOD REMOVED\n" +
+            DisplayName.SetDefault("Book of nerfs, volume of throwing weapons");
+            Tooltip.SetDefault("THIS BOOK SHOW ALL THROWING WEAPONS NERFS THAT HAS BEEN REMOVED\n" +
              "Molotow Cocktail, Bone\n" +
              "Poisoned Knife\n" +
             "IF ANY NERF WILL BE FOUND, IT WILL BE ADDED HERE\n");

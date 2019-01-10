@@ -11,8 +11,8 @@ namespace ItemsBuffs.Items.Books
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Book of nerfs vol.Ranged");
-            Tooltip.SetDefault("THIS BOOK SHOW ONLY ALL RANGED NERFS THAT MOD REMOVED\n" +
+            DisplayName.SetDefault("Book of nerfs, volume of ammo and ranged weapons");
+            Tooltip.SetDefault("THIS BOOK SHOW ALL RANGED WEAPONS NERFS THAT HAS BEEN REMOVED\n" +
              "Phantasm, Chlorophyte Bulllet\n" +
              "Phoenix Blastert\n" +
              "Star Canon\n" +

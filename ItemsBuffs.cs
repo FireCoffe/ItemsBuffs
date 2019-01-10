@@ -75,9 +75,9 @@ namespace ItemsBuffs
             recipe.AddRecipe();
 
             recipe = new ModRecipe(this);
-            recipe.AddIngredient(1225, 18);
-            recipe.AddTile(134);
-            recipe.SetResult(990, 1);
+            recipe.AddIngredient(1225, 18); //hallow bars
+            recipe.AddTile(134); //hardmode anvil
+            recipe.SetResult(990, 1); //pick axe
             recipe.AddRecipe();
 
             recipe = new ModRecipe(this);

@@ -7,14 +7,14 @@ using Terraria.ModLoader;
 
 namespace ItemsBuffs.Items.Books
 {
-    public class AllNerfsList : ModItem //all of these book are based on lunar event expect for book of nerfs thrown
+    public class AllNerfsList : ModItem //v3.4: removed old sprite of  it , and replaced with fused version of all books , all of these book are based on lunar event but not book of nerfs thrown
     {
        // public int Frame;
-        //public int FrameCounter;
+     //   public int FrameCounter;
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Book of nerfs");
-            Tooltip.SetDefault("THIS BOOK SHOW ALL NERFS THAT MOD REMOVED\n" +
+            Tooltip.SetDefault("THIS BOOK SHOW ALL NERFS THAT MOD REMOVED, It seems to be fused with lunar power\n" +
              "Aqua Scepter, Bananarang, Blizzard Staff, Blue Moon, Bone, Book of Skulls\n" +
              "Copper Shortsword, Crystal Storm, Cuttlass, Demon Scythe, Diamond Staff, Flamarang, Flamelash, Flower of Fire, Frost Staff\n" +
              "Golden Shower, Heat Ray, Hornet Staff, Chlorophyte Bulllet, Chlorophyte Drill, Imp Staff, Iron Hammer\n" +
@@ -39,14 +39,17 @@ namespace ItemsBuffs.Items.Books
               Main.item[num].Prefix((int)item.prefix);
               Main.item[num].newAndShiny = false;
           }*/
-
+        public override void ModifyTooltips(List<TooltipLine> tooltips)
+        {
+            tooltips[2].overrideColor = new Color(10, 153, 255);
+        }
         public override void SetDefaults()
         {
             item.width = 28;
             item.height = 30;
-            item.maxStack = 999999999; 
+            item.maxStack = 999; 
             item.value = 0;
-            item.rare = 1;
+            item.rare = (-12);
         }
 
         public override bool CloneNewInstances
@@ -56,47 +59,51 @@ namespace ItemsBuffs.Items.Books
                 return true;
             }
         }
-        //this was used for new sprite of book of nerfs but it was cancelled
-       /* public override void ModifyTooltips(List<TooltipLine> tooltips)
-        {
+        //this was used for new sprite of book of nerfs but it was cancelled and again cancelled
+      /*   public override void ModifyTooltips(List<TooltipLine> tooltips)
+         {
+
             foreach (TooltipLine line5 in tooltips) 
-            {
-                if (line5.mod == "Terraria" && line5.Name == "ItemName")
-                {
-                    if (Frame == 0)
-                    {
-                        line5.text = ("[c/ff6600:Book of nerfs]");
-                    }
-                    if (Frame == 1)
-                    {
-                        line5.text = ("[c/00cc66:Book of nerfs]");
-                    }
-                    if (Frame == 2)
-                    {
-                        line5.text = ("[c/ff00ff:Book of nerfs]");
-                    }
-                    if (Frame == 3)
-                    {
-                        line5.text = ("[c/00ccff:Book of nerfs]");
-                    }
-                }
-            }
-        } 
-        public override void UpdateInventory(Player player)
-        {
-            FrameCounter++; //increase the frameCounter by one
-            if (FrameCounter >= 20) //once the frameCounter has reached 3 - change the 10 to change how fast the projectile animates
-            {
-                FrameCounter = 0;
-                Frame++; //go to the next frame
-                if (Frame > 3) //if past the last frame
-                    Frame = 0; //go back to the first frame
-            }
-        } */
+             {
+                 if (line5.mod == "Terraria" && line5.Name == "ItemName")
+                 {
+                     if (Frame == 0)
+                     {
+                         line5.text = ("[c/d325e7:Book of nerfs]");
+                     }
+                     if (Frame == 1)
+                     {
+                         line5.text = ("[c/fe9e23:Book of nerfs]");
+                     }
+                     if (Frame == 2)
+                     {
+                         line5.text = ("[c/009aff:Book of nerfs]");
+                     }
+                     if (Frame == 3)
+                     {
+                         line5.text = ("[c/2ff79f:Book of nerfs]");
+                     }
+                     if (Frame == 4)
+                     {
+                         line5.text = ("[c/2ff79f:Book of nerfs]");
+                     }
+                 }
+             }
+         } 
+         public override void UpdateInventory(Player player)
+         {
+             FrameCounter++; //increase the frameCounter by one
+             if (FrameCounter >= 20) //once the frameCounter has reached 3 - change the 10 to change how fast the projectile animates
+             {
+                 FrameCounter = 0;
+                 Frame++; //go to the next frame
+                 if (Frame > 4) //if past the last frame
+                     Frame = 0; //go back to the first frame
+             }
+         } */
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(2, 1);
             recipe.AddTile(TileID.WorkBenches);
             recipe.SetResult(this);
             recipe.AddRecipe();

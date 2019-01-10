@@ -11,8 +11,8 @@ namespace ItemsBuffs.Items.Books
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Book of nerfs vol.Summon");
-            Tooltip.SetDefault("THIS BOOK SHOW ALL Summons staffs NERFS THAT MOD REMOVED\n" +
+            DisplayName.SetDefault("Book of nerfs, volume of Summon staffs");
+            Tooltip.SetDefault("THIS BOOK SHOW ALL SUMMON STAFFS NERFS THAT HAS BEEN REMOVED\n" +
              "Imp Staff, Hornet staff\n" +
              "Slime Staff, Stardust Dragon staff\n" +
             "IF ANY NERF WILL BE FOUND, IT WILL BE ADDED HERE\n");

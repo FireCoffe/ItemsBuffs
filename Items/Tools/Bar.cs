@@ -17,8 +17,8 @@ namespace ItemsBuffs.Items.Tools
         public override void SetStaticDefaults()
 		{
             DisplayName.SetDefault("Democrimtane bar");
-            Tooltip.SetDefault("the dark energy of the two evil worlds has been synced");
-            Main.RegisterItemAnimation(item.type, new DrawAnimationVertical(13, 2));
+            Tooltip.SetDefault("'The dark energy of the two evil worlds has been synced'");
+            Main.RegisterItemAnimation(item.type, new DrawAnimationVertical(15, 5));
       //      ItemID.Sets.AnimatesAsSoul[item.type] = true;
        //   ItemID.Sets.ItemIconPulse[item.type] = true;
             //  Main.RegisterItemAnimation(item.type, new DrawAnimationVertical(30, 2));
@@ -28,7 +28,7 @@ namespace ItemsBuffs.Items.Tools
 		{
             item.width = 30;
             item.height = 24;
-            item.maxStack = 9999999;
+            item.maxStack = 999;
 			item.value = 0;
 			item.rare = 1;
 		}

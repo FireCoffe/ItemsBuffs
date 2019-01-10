@@ -13,7 +13,8 @@ namespace ItemsBuffs.Items.Tools
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Rod of Discord"); 
-            Tooltip.SetDefault("on use it doesnt give chaos state");
+            Tooltip.SetDefault("'but the game store and chat cant be activated'" +
+                "\n on use doesnt give chaos state");
             Item.staff[item.type] = true;
         }
 
@@ -103,7 +104,7 @@ namespace ItemsBuffs.Items.Tools
                     // If you die, you get a special message
                     if (player.statLife <= 0)
                     {
-                        PlayerDeathReason damageSource = PlayerDeathReason.ByCustomReason(player.name + "Discord Chat broke your hands");
+                        PlayerDeathReason damageSource = PlayerDeathReason.ByCustomReason(player.name + "Discord Chat broke your while writing and all your games was UNINSTALLED");
                         player.KillMe(damageSource, 1.0, 0, false);
 
                         return true;
@@ -115,7 +116,7 @@ namespace ItemsBuffs.Items.Tools
                     // Give player chaos state
                  //   player.AddBuff(BuffID.ChaosState, TIME_DEBUFF_CHAOS, true);
 
-                    // Give player slow and cursed inferno debuffs. The rod's broken, after all.
+                    // Give player slow and cursed inferno debuffs. The rod's broken, after all. broken by balance 
                  //   player.AddBuff(BuffID.Slow, TIME_DEBUFF_HURT, true);
                  //   player.AddBuff(BuffID.CursedInferno, TIME_DEBUFF_HURT, true);
                 }

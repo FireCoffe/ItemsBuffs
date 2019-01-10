@@ -16,11 +16,11 @@ namespace ItemsBuffs.Items.Tools
         int stack;
         public override void SetStaticDefaults()
 		{
-            DisplayName.SetDefault("Democrimtane bar");
-            Tooltip.SetDefault("collect 15 to craft bloody spine or worm food");
-            Main.RegisterItemAnimation(item.type, new DrawAnimationVertical(13, 2));
+            DisplayName.SetDefault("Democrimtane fragment");
+            Tooltip.SetDefault("collect 15 fragments to craft bloody spine or worm food");
+         //   Main.RegisterItemAnimation(item.type, new DrawAnimationVertical(13, 2));
       //      ItemID.Sets.AnimatesAsSoul[item.type] = true;
-       //   ItemID.Sets.ItemIconPulse[item.type] = true;
+          ItemID.Sets.ItemIconPulse[item.type] = true;
             //  Main.RegisterItemAnimation(item.type, new DrawAnimationVertical(30, 2));
         }
 
@@ -33,9 +33,9 @@ namespace ItemsBuffs.Items.Tools
             }
             if (stack == 10)
             {
-                Texture2D texture = mod.GetTexture("Items/Tools/HeartofLife1");
-                spriteBatch.Draw(texture, position, null, Color.White, 0, origin, scale, SpriteEffects.None, 0f);
-                return false;
+             //   Texture2D texture = mod.GetTexture("Items/Tools/HeartofLife1");
+               // spriteBatch.Draw(texture, position, null, Color.White, 0, origin, scale, SpriteEffects.None, 0f);
+                return true;
             }
             if (stack >= 15)
             {
@@ -57,11 +57,11 @@ namespace ItemsBuffs.Items.Tools
         }
         public override void SetDefaults()
 		{
-            item.width = 30;
-            item.height = 24;
+            item.width = 16;
+            item.height = 16;
             item.maxStack = 15;
 			item.value = 0;
-			item.rare = -1;
+			item.rare = 1;
 		}
 
 		public override void AddRecipes()

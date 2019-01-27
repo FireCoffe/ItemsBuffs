@@ -50,6 +50,16 @@ namespace ItemsBuffs
            recipe.AddRecipe();
 
             recipe = new ModRecipe(this);
+            recipe.AddIngredient(null, "RodofDiscordClassic");
+            recipe.SetResult(ItemID.RodofDiscord, 1);
+            recipe.AddRecipe();
+
+            recipe = new ModRecipe(this);
+            recipe.AddIngredient(null, "OrbofLightItem");
+            recipe.SetResult(115, 1);
+            recipe.AddRecipe();
+
+            recipe = new ModRecipe(this);
             recipe.AddIngredient(null, "VortexBook");
             recipe.SetResult(ItemType<Items.Books.AllNerfsList>());
             recipe.AddRecipe();
@@ -78,6 +88,36 @@ namespace ItemsBuffs
             recipe.AddIngredient(1225, 18); //hallow bars
             recipe.AddTile(134); //hardmode anvil
             recipe.SetResult(990, 1); //pick axe
+            recipe.AddRecipe();
+
+            recipe = new ModRecipe(this);
+            recipe.AddIngredient(1198, 18); //TITANIUM bars
+            recipe.AddTile(134); //hardmode anvil
+            recipe.SetResult(1219, 1); //TITANUM LEGS
+            recipe.AddRecipe();
+
+            recipe = new ModRecipe(this);
+            recipe.AddIngredient(1198, 24); //TITANIUM bars
+            recipe.AddTile(134); //hardmode anvil
+            recipe.SetResult(1218, 1); //TITANUM Brest
+            recipe.AddRecipe();
+
+            recipe = new ModRecipe(this);
+            recipe.AddIngredient(1198, 12); //TITANIUM bars
+            recipe.AddTile(134); //hardmode anvil
+            recipe.SetResult(1217, 1); //TITANUM head one
+            recipe.AddRecipe();
+
+            recipe = new ModRecipe(this);
+            recipe.AddIngredient(1198, 12); //TITANIUM bars
+            recipe.AddTile(134); //hardmode anvil
+            recipe.SetResult(1216, 1); //TITANUM head two
+            recipe.AddRecipe();
+
+            recipe = new ModRecipe(this);
+            recipe.AddIngredient(1198, 12); //TITANIUM bars
+            recipe.AddTile(134); //hardmode anvil
+            recipe.SetResult(1215, 1); //TITANUM head three
             recipe.AddRecipe();
 
             recipe = new ModRecipe(this);

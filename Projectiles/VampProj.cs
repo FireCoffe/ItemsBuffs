@@ -21,8 +21,11 @@ namespace ItemsBuffs.Projectiles
 		{
 			DisplayName.SetDefault("VampProj");
 		}
-
-		public override void SetDefaults()
+        public override Color? GetAlpha(Color lightColor)
+        {
+            return Color.White * 0.5f;
+        }
+        public override void SetDefaults()
 		{
 			projectile.CloneDefaults(304);
 			aiType = 304;

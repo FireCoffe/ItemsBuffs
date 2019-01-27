@@ -38,18 +38,14 @@ doesnt give chaos state debuff
 -Vampire knifes Weapon and Heal nerf completly Removed !
 -Spectre Hood Nerf completly Removed !
 
-v3.4
-MAJOR UPDATE PART 2
+v3.5
+Celestial books update 
 
--book of nerfs and other volumes , improved names of the volumes books 
-FIXED ALOT OF THINGS WITH BOOK OF NERFS VOLUMES  Tooltips
-book of nerfs can now be crafted from nothing at crafting table
-book of nerfs have now fixed rarity again
-book of nerfs has been fused with all parts of books the sprite has been changed
-democrimtane bar animation sprite changed
-democrimtane bar that drop from orb/crimson heart changed to democrimtane fragment
-Rod of discord sprite remastered
-
-quality of life 
-added book of nerfs , Collector edition - you can get all book volumes from it by right click (crafted with nothing at crafting table)
-
+all book of nerfs sprites changed ! 
+all book of nerfs sprites has been made by Artz thanks
+renamed book of nerfs to Celestial emblem of nerfs
+added non-meme variant of rod of discord (the vanilla variant)
+removed titanium armor crafting nerf
+fixed modded starfury shoot speed
+removed Shadow orb nerf
+added shadoworb to Celestial Emblem of nerfs

@@ -13,16 +13,16 @@ namespace ItemsBuffs.Items.Books
      //   public int FrameCounter;
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Book of nerfs");
-            Tooltip.SetDefault("THIS BOOK SHOW ALL NERFS THAT MOD REMOVED, It seems to be fused with lunar power\n" +
+            DisplayName.SetDefault("Celestial emblem of nerfs");
+            Tooltip.SetDefault("THIS BOOK SHOW ALL NERFS THAT MOD REMOVED, fused with lunar power\n" +
              "Aqua Scepter, Bananarang, Blizzard Staff, Blue Moon, Bone, Book of Skulls\n" +
              "Copper Shortsword, Crystal Storm, Cuttlass, Demon Scythe, Diamond Staff, Flamarang, Flamelash, Flower of Fire, Frost Staff\n" +
-             "Golden Shower, Heat Ray, Hornet Staff, Chlorophyte Bulllet, Chlorophyte Drill, Imp Staff, Iron Hammer\n" +
+             "Golden Shower, Heat Ray, Hornet Staff, Chlorophyte Bulllet, Chlorophyte Drill, Imp Staff, Iron Hammer, Titanium armor craft nerf\n" +
              "Leaf Blower,Magic Missile, Medusa Head, Molotow Cocktail\n" +
              "Molten Pickaxe, Muramasa, Nebula Arcanum, Nightmare Pickaxe, North Pole, Phantasm\n" +
              "Phoenix Blaster, Poisoned Knife,Pickaxe Axe, Poison Staff, Possessed Hatchet\n" +
              "Rainbow Rod, Rod of Discord, Razorpine, Reds Throw\n" +
-             "Shadowbeam Staff, Slime Staff, Spectre Hood, Staff of Regrowth, Star Canon, Stardust Dragon staff, Sunfury\n" +
+             "Shadowbeam Staff, ShadowOrb, Slime Staff, Spectre Hood, Staff of Regrowth, Star Cannon, Stardust Dragon staff, Sunfury \n" +
              "StarFury, Unholy Trident, Valkyrie Yoyo, Vampire Knifes, Vilethorn, Vortex Beater\n" +
        //     "IF ANY NERF WILL BE FOUND, IT WILL BE ADDED HERE\n");
        "ALL NERFS HAS BEEN REMOVED !\n");
@@ -39,14 +39,14 @@ namespace ItemsBuffs.Items.Books
               Main.item[num].Prefix((int)item.prefix);
               Main.item[num].newAndShiny = false;
           }*/
-        public override void ModifyTooltips(List<TooltipLine> tooltips)
-        {
-            tooltips[2].overrideColor = new Color(10, 153, 255);
-        }
+     //   public override void ModifyTooltips(List<TooltipLine> tooltips)
+       // {
+         //   tooltips[2].overrideColor = new Color(10, 153, 255);
+        //}
         public override void SetDefaults()
         {
-            item.width = 28;
-            item.height = 30;
+            item.width = 40;
+            item.height = 40;
             item.maxStack = 999; 
             item.value = 0;
             item.rare = (-12);

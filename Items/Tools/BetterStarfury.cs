@@ -15,6 +15,7 @@ namespace ItemsBuffs.Items.Tools
                 return "Terraria/Item_65";
             }
         }
+
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Starfury");
@@ -37,7 +38,7 @@ namespace ItemsBuffs.Items.Tools
             item.UseSound = SoundID.Item65;
             item.autoReuse = false;
             item.shoot = (9);
-            item.shootSpeed = 10f;                //projectile speed         
+            item.shootSpeed = 15f;                //projectile speed  //defalt was 10     // 15 is so far best    
         }
         public override bool Shoot(Player player, ref Vector2 position, ref float speedX, ref float speedY, ref int type, ref int damage, ref float knockBack)
         {

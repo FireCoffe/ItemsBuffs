@@ -60,7 +60,7 @@ public static class Config
     public static bool VortexBeater = true;
 
 
-    private static string ConfigPath = Path.Combine(Main.SavePath, "Mod Configs", "Removed Nerfs of items v3.6.json");
+    private static string ConfigPath = Path.Combine(Main.SavePath, "Mod Configs", "Removed Nerfs of items v3.9.json");
 
     private static Preferences Configuration = new Preferences(Config.ConfigPath, false, false);
 

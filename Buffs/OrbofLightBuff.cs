@@ -8,7 +8,7 @@ namespace ItemsBuffs.Buffs
         public override void SetDefaults()
         {
             DisplayName.SetDefault("Orb of Light");
-            Description.SetDefault("show the way");
+            Description.SetDefault("light your way");
             Main.buffNoTimeDisplay[Type] = true;
             Main.lightPet[Type] = true;
         }

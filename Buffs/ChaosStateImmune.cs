@@ -9,14 +9,14 @@ namespace ItemsBuffs.Buffs
 	{
 		public override void SetDefaults()
 		{
-			DisplayName.SetDefault("Telepotic Rod"); //[c/808080:parallel dimensions]
+			DisplayName.SetDefault("Teleportic Rod"); //[c/808080:parallel dimensions]
             Description.SetDefault(
             "immunity to chaos State");
         }
 
         public override void Update(Player player, ref int buffIndex)
         {
-            player.buffImmune[BuffID.ChaosState] = true; //buff name
+            player.buffImmune[BuffID.ChaosState] = true; 
         }
     }
 }

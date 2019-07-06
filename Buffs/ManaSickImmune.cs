@@ -13,7 +13,7 @@ namespace ItemsBuffs.Buffs
 
 		public override void Update(Player player, ref int buffIndex)
 		{
-			player.buffImmune[94] = true;
+			player.buffImmune[94] = true; //mana sickness
 		}
 	}
 }

@@ -3,6 +3,8 @@ using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
+using System.IO;
+using Microsoft.Xna.Framework.Graphics;
 
 namespace ItemsBuffs.Items.Tools
 {
@@ -62,13 +64,13 @@ namespace ItemsBuffs.Items.Tools
             }
             return false;
         }
-        /* i tried to find starfury dust type but i didnt find it
-        public override void MeleeEffects(Player player, Rectangle hitbox)
+     
+     /*   public override void MeleeEffects(Player player, Rectangle hitbox)
         {
             if (Main.rand.Next(3) == 0)
             {
                 //Emit dusts when swing the sword
-                Dust.NewDust(new Vector2(hitbox.X, hitbox.Y), hitbox.Width, hitbox.Height, (264));
+                Dust.NewDust(new Vector2(hitbox.X, hitbox.Y), hitbox.Width, hitbox.Height, (163));
             }
         } */
         public override void AddRecipes()

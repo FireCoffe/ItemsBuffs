@@ -6,7 +6,9 @@ namespace ItemsBuffs.Items.Books
 {
 	public class PileofBooks : ModItem
 	{
-		public override void SetStaticDefaults()
+
+
+        public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Book of nerfs , Collector edition");
 			Tooltip.SetDefault("<right> to get all books of nerfs volumes");
@@ -32,7 +34,8 @@ namespace ItemsBuffs.Items.Books
             player.QuickSpawnItem(mod.ItemType("StardustBook"));
             player.QuickSpawnItem(mod.ItemType("SolarBook"));
             player.QuickSpawnItem(mod.ItemType("NebulaBook"));
-            player.QuickSpawnItem(mod.ItemType("AllNerfsList"));
+            player.QuickSpawnItem(mod.ItemType("BookOfNerfsMain"));
+   
         }
 
 		public override void AddRecipes()

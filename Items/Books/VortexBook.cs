@@ -12,12 +12,11 @@ namespace ItemsBuffs.Items.Books
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Book of nerfs, volume of ammo and ranged weapons");
-            Tooltip.SetDefault("THIS BOOK SHOW ALL RANGED WEAPONS NERFS THAT HAS BEEN REMOVED\n" +
+            Tooltip.SetDefault("show only Bow/gun weapons nerfs which are removed\n" +
              "Phantasm, Chlorophyte Bulllet\n" +
              "Phoenix Blastert\n" +
              "Star Canon\n" +
-             "Vortex Beater\n" +
-            "IF ANY NERF WILL BE FOUND, IT WILL BE ADDED HERE\n");
+             "Vortex Beater\n");
             //Main.RegisterItemAnimation(item.type, new DrawAnimationVertical(30, 8));
         }
 
@@ -47,7 +46,7 @@ namespace ItemsBuffs.Items.Books
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(null, "AllNerfsList");
+            recipe.AddIngredient(null, "BookOfNerfsMain");
             recipe.AddTile(18);
             recipe.SetResult(this);
             recipe.AddRecipe();

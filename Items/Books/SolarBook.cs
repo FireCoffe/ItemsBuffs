@@ -12,7 +12,7 @@ namespace ItemsBuffs.Items.Books
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Book of nerfs, volume of swords");
-            Tooltip.SetDefault("THIS BOOK SHOW ALL MELEE WEAPONS NERFS THAT MOD REMOVED\n" +
+            Tooltip.SetDefault("show only Melee weapons nerfs which are removed\n" +
              "Bananarang, Blue moon\n" +
              "Copper Shortsword, Cuttlass, Flamarang\n" +
              "Iron Hammer, Chlorophyte Drill\n" +
@@ -20,8 +20,7 @@ namespace ItemsBuffs.Items.Books
              "Possessed Hatchet, Pickaxe Axe\n" +
              "Rainbow Rod, Rod of Discord, Reds Throw\n" +
              "Staff of Regrowth, Sunfury, StarFury\n" +
-             "Valkyrie Yoyo, Vampire Knifes\n" +
-            "IF ANY NERF WILL BE FOUND, IT WILL BE ADDED HERE\n");
+             "Valkyrie Yoyo, Vampire Knifes\n");
             //Main.RegisterItemAnimation(item.type, new DrawAnimationVertical(30, 8));
         }
 
@@ -46,7 +45,7 @@ namespace ItemsBuffs.Items.Books
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(null, "AllNerfsList");
+            recipe.AddIngredient(null, "BookOfNerfsMain");
             recipe.AddTile(18);
             recipe.SetResult(this);
             recipe.AddRecipe();

@@ -12,7 +12,7 @@ namespace ItemsBuffs.Items.Books
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Book of nerfs, volume of Magic");
-            Tooltip.SetDefault("THIS BOOK SHOW ALL MAGIC WEAPONS NERFS THAT HAS BEEN REMOVED\n" +
+            Tooltip.SetDefault("show only Magic Weapons nerfs which are removed\n" +
              "Aqua Scepter, Blizzard Staff, Book of Skulls\n" +
              "Crystal Storm, Demon Scythe, Diamond Staff, Flamelash, Flower of Fire, Frost Staff\n" +
              "Golden Shower, Heat Ray\n" +
@@ -21,9 +21,9 @@ namespace ItemsBuffs.Items.Books
              "Poison Staff\n" +
              "Rainbow Rod, Spectre hood, Razorpine\n" +
              "Shadowbeam Staff\n" +
-             "Unholy Trident\n" +
-            "IF ANY NERF WILL BE FOUND, IT WILL BE ADDED HERE\n");
-           // Main.RegisterItemAnimation(item.type, new DrawAnimationVertical(30, 2)); //30 the speed of frame , 2 is how much frames the image have
+             "Unholy Trident\n");
+            //   "\n");
+            // Main.RegisterItemAnimation(item.type, new DrawAnimationVertical(30, 2)); //30 the speed of frame , 2 is how much frames the image have
         }
 
         /* public override bool CanRightClick()
@@ -48,7 +48,7 @@ namespace ItemsBuffs.Items.Books
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(null, "AllNerfsList");
+            recipe.AddIngredient(null, "BookOfNerfsMain");
             recipe.AddTile(18);
             recipe.SetResult(this);
             recipe.AddRecipe();

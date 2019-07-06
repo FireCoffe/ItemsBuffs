@@ -12,10 +12,9 @@ namespace ItemsBuffs.Items.Books
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Book of nerfs, volume of Summon staffs");
-            Tooltip.SetDefault("THIS BOOK SHOW ALL SUMMON STAFFS NERFS THAT HAS BEEN REMOVED\n" +
+            Tooltip.SetDefault("show only Summon Staffs nerfs which are removed\n" +
              "Imp Staff, Hornet staff\n" +
-             "Slime Staff, Stardust Dragon staff\n" +
-            "IF ANY NERF WILL BE FOUND, IT WILL BE ADDED HERE\n");
+             "Slime Staff, Stardust Dragon staff\n");
             //Main.RegisterItemAnimation(item.type, new DrawAnimationVertical(30, 8));
         }
 
@@ -40,7 +39,7 @@ namespace ItemsBuffs.Items.Books
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(null, "AllNerfsList");
+            recipe.AddIngredient(null, "BookOfNerfsMain");
             recipe.AddTile(18);
             recipe.SetResult(this);
             recipe.AddRecipe();

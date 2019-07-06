@@ -50,7 +50,7 @@ namespace ItemsBuffs.Projectiles
 			{
 				projectile.timeLeft = 2;
 			}
-            Lighting.AddLight(projectile.Center, 1f, 1f, 1f);
+            Lighting.AddLight(projectile.Center, 1f, 0.9f, 0.5f); //fixed light v4.0
         }
 	}
 }

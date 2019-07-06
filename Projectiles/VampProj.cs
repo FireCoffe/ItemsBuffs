@@ -1,6 +1,6 @@
-using System;
-using System.Collections.Generic;
+using System.IO;
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
@@ -23,7 +23,8 @@ namespace ItemsBuffs.Projectiles
 		}
         public override Color? GetAlpha(Color lightColor)
         {
-            return Color.White * 0.5f;
+            //return Color.White;
+            return new Color(255, 255, 255, 0) * (1f - (float)projectile.alpha / 255f);
         }
         public override void SetDefaults()
 		{

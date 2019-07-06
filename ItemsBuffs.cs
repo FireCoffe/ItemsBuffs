@@ -22,7 +22,7 @@ namespace ItemsBuffs
 	{
         public static string ConfigFileRelativePath
         {
-            get { return "Mod Configs/Removed Nerfs of items v3.3.json"; }
+            get { return "Mod Configs/Removed Nerfs of items v3.6.json"; }
         }
         public static void ReloadConfigFromFile()
         {
@@ -61,27 +61,27 @@ namespace ItemsBuffs
 
             recipe = new ModRecipe(this);
             recipe.AddIngredient(null, "VortexBook");
-            recipe.SetResult(ItemType<Items.Books.AllNerfsList>());
+            recipe.SetResult(ItemType<Items.Books.BookOfNerfsMain>());
             recipe.AddRecipe();
 
             recipe = new ModRecipe(this);
             recipe.AddIngredient(null, "NebulaBook");
-            recipe.SetResult(ItemType<Items.Books.AllNerfsList>());
+            recipe.SetResult(ItemType<Items.Books.BookOfNerfsMain>());
             recipe.AddRecipe();
 
             recipe = new ModRecipe(this);
             recipe.AddIngredient(null, "SolarBook");
-            recipe.SetResult(ItemType<Items.Books.AllNerfsList>());
+            recipe.SetResult(ItemType<Items.Books.BookOfNerfsMain>());
             recipe.AddRecipe();
 
             recipe = new ModRecipe(this);
             recipe.AddIngredient(null, "StardustBook");
-            recipe.SetResult(ItemType<Items.Books.AllNerfsList>());
+            recipe.SetResult(ItemType<Items.Books.BookOfNerfsMain>());
             recipe.AddRecipe();
 
             recipe = new ModRecipe(this);
             recipe.AddIngredient(null, "ThrowBook");
-            recipe.SetResult(ItemType<Items.Books.AllNerfsList>());
+            recipe.SetResult(ItemType<Items.Books.BookOfNerfsMain>());
             recipe.AddRecipe();
 
             recipe = new ModRecipe(this);
@@ -121,12 +121,26 @@ namespace ItemsBuffs
             recipe.AddRecipe();
 
             recipe = new ModRecipe(this);
-            recipe.AddIngredient(null, "Bar", 1);
+            recipe.AddIngredient(null, "DemocrimtaneBar", 3);
+            recipe.AddTile(null, "CorruptForgeTile");
             recipe.SetResult(ItemID.WormFood, 1);
             recipe.AddRecipe();
 
             recipe = new ModRecipe(this);
-            recipe.AddIngredient(null, "Bar", 1);
+            recipe.AddIngredient(null, "DemocrimtaneBar", 3);
+            recipe.AddTile(null, "CrimsonForgeTile");
+            recipe.SetResult(ItemID.WormFood, 1);
+            recipe.AddRecipe();
+
+            recipe = new ModRecipe(this);
+            recipe.AddIngredient(null, "DemocrimtaneBar", 3);
+            recipe.AddTile(null, "CorruptForgeTile");
+            recipe.SetResult(ItemID.BloodySpine, 1);
+            recipe.AddRecipe();
+
+            recipe = new ModRecipe(this);
+            recipe.AddIngredient(null, "DemocrimtaneBar", 3);
+            recipe.AddTile(null, "CrimsonForgeTile");
             recipe.SetResult(ItemID.BloodySpine, 1);
             recipe.AddRecipe();
         }

@@ -1,11 +1,6 @@
-items that was nerfed are now have same stats before nerf
-The mod removing ALL NERFS that was made in terraria 
-and all nerfs can be disabled or enabled in mod config
+the mod giving the nerfed weapons stats that have when added to the game
 
-
-the mod giving the nerfed weapons stats that have when added
-
-this is example of nerf
+there is example of nerf
 
   phantasm after nerf: 50 damage
   when phantasm was added: 70 damage
@@ -23,29 +18,27 @@ stardus dragon staff after nerf 40 damage
 the summon staffs that dont used mana before and now using
 will not use any mana as before 
 
-the mod is well balanced
+the mod is well balanced as all things should be
 
 [i:3580][c/66ffff:Mod Features][i:3580]
 -All nerfs removed
+-over 55 nerfs removed
 -all nerfs can be disabled/enabled in mod config
 set to false to enable nerf and set to true (defalt) to disable nerf
--Book of nerfs item that show all nerfs that mod removed
--potion that Protect you to Mana sickness Debuff
-and potion that make u immune Chaos State
--golden shower nerf completly Removed
--u can now craft rod of discord that 
-doesnt give chaos state debuff
--Vampire knifes Weapon and Heal nerf completly Removed !
--Spectre Hood Nerf completly Removed !
+-Celestial emblem of nerfs: item that show all nerfs that mod removed
+- 2 new potions: 1.immunity to chaos state 2.immunity to mana sickness
+-include 2 rods of discords that doesnt inflict chaos state
+-calamity compatible
 
-v3.5
-Celestial books update 
 
-all book of nerfs sprites changed ! 
-all book of nerfs sprites has been made by Artz thanks
-renamed book of nerfs to Celestial emblem of nerfs
-added non-meme variant of rod of discord (the vanilla variant)
-removed titanium armor crafting nerf
-fixed modded starfury shoot speed
-removed Shadow orb nerf
-added shadoworb to Celestial Emblem of nerfs
+v3.9
+balance and rebalance of things also some improvements , not major update
+
+-rebalanced and renamed (config:OldOrbHeartBossSpawnMechanic) to be more balanced and to make more sense
+- added 2 new crafting stations (both work same) only obtainble when OrbHeartBossSpawn is set to true in mod config
+- replaced some placeholder sprites with better sprites and improved animation of some items
+-changed ExampleName.cs of some items , Consume potions Before update they have new .CS
+-Calamity nerf: worm scarf nerf removed and added book of nerfs, Volume of calamity mod
+-fixed misc errors and books are now more readable
+-everything checked
+-new mod icon

@@ -31,8 +31,13 @@ set to false to enable nerf and set to true (defalt) to disable nerf
 -calamity compatible
 
 
-v3.9
-balance and rebalance of things also some improvements , not major update
+
+4.0 
+not major update 
+
+- minor fix
+- updated to latest tmod version
+
 
 -rebalanced and renamed (config:OldOrbHeartBossSpawnMechanic) to be more balanced and to make more sense
 - added 2 new crafting stations (both work same) only obtainble when OrbHeartBossSpawn is set to true in mod config
@@ -42,3 +47,4 @@ balance and rebalance of things also some improvements , not major update
 -fixed misc errors and books are now more readable
 -everything checked
 -new mod icon
+

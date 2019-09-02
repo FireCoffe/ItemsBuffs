@@ -32,19 +32,6 @@ set to false to enable nerf and set to true (defalt) to disable nerf
 
 
 
-4.0 
-not major update 
-
-- minor fix
-- updated to latest tmod version
-
-
--rebalanced and renamed (config:OldOrbHeartBossSpawnMechanic) to be more balanced and to make more sense
-- added 2 new crafting stations (both work same) only obtainble when OrbHeartBossSpawn is set to true in mod config
-- replaced some placeholder sprites with better sprites and improved animation of some items
--changed ExampleName.cs of some items , Consume potions Before update they have new .CS
--Calamity nerf: worm scarf nerf removed and added book of nerfs, Volume of calamity mod
--fixed misc errors and books are now more readable
--everything checked
--new mod icon
+4.1
+-updated to latest tmod version
 

@@ -28,10 +28,10 @@ set to false to enable nerf and set to true (defalt) to disable nerf
 -Celestial emblem of nerfs: item that show all nerfs that mod removed
 - 2 new potions: 1.immunity to chaos state 2.immunity to mana sickness
 -include 2 rods of discords that doesnt inflict chaos state
--calamity compatible
+-calamity compatible , doesnt remove all calamity nerfs
 
 
 
-4.1
+4.2
 -updated to latest tmod version
 

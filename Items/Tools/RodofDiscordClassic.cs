@@ -21,7 +21,7 @@ namespace ItemsBuffs.Items.Tools
         {
             DisplayName.SetDefault("Rod of Discord"); 
             Tooltip.SetDefault("non-meme version" +
-                "\n 'why use portal gun when you have rod of discord ?'" +
+                "\n'why use portal gun when you have rod of discord ?'" +
                 "\n on use doesnt give chaos state");
             Item.staff[item.type] = true;
         }

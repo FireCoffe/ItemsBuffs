@@ -16,7 +16,7 @@ namespace ItemsBuffs.Buffs
         public override void Update(Player player, ref int buffIndex)
         {
             player.buffTime[buffIndex] = 18000;
-            player.GetModPlayer<ItemsBuffsPlayer>(mod).OrbofLight = true;
+            player.GetModPlayer<ItemsBuffsPlayer>().OrbofLight = true;
             bool petProjectileNotSpawned = player.ownedProjectileCounts[mod.ProjectileType("OrbofLight")] <= 0;
             if (petProjectileNotSpawned && player.whoAmI == Main.myPlayer)
             {

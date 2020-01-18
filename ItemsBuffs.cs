@@ -61,27 +61,27 @@ namespace ItemsBuffs
 
             recipe = new ModRecipe(this);
             recipe.AddIngredient(null, "VortexBook");
-            recipe.SetResult(ItemType<Items.Books.BookOfNerfsMain>());
+            recipe.SetResult(ModContent.ItemType<Items.Books.BookOfNerfsMain>());
             recipe.AddRecipe();
 
             recipe = new ModRecipe(this);
             recipe.AddIngredient(null, "NebulaBook");
-            recipe.SetResult(ItemType<Items.Books.BookOfNerfsMain>());
+            recipe.SetResult(ModContent.ItemType<Items.Books.BookOfNerfsMain>());
             recipe.AddRecipe();
 
             recipe = new ModRecipe(this);
             recipe.AddIngredient(null, "SolarBook");
-            recipe.SetResult(ItemType<Items.Books.BookOfNerfsMain>());
+            recipe.SetResult(ModContent.ItemType<Items.Books.BookOfNerfsMain>());
             recipe.AddRecipe();
 
             recipe = new ModRecipe(this);
             recipe.AddIngredient(null, "StardustBook");
-            recipe.SetResult(ItemType<Items.Books.BookOfNerfsMain>());
+            recipe.SetResult(ModContent.ItemType<Items.Books.BookOfNerfsMain>());
             recipe.AddRecipe();
 
             recipe = new ModRecipe(this);
             recipe.AddIngredient(null, "ThrowBook");
-            recipe.SetResult(ItemType<Items.Books.BookOfNerfsMain>());
+            recipe.SetResult(ModContent.ItemType<Items.Books.BookOfNerfsMain>()); //ModContent.ItemType<Items.Books.BookOfNerfsMain>
             recipe.AddRecipe();
 
             recipe = new ModRecipe(this);

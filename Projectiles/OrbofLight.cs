@@ -40,8 +40,8 @@ namespace ItemsBuffs.Projectiles
 
 		public override void AI()
 		{
-			Player player = Main.player[projectile.owner];
-            ItemsBuffsPlayer modPlayer = player.GetModPlayer<ItemsBuffsPlayer>(mod);
+			Player player = Main.player[projectile.owner]; //
+			ItemsBuffsPlayer modPlayer = player.GetModPlayer<ItemsBuffsPlayer>();
 			if (player.dead)
 			{
 				modPlayer.OrbofLight = false;

@@ -40,10 +40,13 @@ namespace ItemsBuffs.Items.Books
 
 		public override void AddRecipes()
 		{
-			ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddTile(18);
-            recipe.SetResult(this);
-			recipe.AddRecipe();
+			if (Config.BookNerfsCrafting == true)
+			{
+				ModRecipe recipe = new ModRecipe(mod);
+				recipe.AddTile(18);
+				recipe.SetResult(this);
+				recipe.AddRecipe();
+			}
 		}
 	}
 }

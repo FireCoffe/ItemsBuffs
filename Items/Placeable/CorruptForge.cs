@@ -23,7 +23,7 @@ namespace ItemsBuffs.Items.Placeable
 			item.useTime = 10;
 			item.useStyle = 1;
 			item.consumable = true;
-			item.rare = 1;
+			item.rare = 0;
 			item.value = Item.sellPrice(0, 0, 0, 0);
 			item.createTile = mod.TileType("CorruptForgeTile");
 		}

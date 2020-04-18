@@ -108,10 +108,14 @@ namespace ItemsBuffs.Items.Books
          } */
         public override void AddRecipes()
         {
-            ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddTile(TileID.WorkBenches);
-            recipe.SetResult(this);
-            recipe.AddRecipe();
+            if (Config.BookNerfsCrafting == true)
+            {
+                ModRecipe recipe = new ModRecipe(mod);
+                recipe.AddTile(TileID.WorkBenches);
+                recipe.SetResult(this);
+                recipe.AddRecipe();
+            }
+       
         }
     }
 }

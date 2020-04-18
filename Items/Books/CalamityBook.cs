@@ -30,7 +30,7 @@ namespace ItemsBuffs.Items.Books
 
         public override void AddRecipes()
         {
-            if (Calamity != null)
+            if (Calamity != null & Config.BookNerfsCrafting == true) //            if (Config.DisableBookNerfsCrafting == true)
             {
                 ModRecipe recipe = new ModRecipe(mod);
                 recipe.AddIngredient(null, "BookOfNerfsMain");

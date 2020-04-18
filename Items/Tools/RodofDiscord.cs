@@ -104,7 +104,7 @@ namespace ItemsBuffs.Items.Tools
                     // If you die, you get a special message
                     if (player.statLife <= 0)
                     {
-                        PlayerDeathReason damageSource = PlayerDeathReason.ByCustomReason(player.name + "Discord Chat broke your while writing and all your games was UNINSTALLED");
+                        PlayerDeathReason damageSource = PlayerDeathReason.ByCustomReason(player.name + "Discord Chat broke your hand while writing and all your games was UNINSTALLED");
                         player.KillMe(damageSource, 1.0, 0, false);
 
                         return true;

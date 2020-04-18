@@ -16,10 +16,10 @@ namespace ItemsBuffs.Items.Potions
 	{
         public override void SetDefaults()
 		{
-			item.width = 16;
-			item.height = 30;
+			item.width = 20;
+			item.height = 26;
 			item.maxStack = 30;
-			item.rare = 1;
+			item.rare = 7;
             item.value = Item.sellPrice(0, 0, 2, 0);
             item.useAnimation = 15;
 			item.useTime = 15;
@@ -46,15 +46,18 @@ namespace ItemsBuffs.Items.Potions
 
 		public override void AddRecipes()
 		{
-            ModRecipe recipe = new ModRecipe(mod);
+            if (Config.ModPotions == true)
+            {
+                ModRecipe recipe = new ModRecipe(mod);
             recipe.AddIngredient(126, 1);
-            recipe.AddIngredient(ItemID.PixieDust, 20);
+            recipe.AddIngredient(ItemID.PixieDust, 25);
             recipe.AddIngredient(ItemID.UnicornHorn, 1);
-            recipe.AddIngredient(ItemID.SoulofLight, 1);
+            recipe.AddIngredient(ItemID.SoulofLight, 3);
             recipe.AddIngredient(75, 1);
             recipe.AddTile(355); //Placed Alchemy table
             recipe.SetResult(this);
             recipe.AddRecipe();
+            }
         }
 	}
 }

@@ -7,6 +7,8 @@ using Terraria.ModLoader;
 public static class Config
 {
     public static bool OldOrbHeartBossSpawnMechanic = false;
+    public static bool BookNerfsCrafting = true;
+    public static bool ModPotions = true;
     public static bool AquaScepter = true;
     public static bool Bananarang = true;
     public static bool BlizzardStaff = true;
@@ -79,6 +81,8 @@ public static class Config
         if (Config.Configuration.Load())
         {
             Config.Configuration.Get<bool>("OldOrbHeartBossSpawnMechanic", ref Config.OldOrbHeartBossSpawnMechanic);
+            Config.Configuration.Get<bool>("BookNerfsCrafting", ref Config.BookNerfsCrafting);
+            Config.Configuration.Get<bool>("ModPotions", ref Config.ModPotions);
             Config.Configuration.Get<bool>("AquaScepter", ref Config.AquaScepter);
             Config.Configuration.Get<bool>("Bananarang", ref Config.Bananarang);
             Config.Configuration.Get<bool>("BlizzardStaff", ref Config.BlizzardStaff);
@@ -143,6 +147,8 @@ public static class Config
     {
         Config.Configuration.Clear();
         Config.Configuration.Put("OldOrbHeartBossSpawnMechanic", Config.OldOrbHeartBossSpawnMechanic);
+        Config.Configuration.Put("BookNerfsCrafting", Config.BookNerfsCrafting);
+        Config.Configuration.Put("ModPotions", Config.ModPotions);
         Config.Configuration.Put("AquaScepter", Config.AquaScepter);
         Config.Configuration.Put("Bananarang", Config.Bananarang);
         Config.Configuration.Put("BlizzardStaff", Config.BlizzardStaff);

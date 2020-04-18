@@ -59,30 +59,33 @@ namespace ItemsBuffs
             recipe.SetResult(115, 1);
             recipe.AddRecipe();
 
-            recipe = new ModRecipe(this);
-            recipe.AddIngredient(null, "VortexBook");
-            recipe.SetResult(ModContent.ItemType<Items.Books.BookOfNerfsMain>());
-            recipe.AddRecipe();
+            if (Config.BookNerfsCrafting == true)
+            {
+                recipe = new ModRecipe(this);
+                recipe.AddIngredient(null, "VortexBook");
+                recipe.SetResult(ModContent.ItemType<Items.Books.BookOfNerfsMain>());
+                recipe.AddRecipe();
 
-            recipe = new ModRecipe(this);
-            recipe.AddIngredient(null, "NebulaBook");
-            recipe.SetResult(ModContent.ItemType<Items.Books.BookOfNerfsMain>());
-            recipe.AddRecipe();
+                recipe = new ModRecipe(this);
+                recipe.AddIngredient(null, "NebulaBook");
+                recipe.SetResult(ModContent.ItemType<Items.Books.BookOfNerfsMain>());
+                recipe.AddRecipe();
 
-            recipe = new ModRecipe(this);
-            recipe.AddIngredient(null, "SolarBook");
-            recipe.SetResult(ModContent.ItemType<Items.Books.BookOfNerfsMain>());
-            recipe.AddRecipe();
+                recipe = new ModRecipe(this);
+                recipe.AddIngredient(null, "SolarBook");
+                recipe.SetResult(ModContent.ItemType<Items.Books.BookOfNerfsMain>());
+                recipe.AddRecipe();
 
-            recipe = new ModRecipe(this);
-            recipe.AddIngredient(null, "StardustBook");
-            recipe.SetResult(ModContent.ItemType<Items.Books.BookOfNerfsMain>());
-            recipe.AddRecipe();
+                recipe = new ModRecipe(this);
+                recipe.AddIngredient(null, "StardustBook");
+                recipe.SetResult(ModContent.ItemType<Items.Books.BookOfNerfsMain>());
+                recipe.AddRecipe();
 
-            recipe = new ModRecipe(this);
-            recipe.AddIngredient(null, "ThrowBook");
-            recipe.SetResult(ModContent.ItemType<Items.Books.BookOfNerfsMain>()); //ModContent.ItemType<Items.Books.BookOfNerfsMain>
-            recipe.AddRecipe();
+                recipe = new ModRecipe(this);
+                recipe.AddIngredient(null, "ThrowBook");
+                recipe.SetResult(ModContent.ItemType<Items.Books.BookOfNerfsMain>()); //ModContent.ItemType<Items.Books.BookOfNerfsMain>
+                recipe.AddRecipe();
+            }
 
             recipe = new ModRecipe(this);
             recipe.AddIngredient(1225, 18); //hallow bars

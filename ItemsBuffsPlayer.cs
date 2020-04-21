@@ -14,9 +14,11 @@ namespace ItemsBuffs
 
         public bool OrbofLight = false;
 
+
         public override void ResetEffects()
         {
             OrbofLight = false;
+
 
 
         }

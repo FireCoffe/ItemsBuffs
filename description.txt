@@ -5,15 +5,15 @@ there is example of nerf
   phantasm after nerf: 50 damage
   when phantasm was added: 70 damage
 
-magic weapons: Flower of Fire used before nerf 10 mana
+magic weapons [i:112]: Flower of Fire used before nerf 10 mana
                  Flower of Fire use now 15 mana
                  the mod make Flower of Fire use 10 mana 
                  instead of 15 mana
 
-summons Staffs
+summons Staffs [i:3531]
 
 Stardust Dragon staff before nerf 60 damage
-stardus dragon staff after nerf 40 damage
+Stardust dragon staff after nerf 40 damage
 
 the summon staffs that dont used mana before and now using
 will not use any mana as before 
@@ -27,13 +27,11 @@ the mod is well balanced as all things should be
 set to false to enable nerf and set to true (defalt) to disable nerf
 -Celestial emblem of nerfs: item that show all nerfs that mod removed
 - 2 new potions: 1.immunity to chaos state 2.immunity to mana sickness
--include 2 rods of discords that doesnt inflict chaos state
--calamity compatible this mod doesnt remove recent nerfs or that i dont know how to remove
+-include [i:1326] 2 rods of discords that doesnt inflict Chaos state
+-calamity compatible, this mod doesnt remove recent nerfs or that i dont know how to remove
 -u can disable/enable if u want book of nerfs in-game or not- true is defalt ,
 set to false to disable book of nerfs crafting
 [i:3580][c/66ffff:END][i:3580]
-
-
 
 4.3
 Balance changes , rarity changes and new config options 
@@ -41,4 +39,7 @@ Balance changes , rarity changes and new config options
 - fixed rarity of some items, Balance changes 
 - added extra options to mod config: disable all book of nerfs recipes (they will be no longer craftable) and 
 disable potions recipes
+4.4
 
+- Rebalanced Mod potions 
+- buff: crimson and corruption forges , they also now work as demon altar , now need to be crafted at demon altar

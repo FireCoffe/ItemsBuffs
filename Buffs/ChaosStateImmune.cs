@@ -9,7 +9,7 @@ namespace ItemsBuffs.Buffs
 	{
 		public override void SetDefaults()
 		{
-			DisplayName.SetDefault("Teleportic Rod"); //[c/808080:parallel dimensions]
+			DisplayName.SetDefault("Chaos state Immunity"); //[c/808080:parallel dimensions]
             Description.SetDefault(
             "immunity to chaos State");
         }

@@ -24,7 +24,7 @@ namespace ItemsBuffs.Tiles
 			TileObjectData.addTile(Type);
 			dustType = 219;
 			animationFrameHeight = 38;
-			adjTiles = new int[] { TileID.Furnaces }; //	adjTiles = new int[] { TileID.Furnaces, TileID.Hellforge, TileID.AdamantiteForge };
+			adjTiles = new int[] { TileID.Furnaces, 26 }; //	adjTiles = new int[] { TileID.Furnaces, TileID.Hellforge, TileID.AdamantiteForge };
             ModTranslation name = CreateMapEntryName();
 			name.SetDefault("Crimson Forge");
 			AddMapEntry(new Color(140, 0, 0), name);

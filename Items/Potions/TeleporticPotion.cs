@@ -19,7 +19,7 @@ namespace ItemsBuffs.Items.Potions
 			item.width = 20;
 			item.height = 26;
 			item.maxStack = 30;
-			item.rare = 7;
+			item.rare = 1;
             item.value = Item.sellPrice(0, 0, 2, 0);
             item.useAnimation = 15;
 			item.useTime = 15;
@@ -33,14 +33,14 @@ namespace ItemsBuffs.Items.Potions
         } */
         public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Teleportic Potion");
+			DisplayName.SetDefault("Teleportic Bottle");
             Tooltip.SetDefault("Grants immunity to chaos State\n" +
-            "8 Minutes duration\n");
+            "5 Minutes duration\n");
         }
 
 		public override bool UseItem(Player player)
 		{
-			player.AddBuff(mod.BuffType("ChaosStateImmune"), 32000); //999999999
+			player.AddBuff(mod.BuffType("ChaosStateImmune"), 20000); //999999999 32000 
             return true;
 		}
 

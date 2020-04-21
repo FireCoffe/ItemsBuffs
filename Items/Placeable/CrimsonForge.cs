@@ -9,7 +9,8 @@ namespace ItemsBuffs.Items.Placeable
 	{
 		public override void SetStaticDefaults()
 		{
-			Tooltip.SetDefault("Used to extract dark energy from demonrimtane bars");
+			Tooltip.SetDefault("Used to extract dark energy from demonrimtane bars\n" +
+			"Also works as Demon Altar\n");
 		}
 
 		public override void SetDefaults()
@@ -33,7 +34,7 @@ namespace ItemsBuffs.Items.Placeable
 			ModRecipe recipe = new ModRecipe(mod);
             recipe.AddIngredient(ItemID.Furnace);
             recipe.AddIngredient(null, "DemocrimtaneBar", 3);
-            recipe.AddTile(TileID.WorkBenches);
+            recipe.AddTile(26);
             recipe.SetResult(this);
 			recipe.AddRecipe();
 		}

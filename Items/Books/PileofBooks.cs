@@ -1,3 +1,4 @@
+
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
@@ -8,9 +9,9 @@ namespace ItemsBuffs.Items.Books
 	{
 
 
-        public override void SetStaticDefaults()
+		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Book of nerfs , Collector edition");
+			DisplayName.SetDefault("Lunar Chest");
 			Tooltip.SetDefault("<right> to get all books of nerfs volumes");
 		}
 
@@ -18,8 +19,9 @@ namespace ItemsBuffs.Items.Books
 		{
 			item.width = 42;
 			item.height = 16;
-            item.maxStack = 999;
-            item.rare = (-12);
+			item.maxStack = 999;
+			item.rare = (-12);
+			item.consumable = true;
 		}
 
 		public override bool CanRightClick()
@@ -29,14 +31,15 @@ namespace ItemsBuffs.Items.Books
 
 		public override void RightClick(Player player)
 		{
-            player.QuickSpawnItem(mod.ItemType("ThrowBook"));
-            player.QuickSpawnItem(mod.ItemType("VortexBook"));
-            player.QuickSpawnItem(mod.ItemType("StardustBook"));
-            player.QuickSpawnItem(mod.ItemType("SolarBook"));
-            player.QuickSpawnItem(mod.ItemType("NebulaBook"));
-            player.QuickSpawnItem(mod.ItemType("BookOfNerfsMain"));
-   
-        }
+			player.QuickSpawnItem(mod.ItemType("ThrowBook"));
+			player.QuickSpawnItem(mod.ItemType("VortexBook"));
+			player.QuickSpawnItem(mod.ItemType("StardustBook"));
+			player.QuickSpawnItem(mod.ItemType("SolarBook"));
+			player.QuickSpawnItem(mod.ItemType("NebulaBook"));
+			player.QuickSpawnItem(mod.ItemType("CalamityBook"));
+			player.QuickSpawnItem(mod.ItemType("BookOfNerfsMain"));
+
+		}
 
 		public override void AddRecipes()
 		{

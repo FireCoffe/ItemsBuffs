@@ -21,7 +21,7 @@ namespace ItemsBuffs.Items.Potions
 			item.width = 20;
 			item.height = 30;
 			item.maxStack = 30;
-			item.rare = 2;
+			item.rare = 1;
             item.value = Item.sellPrice(0, 0, 2, 0);
             item.useAnimation = 15;
 			item.useTime = 15;
@@ -42,7 +42,7 @@ namespace ItemsBuffs.Items.Potions
 
 		public override bool UseItem(Player player)
 		{
-			player.AddBuff(mod.BuffType("ManaSickImmune"), 32000); //999999999
+			player.AddBuff(mod.BuffType("ManaSickImmune"), 32000); //999999999 32000
             return true;
 		}
 
@@ -55,7 +55,7 @@ namespace ItemsBuffs.Items.Potions
                 recipe.AddIngredient(ItemID.Moonglow, 5);
                 recipe.AddIngredient(ItemID.Daybloom, 5);
                 recipe.AddIngredient(ItemID.Deathweed, 5);
-                recipe.AddIngredient(75, 5);
+                recipe.AddIngredient(75, 3); 
                 recipe.AddTile(355); //Placed bottle now requre alchemy station balance change
                 recipe.SetResult(this);
                 recipe.AddRecipe();

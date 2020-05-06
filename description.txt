@@ -22,7 +22,7 @@ the mod is well balanced as all things should be
 
 [i:3580][c/66ffff:Mod Features][i:3580]
 -All nerfs removed (maybe)
--over 55 nerfs removed
+-over 56 nerfs removed
 -all nerfs can be disabled/enabled in mod config
 set to false to enable nerf and set to true (defalt) to disable nerf
 -Celestial emblem of nerfs: item that show all nerfs that mod removed
@@ -33,13 +33,15 @@ set to false to enable nerf and set to true (defalt) to disable nerf
 set to false to disable book of nerfs crafting
 [i:3580][c/66ffff:END][i:3580]
 
-4.3
-Balance changes , rarity changes and new config options 
+4.5
+Major update
 
-- fixed rarity of some items, Balance changes 
-- added extra options to mod config: disable all book of nerfs recipes (they will be no longer craftable) and 
-disable potions recipes
-4.4
-
-- Rebalanced Mod potions 
-- buff: crimson and corruption forges , they also now work as demon altar , now need to be crafted at demon altar
+-removed Heal sickness from ALL POTIONS from vanilla , it can be enabled in mod config
+and its disabled by defalt
+- added to mod config: you can now disable modded RoDs, and Orb of light
+and disable titanium cheaper recipe and pickaxe axe recipe and alot more
+ All mod items are now can be disabled in mod config
+- Fixed some things in mod config
+-removed restoration potion nerf
+- fixed grammar errors
+- mod config updated to v4.5

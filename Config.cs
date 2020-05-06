@@ -9,6 +9,14 @@ public static class Config
     public static bool OldOrbHeartBossSpawnMechanic = false;
     public static bool BookNerfsCrafting = true;
     public static bool ModPotions = true;
+    public static bool NoCooldownForHealItems = false;
+    public static bool NonChaosRods = true;
+    public static bool OrbOfLight = true;
+    public static bool TitaniumCrafting = true;
+    public static bool PickaxeAxeCrafting = true;
+    public static bool RestorationPotion = true;
+    public static bool Starfury = true;
+    public static bool WormScarfCalamity = true;
     public static bool AquaScepter = true;
     public static bool Bananarang = true;
     public static bool BlizzardStaff = true;
@@ -62,7 +70,7 @@ public static class Config
     public static bool VortexBeater = true;
 
 
-    private static string ConfigPath = Path.Combine(Main.SavePath, "Mod Configs", "Removed Nerfs of items v3.9.json");
+    private static string ConfigPath = Path.Combine(Main.SavePath, "Mod Configs", "Removed Nerfs of items v4.5.json");
 
     private static Preferences Configuration = new Preferences(Config.ConfigPath, false, false);
 
@@ -83,6 +91,14 @@ public static class Config
             Config.Configuration.Get<bool>("OldOrbHeartBossSpawnMechanic", ref Config.OldOrbHeartBossSpawnMechanic);
             Config.Configuration.Get<bool>("BookNerfsCrafting", ref Config.BookNerfsCrafting);
             Config.Configuration.Get<bool>("ModPotions", ref Config.ModPotions);
+            Config.Configuration.Get<bool>("NoCooldownForHealItems", ref Config.NoCooldownForHealItems);
+            Config.Configuration.Get<bool>("NonChaosRods", ref Config.NonChaosRods);
+            Config.Configuration.Get<bool>("OrbOfLight", ref Config.OrbOfLight);
+            Config.Configuration.Get<bool>("TitaniumCrafting", ref Config.TitaniumCrafting);
+            Config.Configuration.Get<bool>("PickaxeAxeCrafting", ref Config.PickaxeAxeCrafting);
+            Config.Configuration.Get<bool>("RestorationPotion", ref Config.RestorationPotion);
+            Config.Configuration.Get<bool>("Starfury", ref Config.Starfury);
+            Config.Configuration.Get<bool>("WormScarfCalamity", ref Config.WormScarfCalamity);
             Config.Configuration.Get<bool>("AquaScepter", ref Config.AquaScepter);
             Config.Configuration.Get<bool>("Bananarang", ref Config.Bananarang);
             Config.Configuration.Get<bool>("BlizzardStaff", ref Config.BlizzardStaff);
@@ -149,6 +165,14 @@ public static class Config
         Config.Configuration.Put("OldOrbHeartBossSpawnMechanic", Config.OldOrbHeartBossSpawnMechanic);
         Config.Configuration.Put("BookNerfsCrafting", Config.BookNerfsCrafting);
         Config.Configuration.Put("ModPotions", Config.ModPotions);
+        Config.Configuration.Put("NoCooldownForHealItems", Config.NoCooldownForHealItems);
+        Config.Configuration.Put("NonChaosRods", Config.NonChaosRods);
+        Config.Configuration.Put("OrbOfLight", Config.OrbOfLight);
+        Config.Configuration.Put("TitaniumCrafting", Config.TitaniumCrafting);
+        Config.Configuration.Put("PickaxeAxeCrafting", Config.PickaxeAxeCrafting);
+        Config.Configuration.Put("RestorationPotion", Config.RestorationPotion);
+        Config.Configuration.Put("Starfury", Config.Starfury);
+        Config.Configuration.Put("WormScarfCalamity", Config.WormScarfCalamity);
         Config.Configuration.Put("AquaScepter", Config.AquaScepter);
         Config.Configuration.Put("Bananarang", Config.Bananarang);
         Config.Configuration.Put("BlizzardStaff", Config.BlizzardStaff);

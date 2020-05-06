@@ -14,8 +14,8 @@ namespace ItemsBuffs
 		{
 			if (type == 31 & Config.OldOrbHeartBossSpawnMechanic) //how do i make it to drop one item instead of five ???
         {
-            Item.NewItem(i * 16, j * 16, 48, 48, mod.ItemType("DemocrimtaneOre"), Main.rand.Next(1, 1), false, 0, false, false);
-        }
+            Item.NewItem(i * 16, j * 16, 32, 32, mod.ItemType("DemocrimtaneOre"), Main.rand.Next(1, 1), false, 0, false, false); //            Item.NewItem(i * 16, j * 16, 48, 48, mod.ItemType("DemocrimtaneOre"), Main.rand.Next(1, 1), false, 0, false, false);
+			}
 			return true;
 		}
 	}

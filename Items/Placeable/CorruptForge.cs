@@ -9,7 +9,7 @@ namespace ItemsBuffs.Items.Placeable
 	{
 		public override void SetStaticDefaults()
 		{
-			Tooltip.SetDefault("Used to extract dark energy from demonrimtane bars\n" +
+			Tooltip.SetDefault("Used to extract dark energy from demoncrimtane bars\n" +
 			"Also works as Demon Altar\n");
 		}
 
@@ -31,12 +31,15 @@ namespace ItemsBuffs.Items.Placeable
 
 		public override void AddRecipes()
 		{
-			ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(ItemID.Furnace); //damn that hot
-            recipe.AddIngredient(null, "DemocrimtaneBar", 3); //Balanced as all things should be
-            recipe.AddTile(26);
-            recipe.SetResult(this);
-			recipe.AddRecipe();
+			if (Config.OldOrbHeartBossSpawnMechanic == true)
+			{
+				ModRecipe recipe = new ModRecipe(mod);
+				recipe.AddIngredient(ItemID.Furnace);
+				recipe.AddIngredient(null, "DemocrimtaneBar", 3);
+				recipe.AddTile(26);
+				recipe.SetResult(this);
+				recipe.AddRecipe();
+			}
 		}
 	}
 }

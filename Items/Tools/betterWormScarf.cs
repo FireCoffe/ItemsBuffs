@@ -43,7 +43,7 @@ namespace ItemsBuffs.Items.Tools
         }
         public override void AddRecipes()
         {
-            if (Calamity != null)
+            if (Calamity != null & Config.WormScarfCalamity == true) // Not craftable if calamity mod isnt active and craftable if calamity scarf is set to true
             {
                 ModRecipe recipe = new ModRecipe(mod);
                 recipe.AddIngredient(3224, 1);

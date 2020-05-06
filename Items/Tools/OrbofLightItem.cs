@@ -25,10 +25,13 @@ namespace ItemsBuffs.Items.Tools
         }
         public override void AddRecipes()
         {
-            ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(115);
-            recipe.SetResult(this);
-            recipe.AddRecipe();
+            if (Config.OrbOfLight == true)
+            {
+                ModRecipe recipe = new ModRecipe(mod);
+                recipe.AddIngredient(115);
+                recipe.SetResult(this);
+                recipe.AddRecipe();
+            }
         }
         public override void UseStyle(Player player)
         {

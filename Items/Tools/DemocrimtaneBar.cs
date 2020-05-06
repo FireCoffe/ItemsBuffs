@@ -36,11 +36,14 @@ namespace ItemsBuffs.Items.Tools
         public override void AddRecipes()
 		{
 
-            ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(null, "DemocrimtaneOre", 5);
-            recipe.AddTile(TileID.Furnaces);
-            recipe.SetResult(this);
-            recipe.AddRecipe();
+            if (Config.OldOrbHeartBossSpawnMechanic == true)
+            {
+				ModRecipe recipe = new ModRecipe(mod);
+				recipe.AddIngredient(null, "DemocrimtaneOre", 5);
+				recipe.AddTile(TileID.Furnaces);
+				recipe.SetResult(this);
+				recipe.AddRecipe();
+			}
             /*
 			// Start a new Recipe. (Prepend with "ModRecipe " if 1st recipe in code block.)
 			recipe = new ModRecipe(mod);

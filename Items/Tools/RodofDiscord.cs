@@ -33,10 +33,13 @@ namespace ItemsBuffs.Items.Tools
 
         public override void AddRecipes()
         {
-            ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(ItemID.RodofDiscord, 1);
-            recipe.SetResult(this);
-            recipe.AddRecipe();
+            if (Config.NonChaosRods == true)
+            {
+                ModRecipe recipe = new ModRecipe(mod);
+                recipe.AddIngredient(ItemID.RodofDiscord, 1);
+                recipe.SetResult(this);
+                recipe.AddRecipe();
+            }
         }
         // Code is modified from the vanilla source code handling Rod of Discord
         public override bool UseItem(Player player)

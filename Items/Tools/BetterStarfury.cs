@@ -75,16 +75,19 @@ namespace ItemsBuffs.Items.Tools
         } */
         public override void AddRecipes()
         {
-            ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(ItemID.Starfury, 1);
-            recipe.SetResult(this);
-            recipe.AddRecipe();
+            if (Config.Starfury == true)
+            {
+                ModRecipe recipe = new ModRecipe(mod);
+                recipe.AddIngredient(ItemID.Starfury, 1);
+                recipe.SetResult(this);
+                recipe.AddRecipe();
 
 
-            recipe = new ModRecipe(mod);
-            recipe.AddIngredient(null, "BetterStarfury");
-            recipe.SetResult(ItemID.Starfury, 1);
-            recipe.AddRecipe();
+                recipe = new ModRecipe(mod);
+                recipe.AddIngredient(null, "BetterStarfury");
+                recipe.SetResult(ItemID.Starfury, 1);
+                recipe.AddRecipe();
+            }
         }
 	}
 }

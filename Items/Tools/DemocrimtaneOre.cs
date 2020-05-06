@@ -16,7 +16,9 @@ namespace ItemsBuffs.Items.Tools
      //   int stack;
         public override void SetStaticDefaults()
 		{
-            DisplayName.SetDefault("Democrimtane ore");
+			if (Config.OldOrbHeartBossSpawnMechanic == true)
+
+				DisplayName.SetDefault("Democrimtane ore");
             Tooltip.SetDefault("'The dark energy pulse within ore'");
             Main.RegisterItemAnimation(item.type, new DrawAnimationVertical(14, 17));
       //      ItemID.Sets.AnimatesAsSoul[item.type] = true;

@@ -7,7 +7,7 @@ using Terraria.ModLoader;
 
 namespace ItemsBuffs.Items.Books
 {
-    public class ThrowBook : ModItem
+    public class ThrowBook : ModItem //TO DO: remove in 1.4
     {
         public override void SetStaticDefaults()
         {

@@ -17,15 +17,15 @@ namespace ItemsBuffs.Items.Books
             Tooltip.SetDefault("show only all nerfs which are removed\n" +
              "Aqua Scepter, Bananarang, Blizzard Staff, Blue Moon, Bone, Book of Skulls\n" +
              "Copper Shortsword, Crystal Storm, Cuttlass, Demon Scythe, Diamond Staff, Flamarang, Flamelash, Flower of Fire, Frost Staff\n" +
-             "Golden Shower, Heat Ray, Hornet Staff, Chlorophyte Bulllet, Chlorophyte Drill, Imp Staff, Iron Hammer, Titanium armor craft nerf\n" +
-             "Leaf Blower,Magic Missile, Medusa Head, Molotow Cocktail\n" +
+             "Golden Shower, Heat Ray, Hornet Staff, Chlorophyte Bulllet, Chlorophyte Drill, Imp Staff, Iron Hammer\n" +
+             "Leaf Blower,Magic Missile, Medusa Head, Molotow Cocktail, Titanium armor craft nerf, Restoration potion\n" +
              "Molten Pickaxe, Muramasa, Nebula Arcanum, Nightmare Pickaxe, North Pole, Phantasm\n" +
              "Phoenix Blaster, Poisoned Knife,Pickaxe Axe, Poison Staff, Possessed Hatchet\n" +
              "Rainbow Rod, Rod of Discord, Razorpine, Reds Throw\n" +
              "Shadowbeam Staff, ShadowOrb, Slime Staff, Spectre Hood, Staff of Regrowth, Star Cannon, Stardust Dragon staff, Sunfury \n" +
              "StarFury, Unholy Trident, Valkyrie Yoyo, Vampire Knifes, Vilethorn, Vortex Beater\n" +
        //     "IF ANY NERF WILL BE FOUND, IT WILL BE ADDED HERE\n");
-       "Total nerfs removed: 55\n");
+       "Total nerfs removed: 56\n");
             //Main.RegisterItemAnimation(item.type, new DrawAnimationVertical(30, 8));
         }
 

@@ -1,5 +1,5 @@
 author = IceCoffe (SolariumTea)
-version = 4.5
+version = 4.6
 homepage = https://forums.terraria.org/index.php?threads/removed-nerfs-of-items.71134/
 displayName = Removed nerfs of items
 hideCode = true

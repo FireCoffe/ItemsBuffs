@@ -52,9 +52,9 @@ namespace ItemsBuffs.Items.Potions
             {
                 ModRecipe recipe = new ModRecipe(mod);
                 recipe.AddIngredient(126, 1);
-                recipe.AddIngredient(ItemID.Moonglow, 5);
-                recipe.AddIngredient(ItemID.Daybloom, 5);
-                recipe.AddIngredient(ItemID.Deathweed, 5);
+                recipe.AddIngredient(ItemID.Moonglow, 1);
+                recipe.AddIngredient(ItemID.Daybloom, 1);
+                recipe.AddIngredient(ItemID.Deathweed, 1);
                 recipe.AddIngredient(75, 3); 
                 recipe.AddTile(355); //Placed bottle now requre alchemy station balance change
                 recipe.SetResult(this);

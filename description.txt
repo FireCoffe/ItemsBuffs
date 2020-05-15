@@ -33,15 +33,9 @@ set to false to enable nerf and set to true (defalt) to disable nerf
 set to false to disable book of nerfs crafting
 [i:3580][c/66ffff:END][i:3580]
 
-4.5
-Major update
+v4.6
+pre 1.4 bug fixes
 
--removed Heal sickness from ALL POTIONS from vanilla , it can be enabled in mod config
-and its disabled by defalt
-- added to mod config: you can now disable modded RoDs, and Orb of light
-and disable titanium cheaper recipe and pickaxe axe recipe and alot more
- All mod items are now can be disabled in mod config
-- Fixed some things in mod config
--removed restoration potion nerf
-- fixed grammar errors
-- mod config updated to v4.5
+-fixed and balanced stairaise potion recipe
+
+-bigger updates will come post 1.4

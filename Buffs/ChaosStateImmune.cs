@@ -9,9 +9,9 @@ namespace ItemsBuffs.Buffs
 	{
 		public override void SetDefaults()
 		{
-			DisplayName.SetDefault("Chaos state Immunity"); //[c/808080:parallel dimensions]
+			DisplayName.SetDefault("[c/A92DC9:Chaos Aura]"); //[c/808080:parallel dimensions]
             Description.SetDefault(
-            "immunity to chaos State");
+           "immunity to chaos State");
         }
 
         public override void Update(Player player, ref int buffIndex)

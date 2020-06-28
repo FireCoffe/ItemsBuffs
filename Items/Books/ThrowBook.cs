@@ -4,22 +4,28 @@ using Terraria;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
+using static Terraria.ModLoader.ModContent;
 
 namespace ItemsBuffs.Items.Books
 {
-    public class ThrowBook : ModItem //TO DO: remove in 1.4
+    public class ThrowBook : ModItem //TO DO: remove in 1.4 or keep it as joke
     {
+        public override bool Autoload(ref string name)
+		{
+			return !GetInstance<ItemsBuffsConfigServer>().BookCraft;
+		}
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Book of nerfs, volume of throwing weapons");
+            DisplayName.SetDefault("Nerfs Book, of not throwing weapons");
             Tooltip.SetDefault("show only throwing class nerfs which are removed\n" +
-             "Molotow Cocktail, Bone\n" +
+             "Molotow Cocktail, Bone, Bone Javelin\n" +
              "Poisoned Knife\n");
             //Main.RegisterItemAnimation(item.type, new DrawAnimationVertical(30, 8));
         }
 
         public override void SetDefaults()
         {
+         
             item.width = 28;
             item.height = 30;
             item.maxStack = 999; 
@@ -42,11 +48,9 @@ namespace ItemsBuffs.Items.Books
         }*/
         public override void AddRecipes()
         {
-            if (Config.BookNerfsCrafting == true)
             {
                 ModRecipe recipe = new ModRecipe(mod);
-                recipe.AddIngredient(null, "BookOfNerfsMain");
-                recipe.AddTile(18);
+                recipe.AddTile(TileID.WorkBenches);
                 recipe.SetResult(this);
                 recipe.AddRecipe();
             }

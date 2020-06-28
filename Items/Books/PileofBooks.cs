@@ -1,18 +1,20 @@
-
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
+using static Terraria.ModLoader.ModContent;
 
 namespace ItemsBuffs.Items.Books
 {
 	public class PileofBooks : ModItem
 	{
-
-
+		public override bool Autoload(ref string name)
+		{
+			return !GetInstance<ItemsBuffsConfigServer>().BookCraft;
+		}
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Lunar Chest");
-			Tooltip.SetDefault("<right> to get all books of nerfs volumes");
+			Tooltip.SetDefault("<right> to get all Nerfs Books volumes");
 		}
 
 		public override void SetDefaults()
@@ -43,12 +45,12 @@ namespace ItemsBuffs.Items.Books
 
 		public override void AddRecipes()
 		{
-			if (Config.BookNerfsCrafting == true)
+
 			{
-				ModRecipe recipe = new ModRecipe(mod);
-				recipe.AddTile(18);
-				recipe.SetResult(this);
-				recipe.AddRecipe();
+                ModRecipe recipe = new ModRecipe(mod);
+                recipe.AddTile(TileID.WorkBenches);
+                recipe.SetResult(this);
+                recipe.AddRecipe();
 			}
 		}
 	}

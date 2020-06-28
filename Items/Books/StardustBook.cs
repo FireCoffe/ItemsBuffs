@@ -4,14 +4,19 @@ using Terraria;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
+using static Terraria.ModLoader.ModContent;
 
 namespace ItemsBuffs.Items.Books
 {
     public class StardustBook : ModItem
     {
+        public override bool Autoload(ref string name)
+		{
+			return !GetInstance<ItemsBuffsConfigServer>().BookCraft;
+		}
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Book of nerfs, volume of Summon staffs");
+            DisplayName.SetDefault("Nerfs Book, Summoner");
             Tooltip.SetDefault("show only Summon Staffs nerfs which are removed\n" +
              "Imp Staff, Hornet staff\n" +
              "Slime Staff, Stardust Dragon staff\n");
@@ -38,11 +43,10 @@ namespace ItemsBuffs.Items.Books
         }*/
         public override void AddRecipes()
         {
-            if (Config.BookNerfsCrafting == true)
+
             {
                 ModRecipe recipe = new ModRecipe(mod);
-                recipe.AddIngredient(null, "BookOfNerfsMain");
-                recipe.AddTile(18);
+                recipe.AddTile(TileID.WorkBenches);
                 recipe.SetResult(this);
                 recipe.AddRecipe();
             }

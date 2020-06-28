@@ -54,7 +54,7 @@ namespace ItemsBuffs.Items.Tools
 
         public override void AddRecipes()
         {
-            if (GetInstance<ItemsBuffsConfigServer>().NoModRods == true)
+            if (GetInstance<ItemsBuffsConfigServer>().RMeme == true)
             {
                 ModRecipe recipe = new ModRecipe(mod);
                 recipe.AddIngredient(ItemID.RodofDiscord, 1);

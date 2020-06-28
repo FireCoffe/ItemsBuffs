@@ -4,14 +4,19 @@ using Terraria;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
+using static Terraria.ModLoader.ModContent;
 
 namespace ItemsBuffs.Items.Books
 {
     public class NebulaBook : ModItem
     {
+        public override bool Autoload(ref string name)
+		{
+			return !GetInstance<ItemsBuffsConfigServer>().BookCraft;
+		}
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Book of nerfs, volume of Magic");
+            DisplayName.SetDefault("Nerfs Book, Magic Class");
             Tooltip.SetDefault("show only Magic Weapons nerfs which are removed\n" +
              "Aqua Scepter, Blizzard Staff, Book of Skulls\n" +
              "Crystal Storm, Demon Scythe, Diamond Staff, Flamelash, Flower of Fire, Frost Staff\n" +
@@ -19,7 +24,7 @@ namespace ItemsBuffs.Items.Books
              "Leaf Blower,Magic Missile, Medusa Head\n" +
              "Nebula Arcanum\n" +
              "Poison Staff\n" +
-             "Rainbow Rod, Spectre hood, Razorpine\n" +
+             "Rainbow Rod, Spectre hood, Razorpine, sky fracture\n" +
              "Shadowbeam Staff\n" +
              "Unholy Trident\n");
             //   "\n");
@@ -47,13 +52,12 @@ namespace ItemsBuffs.Items.Books
 
         public override void AddRecipes()
         {
-                if (Config.BookNerfsCrafting == true)
+
                 {
-                    ModRecipe recipe = new ModRecipe(mod);
-                    recipe.AddIngredient(null, "BookOfNerfsMain");
-                    recipe.AddTile(18);
-                    recipe.SetResult(this);
-                    recipe.AddRecipe();
+                ModRecipe recipe = new ModRecipe(mod);
+                recipe.AddTile(TileID.WorkBenches);
+                recipe.SetResult(this);
+                recipe.AddRecipe();
                 }
             }
         }

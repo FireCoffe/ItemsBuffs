@@ -5,7 +5,8 @@ there is example of nerf
   phantasm after nerf: 50 damage
   when phantasm was added: 70 damage
 
-magic weapons [i:112]: Flower of Fire used before nerf 10 mana
+magic weapons
+[i:112]: Flower of Fire used before nerf 10 mana
                  Flower of Fire use now 15 mana
                  the mod make Flower of Fire use 10 mana 
                  instead of 15 mana
@@ -18,24 +19,67 @@ Stardust dragon staff after nerf 40 damage
 the summon staffs that dont used mana before and now using
 will not use any mana as before 
 
-the mod is well balanced as all things should be
+[i:3560][c/a70909:Mod Issues][i:3560]
+-when Potion sickness on potion is disabled
+quick heal doesnt work
 
 [i:3580][c/66ffff:Mod Features][i:3580]
--All nerfs removed (maybe)
--over 56 nerfs removed
--all nerfs can be disabled/enabled in mod config
-set to false to enable nerf and set to true (defalt) to disable nerf
--Celestial emblem of nerfs: item that show all nerfs that mod removed
+-over 70 + nerfs removed
+- Removed healing potions sickness from vanilla potions
+- all nerfs are in ingame config, they can be enabled and disabled
+-nerf books show that nerfs are removed [i:3601]
 - 2 new potions: 1.immunity to chaos state 2.immunity to mana sickness
 -include [i:1326] 2 rods of discords that doesnt inflict Chaos state
--calamity compatible, this mod doesnt remove recent nerfs or that i dont know how to remove
--u can disable/enable if u want book of nerfs in-game or not- true is defalt ,
-set to false to disable book of nerfs crafting
+ -toggleable Mana sickness and Potion sickness for all Potions in vanilla
+ and toggleable Potion sickness for all healing Pots including modded
+ -ingame config
 [i:3580][c/66ffff:END][i:3580]
 
-v4.6
-pre 1.4 bug fixes
+[i:509] [c/4aba75:ingame Config] [i:3611]
+-nerf are disabled = off , nerf is enabled = on
+-crafting nerfs are off = that mean they are enabled by defalt
+- all mod items are off = that mean they are enabled by defalt
 
--fixed and balanced stairaise potion recipe
 
--bigger updates will come post 1.4
+[c/66ffff:v5.0]
+ [i:1344] [c/1BD1B9:The Revamp update] [i:1344]
+[i:182] Major changes and improvents, Config update , Updated sprites[i:182]
+
+-updated mod icon
+-Nerfs books can be only crafted on workbench , cant be crafted to another one so crafting menu isnt full of them
+-book of nerfs renamed to Nerfs books
+-updated to latest tmodloader
+- updated sprites of Rod of Discord , Teleportic potion and buff sprite , Staraise Potion and buff sprite
+orb of light buff , item , projectile sprite
+- Teleportic potion renamed to Chaos Aura Potion
+- [i:454] old config is GONE [i:454] 
+now its [c/E2E212:Ingame Config] Better , and faster 
+-increased vampire knifes healing
+-increased mod potions duration to 1 hour !
+-Removed Democrimtame Bar and Ore , Crimson and Corruption forges as they dont fit the mod
+-Removed Lesser Restoration Potion and Strange Brew nerf it doesnt also have cooldown now 
+-removed molotov cocktail crafting nerf
+-removed Calamity meteor armor set nerf
+-added Star Flower an upgrade accesory to mana flower that grants immunity to mana sickness
+-all healings pots and items are now in config
+- Potion sickness cant no longer affect mods and vanilla potions toggleable
+
+
+1.4 nerfs (note: its removed but its not noticable in 1.3.5.3)
+-removed Reaver Shark nerf
+-removed D. Stormbow nerf
+-removed Amazon nerf , added 1.3.5 amazon recipe
+-removed The Bees Knees nerf
+-removed bone javelin nerf
+-removed Fetid Baghnakhs nerf
+-removed Falcon blade nerf
+-removed Beam Sword nerf
+-removed Enchanted Sword nerf
+-removed Chik nerf
+-removed  Sky Fracture nerf
+-removed Cactus Sword and Pickaxe and breastplate nerf
+-removed Clockwork Assault Rifle nerf
+-removed  Bee Keeper nerf
+-removed celebration nerf 
+-removed Valhalla Knight's Breastplate nerf
+-removed Squire's Great Helm nerf

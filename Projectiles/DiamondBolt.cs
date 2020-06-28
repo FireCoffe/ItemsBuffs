@@ -16,7 +16,7 @@ namespace ItemsBuffs.Projectiles
         }
         public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("DiamondBolt");
+			DisplayName.SetDefault("Diamond Bolt");
 		}
 
 		public override void SetDefaults()

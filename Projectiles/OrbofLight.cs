@@ -5,7 +5,6 @@ using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
 
-
 namespace ItemsBuffs.Projectiles
 {
 	public class OrbofLight : ModProjectile
@@ -20,15 +19,20 @@ namespace ItemsBuffs.Projectiles
         }
         public override Color? GetAlpha(Color lightColor)
         {
-            return Color.White * 0.5f;
+        return Color.Yellow * 1.0f; //return Color.White * 0.5f;
         }
         public override void SetDefaults()
 		{
-			projectile.CloneDefaults(18);
+			projectile.CloneDefaults(13); //18
             projectile.width = 32; //36 //48
             projectile.height = 32;  //28  //41
           //  projectile.position.Y -= 15;  //15
-			aiType = 18;
+		//	aiType = 11;
+	
+
+
+		
+			
 		}
 
 		public override bool PreAI()
@@ -49,8 +53,11 @@ namespace ItemsBuffs.Projectiles
 			if (modPlayer.OrbofLight)
 			{
 				projectile.timeLeft = 2;
-			}
-            Lighting.AddLight(projectile.Center, 1f, 0.9f, 0.5f); //fixed light v4.0
+			} 
+Lighting.AddLight(projectile.Center, 1f, 0.45f, 0f);  //.AddLight(projectile.Center, 1f, 0.45f, 0f); , .AddLight(projectile.Center, 1f, 1f, 0f);
+		
+       //     Lighting.AddLight(projectile.Center, 1f, 0.9f, 0.5f);  //Lighting.AddLight(projectile.Center, 1f, 1f, 0f)
+
         }
 	}
 }

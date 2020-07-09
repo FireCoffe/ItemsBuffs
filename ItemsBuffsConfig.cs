@@ -85,10 +85,10 @@ using Terraria.ID;
 		[ReloadRequired]
 		public bool BookCraft { get; set; } 
 
-		[Label("[i:3281]  Amazon 1.3 Crafting Recipe")]
+		/*[Label("[i:3281]  Amazon 1.3 Crafting Recipe")]
 		[Tooltip("Disable and enable 1.3 Amazon Recipe")]
 		[ReloadRequired]
-		public bool AmazonCraft { get; set; } 
+		public bool AmazonCraft { get; set; }  */
 
 		[Label("[i:1218]  Titanium armor 1.2 Crafting Recipe")]
 		[Tooltip("Disable and enable Titanium armor 1.2 Recipe")]
@@ -257,10 +257,10 @@ using Terraria.ID;
 		public bool SuperHealingPotion { get; set; } 
 
 		[Header("Nerfs")]
-		[Label("[i:3281]  Amazon")]
+	/*	[Label("[i:3281]  Amazon")]
 		[Tooltip("damage is increased to 20 instead of 18, 1.4")]
 		[ReloadRequired]
-		public bool Amazon { get; set; }
+		public bool Amazon { get; set; } */
 		//$"message {variable}" [i:3531]
 		// You'll notice this next one is a Property instead of a field. That works too.
 	// Here we see an attribute added by tModLoader: LabelAttribute. This one allows us to add a label so the user knows more about the setting they are changing. Without a label, the name of the field or property is displayed.
@@ -279,15 +279,15 @@ using Terraria.ID;
 		[ReloadRequired]
 		public bool Bananarang { get; set; }
 
-		[Label("[i:723]  Beam Sword")]
+	/*	[Label("[i:723]  Beam Sword")]
 		[Tooltip("Use time is decreased to 15 instead of 20")]
 		[ReloadRequired]
-		public bool BeamSword { get; set; }
+		public bool BeamSword { get; set; } 
 
 		[Label("[i:1123]  Bee Keeper")]
 		[Tooltip("Have autoswing,damage 26, knockback is increased to 5.3 , 1.4")]
 		[ReloadRequired]
-		public bool Beekeeper { get; set; }
+		public bool Beekeeper { get; set; } */
 
 		[Label("[i:1931]  Blizzard Staff")]
 		[Tooltip("Use 5 mana instead of 9")]
@@ -314,12 +314,12 @@ using Terraria.ID;
 		[ReloadRequired]
 		public bool BookofSkulls { get; set; }
 
-		[Label("[i:895]  Cactus Breastplate")]
+		/*[Label("[i:895]  Cactus Breastplate")]
 		[Tooltip("have 2 defense instead of 1 defense")]
 		[ReloadRequired]
 		public bool CactusBreastplate { get; set; }
 
-		[Label("[i:882]  Cactus Pickaxe")]
+*	[Label("[i:882]  Cactus Pickaxe")]
 		[Tooltip("does 5 dmg instead of 4, 1.4")]
 		[ReloadRequired]
 		public bool CactusPickaxe { get; set; }
@@ -337,7 +337,7 @@ using Terraria.ID;
 		[Label("[i:3283]  Chik")]
 		[Tooltip("does 39 dmg instead of 38 dmg")]
 		[ReloadRequired]
-		public bool Chik { get; set; }
+		public bool Chik { get; set; } */
 
 		[Label("[i:1179]  Chlorophyte Bullet")]
 		[Tooltip("it have 15 dmg instead of 10")]
@@ -349,10 +349,10 @@ using Terraria.ID;
 		[ReloadRequired]
 		public bool ChlorophyteDrill { get; set; }
 
-		[Label("[i:434]  Clockwork Assault Rifle")]
+	/*	[Label("[i:434]  Clockwork Assault Rifle")]
 		[Tooltip("does 19 dmg instead of 17 dmg")]
 		[ReloadRequired]
-		public bool ClockworkAssaultRifle { get; set; }
+		public bool ClockworkAssaultRifle { get; set; } */
 		
 		[Label("[i:3507] Copper Shortsword")]
 		[Tooltip("does 7 dmg instead of 5 dmg")]
@@ -379,30 +379,30 @@ using Terraria.ID;
 		[ReloadRequired]
 		public bool DiamondStaff { get; set; }
 
-		[Label("[i:989]  Enchanted Sword")]
+		/*[Label("[i:989]  Enchanted Sword")]
 		[Tooltip("does 24 dmg instead of 23 , have use time of 18 instead of 21, knockback 5.25 instead of 4.25, 1.4")]
 		[ReloadRequired]
-		public bool EnchantedSword { get; set; }
+		public bool EnchantedSword { get; set; } 
 
 		[Label("[i:2608]  Falcon Blade")]
 		[Tooltip("does 30 dmg instead of 25, have use time 15 instead of 20, 1.4")]
 		[ReloadRequired]
-		public bool FalconBlade { get; set; }
+		public bool FalconBlade { get; set; } 
 
 		[Label("[i:3013]  Fetid Baghnakhs")]
 		[Tooltip("does 70 dmg instead of 60 dmg, use time is 7 instead of 8")]
 		[ReloadRequired]
-		public bool FetidBaghnakhs { get; set; }
+		public bool FetidBaghnakhs { get; set; } */
 
 		[Label("[i:119]  Flamarang")]
 		[Tooltip("does 37 dmg instead of 32")]
 		[ReloadRequired]
 		public bool Flamarang { get; set; }
 
-		[Label("[i:218]  Flamelash")]
+	/*	[Label("[i:218]  Flamelash")]
 		[Tooltip("have 47 dmg instead of 36 and use 12 mana instead of 18 ,1.4")]
 		[ReloadRequired]
-		public bool Flamelash { get; set; }
+		public bool Flamelash { get; set; } */
 
 		[Label("[i:112]  Flower of Fire")]
 		[Tooltip("use 10 mana instead of 15")]
@@ -503,7 +503,7 @@ using Terraria.ID;
 		[ReloadRequired]
 		public bool PoisonedKnife { get; set; }
 
-		[Label("[i:1308]  Poison Staff")] //remove the 1.4 tbd
+		[Label("[i:1308]  Poison Staff")] //remove in 1.4
 		[Tooltip("does 59 dmg instead of 43,use 12 mana instead of 22 mana")]
 		[ReloadRequired]
 		public bool PoisonStaff { get; set; }
@@ -523,10 +523,10 @@ using Terraria.ID;
 		[ReloadRequired]
 		public bool Razorpine { get; set; }
 		
-		[Label("[i:2341]  Reaver Shark")]
+	/*	[Label("[i:2341]  Reaver Shark")]
 		[Tooltip("Reaver shark pickaxe power is now 100% instead of 59% , 1.4")]
 		[ReloadRequired]
-		public bool ReaverShark { get; set; }
+		public bool ReaverShark { get; set; } */
 
 		[Label("[i:3287]  Reds Throw")]
 		[Tooltip("does 180 dmg instead of 70 dmg")]
@@ -538,10 +538,10 @@ using Terraria.ID;
 		[ReloadRequired]
 		public bool ShadowbeamStaff { get; set; }
 
-		[Label("[i:3787]  Sky Fracture")]
+		/*[Label("[i:3787]  Sky Fracture")]
 		[Tooltip("use 14 mana instead of 17 , 1.4")]
 		[ReloadRequired]
-		public bool SkyFracture { get; set; }
+		public bool SkyFracture { get; set; } */
 
 		[Label("[i:1309]  Slime Staff")]
 		[Tooltip("use 0 mana instead of 10")]
@@ -553,10 +553,10 @@ using Terraria.ID;
 		[ReloadRequired]
 		public bool SpectreHood { get; set; }
 
-		[Label("[i:3800]  Squire's Great Helm")]
+	/*	[Label("[i:3800]  Squire's Great Helm")]
 		[Tooltip("heal 4hp per second instead of 2hp per second, 1.4")]
 		[ReloadRequired]
-		public bool SquiresGreatHelm { get; set; }
+		public bool SquiresGreatHelm { get; set; } */
 
 		[Label("[i:213]  Staff of Regrowth")]
 		[Tooltip("does 20 dmg instead of 7 , making staff more useful as melee weapon")]
@@ -578,20 +578,20 @@ using Terraria.ID;
 		[ReloadRequired]
 		public bool Sunfury { get; set; }
 
-		[Label("[i:2888]  The Bee's Knees")]
-		[Tooltip("does 26 dmg instead of 23, use time is 23 instead of 24")]
+	/*	[Label("[i:2888]  The Bee's Knees")]
+		[Tooltip("does 26 dmg instead of 23, use time is 23 instead of 24, 1.4")]
 		[ReloadRequired]
-		public bool TheBeesKnees { get; set; }
+		public bool TheBeesKnees { get; set; } */
 
 		[Label("[i:683]  Unholy Trident")] 
 		[Tooltip("use 14 mana instead of 25")]
 		[ReloadRequired]
 		public bool UnholyTrident { get; set; }
 
-		[Label("[i:3872]  Valhalla Knight's Breastplate")] 
+	/*	[Label("[i:3872]  Valhalla Knight's Breastplate")] 
 		[Tooltip("heals 8 hp per second instead of 4hp per second, 1.4")]
 		[ReloadRequired]
-		public bool ValhallaKnightsBreastplate { get; set; }
+		public bool ValhallaKnightsBreastplate { get; set; } */
 		/*
 		 * Use time decreased from 22 to 17.
 Mana cost decreased from 25 to 19.

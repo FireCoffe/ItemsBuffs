@@ -1,19 +1,36 @@
-using System;
-using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ID;
+using System.Linq;
+using System.Collections.Generic;
+using Terraria.Graphics.Effects;
+using Terraria.Graphics.Shaders;
 using Terraria.Localization;
+using ItemsBuffs.Items;
 using Terraria.ModLoader;
+using Microsoft.Xna.Framework;
+using System.IO;
+using Microsoft.Xna.Framework.Graphics;
+using ReLogic.Graphics;
+using Terraria.UI;
+using Terraria.DataStructures;
+using Terraria.GameContent.UI;
+using System;
+
+using static Terraria.ModLoader.ModContent;
 
 
 namespace ItemsBuffs.Items.Tools
 {
     public class OrbofLightItem : ModItem
     {
+        public override bool Autoload(ref string name)
+		{
+			return !GetInstance<ItemsBuffsConfigServer>().OrbofLightItem;
+		} 
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Orb of Light");
-            Tooltip.SetDefault("Summons a light orb");
+            Tooltip.SetDefault("Summons a Light orb on chain");
         }
 
         public override void SetDefaults()
@@ -25,12 +42,17 @@ namespace ItemsBuffs.Items.Tools
         }
         public override void AddRecipes()
         {
-            if (Config.OrbOfLight == true)
+            {
+            if (GetInstance<ItemsBuffsConfigServer>().OrbofLightItem == false)
             {
                 ModRecipe recipe = new ModRecipe(mod);
                 recipe.AddIngredient(115);
                 recipe.SetResult(this);
                 recipe.AddRecipe();
+
+            }
+
+
             }
         }
         public override void UseStyle(Player player)

@@ -4,18 +4,23 @@ using Terraria;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
+using static Terraria.ModLoader.ModContent;
 
 namespace ItemsBuffs.Items.Books
 {
     public class CalamityBook : ModItem
     {
-        Mod Calamity = ModLoader.GetMod("CalamityMod");
+        public override bool Autoload(ref string name)
+		{
+			return !GetInstance<ItemsBuffsConfigServer>().BookCraft;
+		}
+      ///  Mod Calamity = ModLoader.GetMod("CalamityMod");
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Book of nerfs, volume of Calamity mod");
+            DisplayName.SetDefault("Nerfs Book, Calamity mod");
             Tooltip.SetDefault("show only Calamity nerfs which are removed\n" +
-             "Worm scarf\n" +
-            "[c/da0000:Calamity mod]\n");
+             "Worm scarf, Meteorite armor set bonus\n" +
+            "[c/B81515:Calamity mod]\n");
            // Main.RegisterItemAnimation(item.type, new DrawAnimationVertical(30, 2)); //30 the speed of frame , 2 is how much frames the image have
         }
 
@@ -30,11 +35,10 @@ namespace ItemsBuffs.Items.Books
 
         public override void AddRecipes()
         {
-            if (Calamity != null & Config.BookNerfsCrafting == true) //            if (Config.DisableBookNerfsCrafting == true)
+        //    if (Calamity != null) //            if (Config.DisableBookNerfsCrafting == true)
             {
                 ModRecipe recipe = new ModRecipe(mod);
-                recipe.AddIngredient(null, "BookOfNerfsMain");
-                recipe.AddTile(18);
+                recipe.AddTile(TileID.WorkBenches);
                 recipe.SetResult(this);
                 recipe.AddRecipe();
 

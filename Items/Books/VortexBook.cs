@@ -4,19 +4,24 @@ using Terraria;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
+using static Terraria.ModLoader.ModContent;
 
 namespace ItemsBuffs.Items.Books
 {
     public class VortexBook : ModItem
     {
+        public override bool Autoload(ref string name)
+		{
+			return !GetInstance<ItemsBuffsConfigServer>().BookCraft;
+		}
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Book of nerfs, volume of ammo and ranged weapons");
+            DisplayName.SetDefault("Nerfs Book, Ammo & ranged weapons");
             Tooltip.SetDefault("show only Bow/gun weapons nerfs which are removed\n" +
-             "Phantasm, Chlorophyte Bulllet\n" +
-             "Phoenix Blastert\n" +
-             "Star Canon\n" +
-             "Vortex Beater\n");
+             "Phantasm, Chlorophyte Bulllet,Celebration\n" +
+             "Phoenix Blastert, D. stormbow\n" +
+             "Star Canon, Clockwork Assault Rifle \n" +
+             "Vortex Beater, Bee's Knees \n");
             //Main.RegisterItemAnimation(item.type, new DrawAnimationVertical(30, 8));
         }
 
@@ -45,11 +50,9 @@ namespace ItemsBuffs.Items.Books
         }*/
         public override void AddRecipes()
         {
-            if (Config.BookNerfsCrafting == true)
             {
                 ModRecipe recipe = new ModRecipe(mod);
-                recipe.AddIngredient(null, "BookOfNerfsMain");
-                recipe.AddTile(18);
+                recipe.AddTile(TileID.WorkBenches);
                 recipe.SetResult(this);
                 recipe.AddRecipe();
             }

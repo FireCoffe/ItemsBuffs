@@ -4,16 +4,26 @@ using Microsoft.Xna.Framework.Graphics;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
+//using Terraria.ItemsBuffsConfig;
+using static Terraria.ModLoader.ModContent;
 
 namespace ItemsBuffs.Items.Books
 {
     public class BookOfNerfsMain : ModItem //v3.4: removed old sprite of  it , and replaced with fused version of all books , all of these book are based on lunar event but not book of nerfs thrown
     {
+        public override bool Autoload(ref string name)
+		{
+			return !GetInstance<ItemsBuffsConfigServer>().BookCraft;
+		}
+    /*    public override bool Autoload(ref string name)
+		{
+			return !GetInstance<ItemsBuffsConfigServer>().BookCraft;
+		} */
        // public int Frame;
      //   public int FrameCounter;
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Celestial Emblem Of Nerfs");
+            DisplayName.SetDefault("Celestial Nerfs Book");
             Tooltip.SetDefault("show only all nerfs which are removed\n" +
              "Aqua Scepter, Bananarang, Blizzard Staff, Blue Moon, Bone, Book of Skulls\n" +
              "Copper Shortsword, Crystal Storm, Cuttlass, Demon Scythe, Diamond Staff, Flamarang, Flamelash, Flower of Fire, Frost Staff\n" +
@@ -24,8 +34,9 @@ namespace ItemsBuffs.Items.Books
              "Rainbow Rod, Rod of Discord, Razorpine, Reds Throw\n" +
              "Shadowbeam Staff, ShadowOrb, Slime Staff, Spectre Hood, Staff of Regrowth, Star Cannon, Stardust Dragon staff, Sunfury \n" +
              "StarFury, Unholy Trident, Valkyrie Yoyo, Vampire Knifes, Vilethorn, Vortex Beater\n" +
+             "this book doesnt have all nerfs in it there too much nerfs\n" +
        //     "IF ANY NERF WILL BE FOUND, IT WILL BE ADDED HERE\n");
-       "Total nerfs removed: 56\n");
+       "Total nerfs removed: 67\n");
             //Main.RegisterItemAnimation(item.type, new DrawAnimationVertical(30, 8));
         }
 
@@ -108,7 +119,9 @@ namespace ItemsBuffs.Items.Books
          } */
         public override void AddRecipes()
         {
-            if (Config.BookNerfsCrafting == true)
+           // if (ItemsBuffsConfigServer.BookCraft == true)
+           
+
             {
                 ModRecipe recipe = new ModRecipe(mod);
                 recipe.AddTile(TileID.WorkBenches);

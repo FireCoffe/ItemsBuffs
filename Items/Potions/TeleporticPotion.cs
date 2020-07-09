@@ -8,56 +8,31 @@ using System.IO;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
+using ItemsBuffs.Items.Potions;
+using static Terraria.ModLoader.ModContent;
 
 namespace ItemsBuffs.Items.Potions
 {
-
-    public class TeleporticPotion : ModItem
+public class TeleporticPotion : ModItem //remove in 5.1
 	{
-        public override void SetDefaults()
-		{
+		public override void SetStaticDefaults() {
+			DisplayName.SetDefault("Teleportic Potion");
+			Tooltip.SetDefault("it no longer works , <right> to get your Potion back");
+		}
+
+		public override void SetDefaults() {
 			item.width = 20;
 			item.height = 26;
 			item.maxStack = 30;
-			item.rare = 1;
-            item.value = Item.sellPrice(0, 0, 2, 0);
-            item.useAnimation = 15;
-			item.useTime = 15;
-			item.useStyle = 2;
-			item.UseSound = SoundID.Item3;
-			item.consumable = true;
-		}
-       /* public override void ModifyTooltips(List<TooltipLine> tooltips)
-        {
-            tooltips[0].overrideColor = new Color(128, 128, 128);
-        } */
-        public override void SetStaticDefaults()
-		{
-			DisplayName.SetDefault("Teleportic Bottle");
-            Tooltip.SetDefault("Grants immunity to chaos State\n" +
-            "5 Minutes duration\n");
-        }
-
-		public override bool UseItem(Player player)
-		{
-			player.AddBuff(mod.BuffType("ChaosStateImmune"), 20000); //999999999 32000 
-            return true;
+			item.rare = ItemRarityID.Quest;
 		}
 
-		public override void AddRecipes()
-		{
-            if (Config.ModPotions == true)
-            {
-                ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(126, 1);
-            recipe.AddIngredient(ItemID.PixieDust, 25);
-            recipe.AddIngredient(ItemID.UnicornHorn, 1);
-            recipe.AddIngredient(ItemID.SoulofLight, 3);
-            recipe.AddIngredient(75, 1);
-            recipe.AddTile(355); //Placed Alchemy table
-            recipe.SetResult(this);
-            recipe.AddRecipe();
-            }
-        }
+		public override bool CanRightClick() {
+			return true;
+		}
+
+		public override void RightClick(Player player) {
+			player.QuickSpawnItem(ItemType<ChaosAuraPotion>());
+		}
 	}
 }

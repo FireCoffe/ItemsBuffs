@@ -4,6 +4,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using System.IO;
+using static Terraria.ModLoader.ModContent;
 using Microsoft.Xna.Framework.Graphics;
 
 namespace ItemsBuffs.Items.Tools
@@ -16,17 +17,18 @@ namespace ItemsBuffs.Items.Tools
             {
                 return "Terraria/Item_65";
             }
-        }
+        } 
 
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Starfury");
+            DisplayName.SetDefault("Star Fury");
             Tooltip.SetDefault("Causes stars to rain from the moon" +
                 "\n'Forged by Celestial Creatures'");
         }
         public override void SetDefaults()
         {
             item.damage = 16;
+         //   item.alpha = 5;
             item.magic = true;
             item.width = 34;
             item.mana = 16;
@@ -39,9 +41,10 @@ namespace ItemsBuffs.Items.Tools
             item.rare = 2;
             item.UseSound = SoundID.Item65;
             item.autoReuse = false;
+           // item.shoot = mod.ProjectileType("FallStar");
             item.shoot = (9);
             item.shootSpeed = 15f;                //projectile speed  //defalt was 10     // 15 is so far best    
-        }
+        } //projectile.tileCollide = false; ignore this
         public override bool Shoot(Player player, ref Vector2 position, ref float speedX, ref float speedY, ref int type, ref int damage, ref float knockBack)
         {
             int numberProjectiles = 4 + Main.rand.Next(2);  //This defines how many projectiles to shot //6 is defalt
@@ -65,17 +68,17 @@ namespace ItemsBuffs.Items.Tools
             return false;
         }
      
-     /*   public override void MeleeEffects(Player player, Rectangle hitbox)
+      /*  public override void MeleeEffects(Player player, Rectangle hitbox)
         {
             if (Main.rand.Next(3) == 0)
             {
                 //Emit dusts when swing the sword
-                Dust.NewDust(new Vector2(hitbox.X, hitbox.Y), hitbox.Width, hitbox.Height, (163));
+                Dust.NewDust(new Vector2(hitbox.X, hitbox.Y), hitbox.Width, hitbox.Height, (DustID.RainbowMk2));
             }
-        } */
+        }  */
         public override void AddRecipes()
         {
-            if (Config.Starfury == true)
+            if (GetInstance<ItemsBuffsConfigServer>().StarFury == true)
             {
                 ModRecipe recipe = new ModRecipe(mod);
                 recipe.AddIngredient(ItemID.Starfury, 1);

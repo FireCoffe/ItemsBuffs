@@ -15,89 +15,63 @@ using Terraria.UI;
 using Terraria.DataStructures;
 using Terraria.GameContent.UI;
 using System;
+using static Terraria.ModLoader.ModContent;
+
 
 namespace ItemsBuffs
 {
 	class ItemsBuffs : Mod
 	{
-        public static string ConfigFileRelativePath
-        {
-            get { return "Mod Configs/Removed Nerfs of items v4.5.json"; }
-        }
-        public static void ReloadConfigFromFile()
-        {
-            // Define implementation to reload your mod's config data from file
-        }
         public ItemsBuffs()
         {
             Properties = new ModProperties()
             {
                 Autoload = true,
-                AutoloadGores = true,
+            //    AutoloadGores = true,
                 AutoloadSounds = true
             };
         }
-        public override void Load()
+        /*   public override void Load()
+           {
+               Config.Load();
+           } */
+        public override void Unload() //added unload idk if this works or not
         {
-            Config.Load();
-        }
-
+            base.Unload();
+         // instance = null;
+        //  ConfigServer = null;
+        } 
         public override void AddRecipes()
         {
             ModRecipe recipe;
-            if (Config.NonChaosRods == true)
+            if (GetInstance<ItemsBuffsConfigServer>().RMeme == true)
             {
                 // ModRecipe recipe = new ModRecipe(this);
                 recipe = new ModRecipe(this);
                 recipe.AddIngredient(null, "RodofDiscord");
                 recipe.SetResult(ItemID.RodofDiscord, 1);
                 recipe.AddRecipe();
-
+                } 
+            if (GetInstance<ItemsBuffsConfigServer>().RVanilla == true)
+            {
                 recipe = new ModRecipe(this);
                 recipe.AddIngredient(null, "RodofDiscordClassic");
                 recipe.SetResult(ItemID.RodofDiscord, 1);
                 recipe.AddRecipe();
 
-            }
+            } 
 
-            if (Config.OrbOfLight == true)
+            if (GetInstance<ItemsBuffsConfigServer>().OrbofLightItem == false)
             {
                 recipe = new ModRecipe(this);
                 recipe.AddIngredient(null, "OrbofLightItem");
                 recipe.SetResult(115, 1);
                 recipe.AddRecipe();
 
-            }
+            } 
 
 
-            if (Config.BookNerfsCrafting == true)
-            {
-                recipe = new ModRecipe(this);
-                recipe.AddIngredient(null, "VortexBook");
-                recipe.SetResult(ModContent.ItemType<Items.Books.BookOfNerfsMain>());
-                recipe.AddRecipe();
-
-                recipe = new ModRecipe(this);
-                recipe.AddIngredient(null, "NebulaBook");
-                recipe.SetResult(ModContent.ItemType<Items.Books.BookOfNerfsMain>());
-                recipe.AddRecipe();
-
-                recipe = new ModRecipe(this);
-                recipe.AddIngredient(null, "SolarBook");
-                recipe.SetResult(ModContent.ItemType<Items.Books.BookOfNerfsMain>());
-                recipe.AddRecipe();
-
-                recipe = new ModRecipe(this);
-                recipe.AddIngredient(null, "StardustBook");
-                recipe.SetResult(ModContent.ItemType<Items.Books.BookOfNerfsMain>());
-                recipe.AddRecipe();
-
-                recipe = new ModRecipe(this);
-                recipe.AddIngredient(null, "ThrowBook");
-                recipe.SetResult(ModContent.ItemType<Items.Books.BookOfNerfsMain>()); //ModContent.ItemType<Items.Books.BookOfNerfsMain>
-                recipe.AddRecipe();
-            }
-            if (Config.PickaxeAxeCrafting == true)
+            if (GetInstance<ItemsBuffsConfigServer>().PickaxeAxeCrafting == false)
             {
                 recipe = new ModRecipe(this);
                 recipe.AddIngredient(1225, 18); //hallow bars
@@ -105,7 +79,7 @@ namespace ItemsBuffs
                 recipe.SetResult(990, 1); //pick axe
                 recipe.AddRecipe();
             }
-            if (Config.TitaniumCrafting == true)
+            if (GetInstance<ItemsBuffsConfigServer>().TitaniumCraft == false)
             {
                 recipe = new ModRecipe(this);
                 recipe.AddIngredient(1198, 18); //TITANIUM bars
@@ -137,32 +111,25 @@ namespace ItemsBuffs
                 recipe.SetResult(1215, 1); //TITANUM head three
                 recipe.AddRecipe();
             }
-
-            if (Config.OldOrbHeartBossSpawnMechanic == true)
+            if (GetInstance<ItemsBuffsConfigServer>().AmazonCraft == false)
             {
-                recipe = new ModRecipe(this);
-                recipe.AddIngredient(null, "DemocrimtaneBar", 3);
-                recipe.AddTile(null, "CorruptForgeTile");
-                recipe.SetResult(ItemID.WormFood, 1);
-                recipe.AddRecipe();
+            recipe = new ModRecipe(this);
+            recipe.AddIngredient(620, 8);
+            recipe.AddIngredient(331, 3);
+            recipe.AddIngredient(209, 2);
+            recipe.SetResult(3281, 1);
+            recipe.AddRecipe();
 
-                recipe = new ModRecipe(this);
-                recipe.AddIngredient(null, "DemocrimtaneBar", 3);
-                recipe.AddTile(null, "CrimsonForgeTile");
-                recipe.SetResult(ItemID.WormFood, 1);
-                recipe.AddRecipe();
+            }
+            if (GetInstance<ItemsBuffsConfigServer>().MolotovCocktailCraft == false)
+            {
+            recipe = new ModRecipe(this);
+            recipe.AddIngredient(ItemID.Ale, 10);
+            recipe.AddIngredient(ItemID.Silk, 1);
+            recipe.AddIngredient(ItemID.Torch, 1);
+            recipe.SetResult(ItemID.MolotovCocktail, 1);
+            recipe.AddRecipe();
 
-                recipe = new ModRecipe(this);
-                recipe.AddIngredient(null, "DemocrimtaneBar", 3);
-                recipe.AddTile(null, "CorruptForgeTile");
-                recipe.SetResult(ItemID.BloodySpine, 1);
-                recipe.AddRecipe();
-
-                recipe = new ModRecipe(this);
-                recipe.AddIngredient(null, "DemocrimtaneBar", 3);
-                recipe.AddTile(null, "CrimsonForgeTile");
-                recipe.SetResult(ItemID.BloodySpine, 1);
-                recipe.AddRecipe();
             }
 
             /*    recipe = new ModRecipe(this);
@@ -170,7 +137,7 @@ namespace ItemsBuffs
                 recipe.AddTile(134); //hardmode anvil
                 recipe.SetResult(1216, 1); //TITANUM head two
                 recipe.AddRecipe(); */
-            if (Config.RestorationPotion == true)
+            if (GetInstance<ItemsBuffsConfigServer>().ResPotCraft == false)
             {
                 recipe = new ModRecipe(this);
                 recipe.AddIngredient(189, 1); //mana

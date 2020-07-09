@@ -45,7 +45,7 @@ namespace ItemsBuffs.Items.Tools
 
         public override void AddRecipes()
         {
-            if (GetInstance<ItemsBuffsConfigServer>().NoModRods == true)
+            if (GetInstance<ItemsBuffsConfigServer>().RVanilla == true)
             {
                 ModRecipe recipe = new ModRecipe(mod);
                 recipe.AddIngredient(ItemID.RodofDiscord, 1);
@@ -60,9 +60,11 @@ namespace ItemsBuffs.Items.Tools
         // Code is modified from the vanilla source code handling Rod of Discord
         public override bool UseItem(Player player)
         {
-            const int MAX_DIST_X = 999999;
+
+            const int MAX_DIST_X = 999999; //999999
             const int MAX_DIST_Y = 999999;
-         
+
+
 
             // Get teleport location
             Vector2 teleportTo;
@@ -71,7 +73,7 @@ namespace ItemsBuffs.Items.Tools
             teleportTo.Y = (float)((double)player.gravDir != 1.0 ? (Main.screenPosition.Y + (double)Main.screenHeight - (double)Main.mouseY) : ((double)Main.mouseY + Main.screenPosition.Y - (double)player.height));
 
             // Can't teleport beyond a certain distance, specified by MAX_DIST_X and MAX_DIST_Y
-            int distX = (int)(System.Math.Abs(teleportTo.X - player.position.X)) / 16;
+            int distX = (int)(System.Math.Abs(teleportTo.X - player.position.X)) / 16; //16
             int distY = (int)(System.Math.Abs(teleportTo.Y - player.position.Y)) / 16;
 
             if (distX > MAX_DIST_X || distY > MAX_DIST_Y)
@@ -84,7 +86,7 @@ namespace ItemsBuffs.Items.Tools
             if (teleportTo.X > 50.0 && teleportTo.X < (double)(Main.maxTilesX * 16 - 50) && (teleportTo.Y > 50.0 && teleportTo.Y < (double)(Main.maxTilesY * 16 - 50)))
             {
                 // Get tile array indexes
-                int index1 = (int)(teleportTo.X / 16.0);
+                int index1 = (int)(teleportTo.X / 16.0); //16.0
                 int index2 = (int)(teleportTo.Y / 16.0);
 
                 // Can't teleport into a solid block, or into the Lihzahrd temple early
@@ -95,24 +97,23 @@ namespace ItemsBuffs.Items.Tools
                     // Copied from Rod of Discord source code
                     NetMessage.SendData(65, -1, -1, (NetworkText)null, 0, (float)player.whoAmI, (float)teleportTo.X, (float)teleportTo.Y, 1, 0, 0);
 
-
-
-                    // If you die, you get a special message
+                    // If you die, you get a special message, u cant get this message since this RoD cant kill you
                     if (player.statLife <= 0)
                     {
-                        PlayerDeathReason damageSource = PlayerDeathReason.ByCustomReason(player.name + "couldnt find his hands instead of legs");
+                        PlayerDeathReason damageSource = PlayerDeathReason.ByCustomReason(player.name + "this message cannot be seen");
                         player.KillMe(damageSource, 1.0, 0, false);
 
                         return true;
                     }
+                }
                 else
                 {
-                    Main.PlaySound(SoundID.Item8, player.position); // teleport sound
+                    Main.PlaySound(SoundID.Item8, player.position);
                 }
             }
             else
             {
-                Main.PlaySound(SoundID.Item8, player.position); //teleport sound
+                Main.PlaySound(SoundID.Item8, player.position);
             }
 
             return true;

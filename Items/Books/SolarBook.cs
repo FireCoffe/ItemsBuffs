@@ -4,22 +4,27 @@ using Terraria;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
+using static Terraria.ModLoader.ModContent;
 
 namespace ItemsBuffs.Items.Books
 {
     public class SolarBook : ModItem
     {
+        public override bool Autoload(ref string name)
+		{
+			return !GetInstance<ItemsBuffsConfigServer>().BookCraft;
+		}
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Book of nerfs, volume of swords");
+            DisplayName.SetDefault("Nerfs Book, Melee class");
             Tooltip.SetDefault("show only Melee weapons nerfs which are removed\n" +
-             "Bananarang, Blue moon\n" +
-             "Copper Shortsword, Cuttlass, Flamarang\n" +
+             "Amazon , Bananarang, Blue moon, Bee keeper, b\n" +
+             "Copper Shortsword, Cuttlass, Cactus sword and pickaxe , cactus breasplate,Flamarang\n" +
              "Iron Hammer, Chlorophyte Drill\n" +
              "Molten Pickaxe, Muramasa, Nightmare Pickaxe, North Pole\n" +
-             "Possessed Hatchet, Pickaxe Axe\n" +
-             "Rainbow Rod, Rod of Discord, Reds Throw\n" +
-             "Staff of Regrowth, Sunfury, StarFury\n" +
+             "Possessed Hatchet, Pickaxe Axe, Falcon blade, Enchanted sword\n" +
+             "Rainbow Rod, Rod of Discord, Reds Throw, Reaver shark\n" +
+             "Staff of Regrowth, Sunfury, StarFury, Fetid Baghnakhs , Chik\n" +
              "Valkyrie Yoyo, Vampire Knifes\n");
             //Main.RegisterItemAnimation(item.type, new DrawAnimationVertical(30, 8));
         }
@@ -44,11 +49,14 @@ namespace ItemsBuffs.Items.Books
         } */
         public override void AddRecipes()
         {
-            if (Config.BookNerfsCrafting == true)
             {
-                ModRecipe recipe = new ModRecipe(mod);
+              /*  ModRecipe recipe = new ModRecipe(mod);
                 recipe.AddIngredient(null, "BookOfNerfsMain");
                 recipe.AddTile(18);
+                recipe.SetResult(this);
+                recipe.AddRecipe(); */
+                 ModRecipe recipe = new ModRecipe(mod);
+                recipe.AddTile(TileID.WorkBenches);
                 recipe.SetResult(this);
                 recipe.AddRecipe();
             }

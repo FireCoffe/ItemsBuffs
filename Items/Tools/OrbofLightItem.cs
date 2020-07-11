@@ -30,7 +30,16 @@ namespace ItemsBuffs.Items.Tools
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Orb of Light");
+
+            if (GetInstance<ItemsBuffsConfigServer>().OrbofLightAI == true)
+            {
             Tooltip.SetDefault("Summons a Light orb on chain");
+            }
+
+            if (GetInstance<ItemsBuffsConfigServer>().OrbofLightAI == false)
+            {
+            Tooltip.SetDefault("Summons a Light orb");
+            } 
         }
 
         public override void SetDefaults()

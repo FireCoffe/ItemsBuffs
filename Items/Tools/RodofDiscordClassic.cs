@@ -25,8 +25,8 @@ namespace ItemsBuffs.Items.Tools
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Rod of Discord"); 
-            Tooltip.SetDefault("\n'why walk when you can teleport ?'" +
-                "\n on use doesnt give chaos state");
+            Tooltip.SetDefault("\n Teleports you to the position of the mouse" +
+                "\n Doesnt inflict Chaos State on use"); //                 "\n Doesnt inflict Chaos State on use" +
             Item.staff[item.type] = true;
         }
 

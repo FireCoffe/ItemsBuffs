@@ -35,6 +35,7 @@ namespace ItemsBuffs.Items.Tools
            
 
         }
+ 
 
         //  public override void UpdateEquip(Player player)
         public override void UpdateAccessory(Player player, bool hideVisual)
@@ -42,14 +43,7 @@ namespace ItemsBuffs.Items.Tools
         player.buffImmune[94] = true;
 		player.manaFlower = true;
 		player.manaCost -= 0.08f;
-            //player.shadowDodge = true;
-//player.shadowDodgeCount = 3;
-          ///  player.shadowDodgeTimer = 999999;
-           
-            
-     //    player.manaMagnet = true;
-		///	player.magicCuffs = true;
-        ///	
+
         }
         public override void AddRecipes()
         {
@@ -58,9 +52,7 @@ namespace ItemsBuffs.Items.Tools
                 ModRecipe recipe = new ModRecipe(mod);
                 recipe.AddIngredient(ItemID.ManaFlower);
                 recipe.AddIngredient(null, "StaraisePotion");
-                recipe.AddIngredient(ItemID.HoneyBlock, 5);
-                recipe.AddIngredient(ItemID.Hive, 3);
-                recipe.AddIngredient(ItemID.FallenStar, 1);
+                recipe.AddTile(TileID.Anvils); 
                 recipe.SetResult(this);
                 recipe.AddRecipe();
 

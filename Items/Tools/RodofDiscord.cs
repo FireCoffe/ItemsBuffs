@@ -18,17 +18,19 @@ namespace ItemsBuffs.Items.Tools
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Rod of Discord");
-            if (GetInstance<ItemsBuffsConfigServer>().DiscordPing == false)
-            {
-                Tooltip.SetDefault("'but the game store and chat cant be activated'" +
-                                    "\n on use doesnt give chaos state debuff");
-            }
+        //    if (GetInstance<ItemsBuffsConfigServer>().DiscordPing == false)
+         //   {
+                Tooltip.SetDefault("Teleports you to the position of the mouse" +
+                 "\n Doesnt inflict Chaos State on use" +
+                 "\n [c/5b6ee1:- Developer Item -]");
+           // }
 
-            if (GetInstance<ItemsBuffsConfigServer>().DiscordPing== true)
+         /*   if (GetInstance<ItemsBuffsConfigServer>().DiscordPing== true)
             {
-                Tooltip.SetDefault("'Someone has Ping you'" +
-                                    "\n on use doesnt give chaos state debuff");
-            }
+                Tooltip.SetDefault("Teleports you to the position of the mouse" +
+                 "\n Doesnt inflict Chaos State on use" +
+                 "\n [c/5b6ee1:- Developer Item -]");
+            } */
             Item.staff[item.type] = true;
         }
 

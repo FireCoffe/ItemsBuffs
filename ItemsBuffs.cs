@@ -87,7 +87,7 @@ namespace ItemsBuffs
                 recipe.SetResult(1219, 1); //TITANUM LEGS
                 recipe.AddRecipe();
 
-                recipe = new ModRecipe(this);
+                recipe = new ModRecipe(this); 
                 recipe.AddIngredient(1198, 24); //TITANIUM bars
                 recipe.AddTile(134); //hardmode anvil
                 recipe.SetResult(1218, 1); //TITANUM Brest
@@ -109,9 +109,9 @@ namespace ItemsBuffs
                 recipe.AddIngredient(1198, 12); //TITANIUM bars
                 recipe.AddTile(134); //hardmode anvil
                 recipe.SetResult(1215, 1); //TITANUM head three
-                recipe.AddRecipe();
+                recipe.AddRecipe(); 
             }
-            if (GetInstance<ItemsBuffsConfigServer>().AmazonCraft == false)
+       /*     if (GetInstance<ItemsBuffsConfigServer>().AmazonCraft == false) enable in 1.4 
             {
             recipe = new ModRecipe(this);
             recipe.AddIngredient(620, 8);
@@ -120,7 +120,7 @@ namespace ItemsBuffs
             recipe.SetResult(3281, 1);
             recipe.AddRecipe();
 
-            }
+            } */
             if (GetInstance<ItemsBuffsConfigServer>().MolotovCocktailCraft == false)
             {
             recipe = new ModRecipe(this);

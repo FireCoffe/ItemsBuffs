@@ -46,8 +46,8 @@ using Terraria.ID;
 
 
 		[Header("Miscellaneous")] //Miscellaneous
-		[Label("[i:1326]  Meme Rod of Discord Ping sound")]// [i:1326]   [i:{ItemType<RodofDiscord>()}]
-		[Tooltip("Disable and enable Meme RoD Ping sound")]
+		[Label("[i:1326]  True Rod of Discord Ping sound")]// [i:1326]   [i:{ItemType<RodofDiscord>()}]
+		[Tooltip("Disable and enable True RoD Ping sound")]
 		[DefaultValue(true)]
 		[ReloadRequired]
 		public bool DiscordPing { get; set; }
@@ -63,15 +63,20 @@ using Terraria.ID;
 		[ReloadRequired]
 		public bool OrbofLightItem { get; set; } 
 
+		[Label("[i:115]  Orb of Light AI")]
+		[Tooltip("Toggle between pre v5.0 ai and post v5.0 ai")]
+		[ReloadRequired]
+		public bool OrbofLightAI { get; set; } 
+
 		[Label("[i:65]  Starfury")]
 		[Tooltip("enable and disable craft of unnerfed Starfury item")]
 		[ReloadRequired]
 		public bool StarFury { get; set; } 
 
-		[Label("[i:3029] Deadelus stormbow")]
+	/*	[Label("[i:3029] Deadelus stormbow")]
 		[Tooltip("enable and disable craft of unnerfed Deadelus stormbow item")]
 		[ReloadRequired]
-		public bool StormBow { get; set; } 
+		public bool StormBow { get; set; }  */
 
 		[Header("Crafting Recipes")] //Crafting recipes  [i:3507]  
 		[Label("[i:227] Restoration Potion Crafting recipe")]
@@ -106,29 +111,29 @@ using Terraria.ID;
 		public bool MolotovCocktailCraft { get; set; } 
 
 		[Header("Mod Rods of Discord")] // RoDs
-		[Label("[i:1326]  Rod of Discord - Meme")]
-		[Tooltip("Enable or Disable crafting recipe of this RoD - Meme version\n" +
-		"on use it doesnt give chaos state")]
+		[Label("[i:1326]  Rod of Discord - The True version")]
+		[Tooltip("Enable or Disable crafting recipe of this RoD - The True version\n" +
+		"Doesnt inflict Chaos State on use")]
 		[DefaultValue(true)]
 		[ReloadRequired]
 		public bool RMeme { get; set; } 
 
         [Label("[i:1326]  Rod of Discord - Vanilla")]
 		[Tooltip("Enable or Disable crafting recipe of this RoD - Vanilla version\n" +
-		"on use it doesnt give chaos state")]
+		"Doesnt inflict Chaos State on use")]
 		[DefaultValue(true)]
 		[ReloadRequired]
 		public bool RVanilla { get; set; } 
 
 		[Header("Mod Potions")] // Mod Potions
-		[Label("Staraise Potion")]
-		[Tooltip("Enable or Disable crafting This Potion, it make you immune to Mana sickness")]
+		[Label("[i:294]  Staraise Potion")]
+		[Tooltip("Enable or Disable crafting This Potion, it give immunity to Mana sickness")]
 		[DefaultValue(true)]
 		[ReloadRequired]
 		public bool SP { get; set; } 
 
-		[Label("Chaos Aura Potion")]
-		[Tooltip("Enable or Disable crafting of This Potion, it make you immune to Chaos State sickness")]
+		[Label("[i:2351]  Chaos Aura Potion")]
+		[Tooltip("Enable or Disable crafting of This Potion, it give immunity to Chaos State sickness")]
 		[DefaultValue(true)]
 		[ReloadRequired]
 		public bool CAP { get; set; } 
@@ -295,7 +300,7 @@ using Terraria.ID;
 		public bool BlizzardStaff { get; set; }
 
 		[Label("[i:163]  Blue Moon")] //remove when 1.4 comes out
-		[Tooltip("Nerf/buff the item to 33dmg as in 1.4 damage is increased")]
+		[Tooltip("Does 30 damage instead of 23 damage")]
 		[ReloadRequired]
 		public bool BlueMoon { get; set; }
 
@@ -574,7 +579,7 @@ using Terraria.ID;
 		public bool StardustDragonStaff { get; set; }
 
 		[Label("[i:220]  Sunfury")] //remove in 1.4
-		[Tooltip("does 40 dmg instead of 35 , in 1.4 it does more dmg so it will buff/nerf item")]
+		[Tooltip("does 40 dmg instead of 35")]
 		[ReloadRequired]
 		public bool Sunfury { get; set; }
 

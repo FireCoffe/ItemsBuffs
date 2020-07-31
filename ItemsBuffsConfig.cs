@@ -64,14 +64,20 @@ using Terraria.ID;
 		public bool OrbofLightItem { get; set; } 
 
 		[Label("[i:115]  Orb of Light AI")]
-		[Tooltip("Toggle between pre v5.0 ai and post v5.0 ai")]
+		[Tooltip("Toggle between orb ai and orb on chain ai")]
 		[ReloadRequired]
 		public bool OrbofLightAI { get; set; } 
 
 		[Label("[i:65]  Starfury")]
-		[Tooltip("enable and disable craft of unnerfed Starfury item")]
+		[Tooltip("enable and disable crafting of unnerfed Starfury")]
 		[ReloadRequired]
 		public bool StarFury { get; set; } 
+
+		[Label("[i:555]  Star Flower")]
+		[Tooltip("enable and disable crafting of Star flower")]
+		[DefaultValue(true)]
+		[ReloadRequired]
+		public bool StarFlower { get; set; } 
 
 	/*	[Label("[i:3029] Deadelus stormbow")]
 		[Tooltip("enable and disable craft of unnerfed Deadelus stormbow item")]
@@ -87,6 +93,7 @@ using Terraria.ID;
 
 		[Label("[i:149]  Nerfs books Crafting")]
 		[Tooltip("disable and enable Crafting of Nerfs books")]
+		[DefaultValue(true)]
 		[ReloadRequired]
 		public bool BookCraft { get; set; } 
 
@@ -97,16 +104,19 @@ using Terraria.ID;
 
 		[Label("[i:1218]  Titanium armor 1.2 Crafting Recipe")]
 		[Tooltip("Disable and enable Titanium armor 1.2 Recipe")]
+		[DefaultValue(true)]
 		[ReloadRequired]
 		public bool TitaniumCraft { get; set; } 
 
 		[Label("[i:990]  Pickaxe Axe 1.2 Crafting Recipe")]
 		[Tooltip("Disable and enable Pickaxe Axe 1.2 Recipe")]
+		[DefaultValue(true)]
 		[ReloadRequired]
 		public bool PickaxeAxeCrafting { get; set; } 
 
 		[Label("[i:2590]  Molotov Cocktail 1.2 Crafting Recipe")]
 		[Tooltip("Disable and enable Molotov Cocktail 1.2 Recipe")]
+		[DefaultValue(true)]
 		[ReloadRequired]
 		public bool MolotovCocktailCraft { get; set; } 
 
@@ -183,27 +193,31 @@ using Terraria.ID;
 
 		[Header("Global healing Potions - affect all Healing Potions")] // Global Pots
 		[Label("[i:3544]  Global Healing Potions")]
-		[Tooltip("Remove Potion sickness from all Healing Potions Including Potions from mods")]
-		[DefaultValue(true)]
+		[Tooltip("Remove Potion sickness from all Healing Potions Including Potions from mods \n" +
+		"Note: Quick heal will dont work for all Healing Potions, if potion sickness is disabled")]
+		[DefaultValue(false)]
 		[ReloadRequired]
 		public bool GHP { get; set; } 
 
-		[Header("Healing Potions and Items")] 	//heal pots //1
+		[Header("Healing Potions and Items")] 	//heal pots
 		[Label("[i:5]  Mushroom")]
-		[Tooltip("Enable and Disable Potion Sickness for this Healing item")]
-		[DefaultValue(true)]
+		[Tooltip("Enable and Disable Potion Sickness for this Healing item \n" +
+		"Note: Quick heal will dont work for this Healing Potion, if potion sickness is disabled")]
+		[DefaultValue(false)]
 		[ReloadRequired]
 		public bool Mushroom { get; set; } 
 
 		[Label("[i:126]  Bottled Water")]
-		[Tooltip("Enable and Disable Potion Sickness for this Healing bottle")]
-		[DefaultValue(true)]
+		[Tooltip("Enable and Disable Potion Sickness for this Healing bottle \n" +
+		"Note: Quick heal will dont work for this Healing Bottle, if potion sickness is disabled")]
+		[DefaultValue(false)]
 		[ReloadRequired]
 		public bool BottledWater{ get; set; } 
 
 		[Label("[i:1134]  Bottled Honey")]
-		[Tooltip("Enable and Disable Potion Sickness for this Healing bottle")]
-		[DefaultValue(true)]
+		[Tooltip("Enable and Disable Potion Sickness for this Healing bottle \n" +
+		"Note: Quick heal will dont work for this Healing Bottle, if potion sickness is disabled")]
+		[DefaultValue(false)]
 		[ReloadRequired]
 		public bool BottledHoney { get; set; } 
 
@@ -214,50 +228,58 @@ using Terraria.ID;
 		public bool Honeyfin { get; set; }  */
 
 		[Label("[i:3001]  Strange Brew")]
-		[Tooltip("Enable and Disable Potion Sickness for this Strange Brew")]
-		[DefaultValue(true)]
+		[Tooltip("Enable and Disable Potion Sickness for this Strange Brew \n" +
+		"Note: Quick heal will dont work for this Healing Potion, if potion sickness is disabled")]
+		[DefaultValue(false)]
 		[ReloadRequired]
 		public bool StrangeBrew { get; set; } 
 
 		[Label("[i:28]  Lesser Healing Potion")]
-		[Tooltip("Enable and Disable Potion Sickness for this Healing Potion.")]
-		[DefaultValue(true)]
+		[Tooltip("Enable and Disable Potion Sickness for this Healing Potion. \n" +
+		"Note: Quick heal will dont work for this Healing Potion, if potion sickness is disabled")]
+		[DefaultValue(false)]
 		[ReloadRequired]
 		public bool LesserHealingPotion { get; set; } 
 
 		[Label("[i:226]  Lesser Restoration Potion")]
-		[Tooltip("Enable and Disable Potion Sicknesss for this Healing Potion.")]
-		[DefaultValue(true)]
+		[Tooltip("Enable and Disable Potion Sicknesss for this Healing Potion. \n" +
+		"Note: Quick heal will dont work for this Healing Potion, if potion sickness is disabled")]
+		[DefaultValue(false)]
 		[ReloadRequired]
 		public bool LesserRestorationPotion { get; set; } 
 
 		[Label("[i:188]  Healing Potion")]
-		[Tooltip("Enable and Disable Potion Sicknesss for this Healing Potion")]
-		[DefaultValue(true)]
+		[Tooltip("Enable and Disable Potion Sicknesss for this Healing Potion \n" +
+		"Note: Quick heal will dont work for this Healing Potion, if potion sickness is disabled")]
+		[DefaultValue(false)]
 		[ReloadRequired]
 		public bool HealingPotion { get; set; } 
 
 		[Label("[i:227]  Restoration Potion")]
-		[Tooltip("Enable and Disable Potion Sickness for this Healing Potion")]
-		[DefaultValue(true)]
+		[Tooltip("Enable and Disable Potion Sickness for this Healing Potion \n" +
+		"Note: Quick heal will dont work for this Healing Potion, if potion sickness is disabled")]
+		[DefaultValue(false)]
 		[ReloadRequired]
 		public bool RestorationPotion { get; set; } 
 
 		[Label("[i:2314]  Honeyfin")]
-		[Tooltip("Enable and Disable Potion Sickness for this Healing fish")]
-		[DefaultValue(true)]
+		[Tooltip("Enable and Disable Potion Sickness for this Healing fish \n" +
+		"Note: Quick heal will dont work for this Healing Potion , if potion sickness is disabled")]
+		[DefaultValue(false)]
 		[ReloadRequired]
 		public bool Honeyfin { get; set; } 
 
 		[Label("[i:499]  Greater Healing Potion")]
-		[Tooltip("Enable and Disable Potion Sickness for this Healing Potion")]
-		[DefaultValue(true)]
+		[Tooltip("Enable and Disable Potion Sickness for this Healing Potion \n" +
+		"Note: Quick heal will dont work for this Healing Potion, if potion sickness is disabled")]
+		[DefaultValue(false)]
 		[ReloadRequired]
 		public bool GreaterHealingPotion { get; set; } 
 
 		[Label("[i:3544]  Super Healing Potion")]
-		[Tooltip("Enable and Disable Potion Sickness for this Healing Potion")]
-		[DefaultValue(true)]
+		[Tooltip("Enable and Disable Potion Sickness for this Healing Potion \n" +
+		"Note: Quick heal will dont work for this Healing Potion, if potion sickness is disabled")]
+		[DefaultValue(false)]
 		[ReloadRequired]
 		public bool SuperHealingPotion { get; set; } 
 
@@ -284,7 +306,7 @@ using Terraria.ID;
 		[ReloadRequired]
 		public bool Bananarang { get; set; }
 
-	/*	[Label("[i:723]  Beam Sword")]
+	/*	[Label("[i:723]  Beam Sword")] enable in 1.4
 		[Tooltip("Use time is decreased to 15 instead of 20")]
 		[ReloadRequired]
 		public bool BeamSword { get; set; } 
@@ -307,7 +329,7 @@ using Terraria.ID;
 		[Label("[i:3378]  Bone Javelin")]
 		[Tooltip("does 29 damage instead of 20, 1.4")]
 		[ReloadRequired]
-		public bool BoneJavelin { get; set; }
+		public bool BoneJavelin { get; set; } 
 
 		[Label("[i:154]  Bone")]
 		[Tooltip("knockback is increased from 2 to 4 and dmg is 22 instead of 20")]
@@ -320,7 +342,7 @@ using Terraria.ID;
 		public bool BookofSkulls { get; set; }
 
 		/*[Label("[i:895]  Cactus Breastplate")]
-		[Tooltip("have 2 defense instead of 1 defense")]
+		[Tooltip("have 2 defense instead of 1 defense, 1.4")]
 		[ReloadRequired]
 		public bool CactusBreastplate { get; set; }
 
@@ -434,10 +456,10 @@ using Terraria.ID;
 		[ReloadRequired]
 		public bool HornetStaff { get; set; }
 
-		[Label("[i:2365]  Imp Staff")] //removed 1.4 nerf Damage decreased from 21 to 17.
+		[Label("[i:2365]  Imp Staff")] //removed 1.4 nerf Damage decreased from 21 to 17. enable in 1.4
 		[Tooltip("doesnt use any mana instead of 10, does 21 dmg instead of 17 , 1.4")]
 		[ReloadRequired]
-		public bool ImpStaff { get; set; }
+		public bool ImpStaff { get; set; } 
 
 		[Label("[i:7]  Iron Hammer")]
 		[Tooltip("Hammer power is 45% instead of 40%")]

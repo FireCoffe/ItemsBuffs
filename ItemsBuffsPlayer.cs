@@ -22,19 +22,15 @@ namespace ItemsBuffs
     {
 
         public bool OrbofLight = false;
-		 public bool StarFall = false;
 
 
         public override void ResetEffects()
         {
             OrbofLight = false;
-
-
-
-
         }
-        
-		/*public override TagCompound Save() {
+
+
+        /*public override TagCompound Save() {
 			// Read https://github.com/tModLoader/tModLoader/wiki/Saving-and-loading-using-TagCompound to better understand Saving and Loading data.
 			return new TagCompound {
 				// {"somethingelse", somethingelse}, // To save more data, add additional lines

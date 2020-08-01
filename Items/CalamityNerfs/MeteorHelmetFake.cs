@@ -41,7 +41,7 @@ namespace ItemsBuffs.Items.CalamityNerfs
 
 		public override void AddRecipes()
 		{
-
+			if (GetInstance<ItemsBuffsConfigServer>().TMH == true)
 			{
 				ModRecipe recipe = new ModRecipe(mod);
 				recipe.AddIngredient(123);

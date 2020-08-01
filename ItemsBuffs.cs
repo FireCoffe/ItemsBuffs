@@ -15,6 +15,7 @@ using Terraria.UI;
 using Terraria.DataStructures;
 using Terraria.GameContent.UI;
 using System;
+using ItemsBuffs;
 using static Terraria.ModLoader.ModContent;
 
 
@@ -31,15 +32,10 @@ namespace ItemsBuffs
                 AutoloadSounds = true
             };
         }
-        /*   public override void Load()
-           {
-               Config.Load();
-           } */
-        public override void Unload() //added unload idk if this works or not
+        public override void Unload() 
         {
             base.Unload();
-         // instance = null;
-        //  ConfigServer = null;
+
         } 
         public override void AddRecipes()
         {
@@ -61,7 +57,7 @@ namespace ItemsBuffs
 
             } 
 
-            if (GetInstance<ItemsBuffsConfigServer>().OrbofLightItem == false)
+            if (GetInstance<ItemsBuffsConfigServer>().OrbofLightItem == true)
             {
                 recipe = new ModRecipe(this);
                 recipe.AddIngredient(null, "OrbofLightItem");
@@ -71,7 +67,7 @@ namespace ItemsBuffs
             } 
 
 
-            if (GetInstance<ItemsBuffsConfigServer>().PickaxeAxeCrafting == false)
+            if (GetInstance<ItemsBuffsConfigServer>().PickaxeAxeCrafting == true)
             {
                 recipe = new ModRecipe(this);
                 recipe.AddIngredient(1225, 18); //hallow bars
@@ -79,7 +75,7 @@ namespace ItemsBuffs
                 recipe.SetResult(990, 1); //pick axe
                 recipe.AddRecipe();
             }
-            if (GetInstance<ItemsBuffsConfigServer>().TitaniumCraft == false)
+            if (GetInstance<ItemsBuffsConfigServer>().TitaniumCraft == true)
             {
                 recipe = new ModRecipe(this);
                 recipe.AddIngredient(1198, 18); //TITANIUM bars
@@ -121,7 +117,7 @@ namespace ItemsBuffs
             recipe.AddRecipe();
 
             } */
-            if (GetInstance<ItemsBuffsConfigServer>().MolotovCocktailCraft == false)
+            if (GetInstance<ItemsBuffsConfigServer>().MolotovCocktailCraft == true)
             {
             recipe = new ModRecipe(this);
             recipe.AddIngredient(ItemID.Ale, 10);
@@ -137,7 +133,7 @@ namespace ItemsBuffs
                 recipe.AddTile(134); //hardmode anvil
                 recipe.SetResult(1216, 1); //TITANUM head two
                 recipe.AddRecipe(); */
-            if (GetInstance<ItemsBuffsConfigServer>().ResPotCraft == false)
+            if (GetInstance<ItemsBuffsConfigServer>().ResPotCraft == true)
             {
                 recipe = new ModRecipe(this);
                 recipe.AddIngredient(189, 1); //mana

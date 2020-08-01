@@ -13,7 +13,7 @@ namespace ItemsBuffs.Items.HealPots
 			if (item.type == ItemID.RestorationPotion &  GetInstance<ItemsBuffsConfigServer>().RestorationPotion)
                 {
 				item.potion = false;
-                if (GetInstance<ItemsBuffsConfigServer>().ResPot == false)
+                if (GetInstance<ItemsBuffsConfigServer>().ResPot == true)
                 {
 					item.healLife = 100;
 					item.healMana = 100;

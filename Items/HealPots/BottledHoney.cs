@@ -10,7 +10,7 @@ namespace ItemsBuffs.Items.HealPots
 		public override void SetDefaults(Item item)
 		{
 			if (item.type == ItemID.BottledHoney &  GetInstance<ItemsBuffsConfigServer>().BottledHoney)
-                {
+			{
 				item.potion = false;
 			}
 		}

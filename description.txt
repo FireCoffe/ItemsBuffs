@@ -36,37 +36,32 @@ will not use any [c/0d96e1:mana] as before
  -ingame config
 [i:3580][c/66ffff:END][i:3580]
 
-[i:509] [c/4aba75:ingame Config] [i:3611]
+[i:851] [c/4aba75:ingame Config] [i:851]
 -enable and disable nerfs
 -crafting of mod items
 - enable and disable old crafting recipes
 -toggle some misc. stuff
+- nerfs are disabled by defalt (off in mod config)
+to enabled the nerf set it to (On in  mod config)
 
 [i:3560][c/a70909:Mod Issues][i:3560]
 -when Potion sickness on potion is disabled
 quick heal doesnt work
 
-[c/66ffff:v5.0]
- [i:1344] [c/1BD1B9:The Revamp update] [i:1344]
-[i:182] Major changes and improvents, Config update , Updated sprites[i:182]
+[c/d89a56:v5.1]
+ [i:1344] [c/d89a56:Bug fix and changes update] [i:1344]
 
--updated mod icon
--Nerfs books can be only crafted on workbench , cant be crafted to another one so crafting menu isnt full of them
--book of nerfs renamed to Nerfs books
--updated to latest tmodloader
-- updated sprites of Rod of Discord , Teleportic potion and buff sprite , Staraise Potion and buff sprite
-orb of light buff , item , projectile sprite
-- Teleportic potion renamed to Chaos Aura Potion
-- [i:454] old config is GONE [i:454] 
-now its [c/E2E212:Ingame Config]
-more things are toggleable now 
--increased vampire knives healing
--increased mod potions duration to 1 hour !
--Removed Democrimtame Bar and Ore , Crimson and Corruption forges as they dont fit the mod
--Removed Lesser Restoration Potion and Strange Brew nerf it doesnt also have cooldown now 
--removed molotov cocktail crafting nerf
--removed Calamity meteor armor set nerf
--added Star Flower an upgrade accesory to mana flower that grants immunity to mana sickness
--all healings pots and items are now in config
-- Potion sickness cant no longer affect mods and vanilla potions toggleable
-- orb of light ai changed , toggleable in ingame config
+[i:182]   [c/1ca320:Major & minor changes] [i:182]
+ - nerfs books recipe changed now req. 3 woods to craft
+  -removed Teleportic potion item
+
+ [i:196]  [c/1ca37f:Fixes]  [i:196]
+ -some features in config are disabled by defalt
+ -minor Staraise Potion buff fix
+ - fixed incorrect values of true and false in config
+ - fixed incorrecly disabled recipes and items
+
+  [i:851]  [c/bb8c1a:Added to mod config]  [i:851]
+ - added some notes to items in mod config
+ - Star flower recipe can be disabled and enabled in config
+ - True meteorite helmet and wormy scarf recipes can now be disabled and enabled in mod config

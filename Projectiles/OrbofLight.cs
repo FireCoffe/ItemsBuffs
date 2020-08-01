@@ -1,9 +1,11 @@
 using System;
 using Microsoft.Xna.Framework;
-using Terraria;
 using Terraria.ID;
-using Terraria.Localization;
 using Terraria.ModLoader;
+using Terraria;
+using Terraria.Localization;
+using Terraria.DataStructures;
+using static Terraria.ModLoader.ModContent;
 
 namespace ItemsBuffs.Projectiles
 {
@@ -23,7 +25,14 @@ namespace ItemsBuffs.Projectiles
         }
         public override void SetDefaults()
 		{
-			projectile.CloneDefaults(13); //18
+	        if (GetInstance<ItemsBuffsConfigServer>().OrbofLightAI == true)
+            {
+	        projectile.CloneDefaults(13); //18
+            }
+            if (GetInstance<ItemsBuffsConfigServer>().OrbofLightAI == false)
+            {
+	         projectile.CloneDefaults(18); //13
+            }
             projectile.width = 32; //36 //48
             projectile.height = 32;  //28  //41
           //  projectile.position.Y -= 15;  //15

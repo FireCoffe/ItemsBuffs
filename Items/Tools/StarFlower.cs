@@ -8,6 +8,7 @@ using System.IO;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
+using static Terraria.ModLoader.ModContent;
 
 namespace ItemsBuffs.Items.Tools
 {
@@ -47,7 +48,7 @@ namespace ItemsBuffs.Items.Tools
         }
         public override void AddRecipes()
         {
-      //      if () //
+            if (GetInstance<ItemsBuffsConfigServer>().StarFlower == true)
             {
                 ModRecipe recipe = new ModRecipe(mod);
                 recipe.AddIngredient(ItemID.ManaFlower);
@@ -55,7 +56,6 @@ namespace ItemsBuffs.Items.Tools
                 recipe.AddTile(TileID.Anvils); 
                 recipe.SetResult(this);
                 recipe.AddRecipe();
-
             }
     
         }

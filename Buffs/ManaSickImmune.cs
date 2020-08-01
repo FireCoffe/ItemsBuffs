@@ -15,6 +15,7 @@ namespace ItemsBuffs.Buffs
 		{
 			
 			player.buffImmune[94] = true; //mana sickness
+			player.buffImmune[ModContent.BuffType<AutoRemoveDebuff>()] = true; 
 				
 		}
 	}

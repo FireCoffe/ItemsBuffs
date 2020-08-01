@@ -1,6 +1,7 @@
 author = IceCoffe (SolariumTea)
-version = 5.0
+version = 5.1
 homepage = https://forums.terraria.org/index.php?threads/removed-nerfs-of-items.71134/
 displayName = Removed nerfs of items
 hideCode = true
 hideResources = true
+ buildIgnore = vs/*, *.csproj, *.sln, *.pidb, *.userprefs, *.user, obj/*, bin/*

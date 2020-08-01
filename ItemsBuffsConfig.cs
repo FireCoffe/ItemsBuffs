@@ -54,22 +54,26 @@ using Terraria.ID;
 
 		[Label("[i:227] Restoration Potion")]
 		[Tooltip("Restoration Potion will heal 100 mana and health")]
-		//[DefaultValue(true)]
+		[DefaultValue(true)]
 		[ReloadRequired]
 		public bool ResPot { get; set; } 
 
 		[Label("[i:115]  Orb of Light")]
 		[Tooltip("disable and enable crafting of better version of shadow orb")]
+		[DefaultValue(true)]
 		[ReloadRequired]
 		public bool OrbofLightItem { get; set; } 
 
 		[Label("[i:115]  Orb of Light AI")]
-		[Tooltip("Toggle between orb ai and orb on chain ai")]
+		[Tooltip("Toggle between orb ai and orb on chain ai\n" +
+		"On = orb on chain ai, Off = shadow orb ai")]
+		[DefaultValue(true)]
 		[ReloadRequired]
 		public bool OrbofLightAI { get; set; } 
 
 		[Label("[i:65]  Starfury")]
 		[Tooltip("enable and disable crafting of unnerfed Starfury")]
+		[DefaultValue(true)]
 		[ReloadRequired]
 		public bool StarFury { get; set; } 
 
@@ -79,6 +83,19 @@ using Terraria.ID;
 		[ReloadRequired]
 		public bool StarFlower { get; set; } 
 
+		[Label("[i:3224]  Wormy Scarf")]
+		[Tooltip("enable and disable crafting of unnerfed Worm Scarf\n" +
+		"it does give 17% dmg rdc instead of 10 % , Calamity mod")]
+		[DefaultValue(true)]
+		[ReloadRequired]
+		public bool WS { get; set; } 
+
+		[Label("[i:123] True Meteor Helmet")]
+		[Tooltip("enable and disable crafting of unnerfed Meteorite helmet\n" +
+		"When worn with breastplate and legs. it will make space gun cost 0 mana, Calamity mod")]
+		[DefaultValue(true)]
+		[ReloadRequired]
+		public bool TMH { get; set; } 
 	/*	[Label("[i:3029] Deadelus stormbow")]
 		[Tooltip("enable and disable craft of unnerfed Deadelus stormbow item")]
 		[ReloadRequired]
@@ -87,12 +104,12 @@ using Terraria.ID;
 		[Header("Crafting Recipes")] //Crafting recipes  [i:3507]  
 		[Label("[i:227] Restoration Potion Crafting recipe")]
 		[Tooltip("enable and disable old Restoration Potion crafting recipe")]
-		//[DefaultValue(true)]
+		[DefaultValue(true)]
 		[ReloadRequired]
 		public bool ResPotCraft { get; set; } 
 
 		[Label("[i:149]  Nerfs books Crafting")]
-		[Tooltip("disable and enable Crafting of Nerfs books")]
+		[Tooltip("disable and enable Crafting of Nerfs books, also disable crafting of lunar chest")]
 		[DefaultValue(true)]
 		[ReloadRequired]
 		public bool BookCraft { get; set; } 

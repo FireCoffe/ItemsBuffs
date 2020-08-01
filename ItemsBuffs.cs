@@ -32,16 +32,10 @@ namespace ItemsBuffs
                 AutoloadSounds = true
             };
         }
-        /*   public override void Load()
-           {
-               Config.Load();
-           } */
-        public override void Unload() //added unload idk if this works or not
+        public override void Unload() 
         {
             base.Unload();
-           // ItemsBuffsConfigServer == null;
-         // instance = null;
-        //  ConfigServer = null;
+
         } 
         public override void AddRecipes()
         {

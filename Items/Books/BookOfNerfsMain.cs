@@ -1,20 +1,28 @@
-using System;
-using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Graphics;
 using Terraria;
 using Terraria.ID;
+using System.Linq;
+using System.Collections.Generic;
+using Terraria.Graphics.Effects;
+using Terraria.Graphics.Shaders;
+using Terraria.Localization;
+using ItemsBuffs.Items;
 using Terraria.ModLoader;
-//using Terraria.ItemsBuffsConfig;
+using Microsoft.Xna.Framework;
+using System.IO;
+using Microsoft.Xna.Framework.Graphics;
+using ReLogic.Graphics;
+using Terraria.UI;
+using Terraria.DataStructures;
+using Terraria.GameContent.UI;
+using System;
+using ItemsBuffs;
 using static Terraria.ModLoader.ModContent;
 
 namespace ItemsBuffs.Items.Books
 {
-    public class BookOfNerfsMain : ModItem //v3.4: removed old sprite of  it , and replaced with fused version of all books , all of these book are based on lunar event but not book of nerfs thrown
+    public class BookOfNerfsMain : ModItem 
     {
-        public override bool Autoload(ref string name)
-		{
-			return !GetInstance<ItemsBuffsConfigServer>().BookCraft;
-		}
+       
     /*    public override bool Autoload(ref string name)
 		{
 			return !GetInstance<ItemsBuffsConfigServer>().BookCraft;
@@ -36,7 +44,7 @@ namespace ItemsBuffs.Items.Books
              "StarFury, Unholy Trident, Valkyrie Yoyo, Vampire Knifes, Vilethorn, Vortex Beater\n" +
              "this book doesnt have all nerfs in it there too much nerfs\n" +
        //     "IF ANY NERF WILL BE FOUND, IT WILL BE ADDED HERE\n");
-       "Total nerfs removed: 67\n");
+       "Total nerfs removed: 67, Note: it shows also 1.4 nerfs that will be removed\n");
             //Main.RegisterItemAnimation(item.type, new DrawAnimationVertical(30, 8));
         }
 
@@ -68,15 +76,14 @@ namespace ItemsBuffs.Items.Books
 
         }
 
-        public override bool CloneNewInstances
+     /*   public override bool CloneNewInstances
         {
             get
             {
                 return true;
             }
         }
-        //this was used for new sprite of book of nerfs but it was cancelled and again cancelled
-      /*   public override void ModifyTooltips(List<TooltipLine> tooltips)
+         public override void ModifyTooltips(List<TooltipLine> tooltips)
          {
 
             foreach (TooltipLine line5 in tooltips) 
@@ -119,11 +126,10 @@ namespace ItemsBuffs.Items.Books
          } */
         public override void AddRecipes()
         {
-           // if (ItemsBuffsConfigServer.BookCraft == true)
-           
-
+            if (GetInstance<ItemsBuffsConfigServer>().BookCraft == true)
             {
                 ModRecipe recipe = new ModRecipe(mod);
+                recipe.AddIngredient(ItemID.Wood, 3);
                 recipe.AddTile(TileID.WorkBenches);
                 recipe.SetResult(this);
                 recipe.AddRecipe();

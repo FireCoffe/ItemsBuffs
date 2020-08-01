@@ -8,13 +8,14 @@ using System.IO;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
+using static Terraria.ModLoader.ModContent;
 
 namespace ItemsBuffs.Items.CalamityNerfs
 {
     [AutoloadEquip(EquipType.Neck)]
     public class BetterWormScarf : ModItem
     {
-       // Mod Calamity = ModLoader.GetMod("CalamityMod");
+
 
         public override void SetStaticDefaults()
         {
@@ -42,7 +43,7 @@ namespace ItemsBuffs.Items.CalamityNerfs
         }
         public override void AddRecipes()
         {
-          //  if (Calamity != null) // Not craftable if calamity mod isnt active and craftable if calamity scarf is set to true, this item will dont be toggleable yet
+          	 if (GetInstance<ItemsBuffsConfigServer>().WS == true)
             {
                 ModRecipe recipe = new ModRecipe(mod);
                 recipe.AddIngredient(3224, 1);

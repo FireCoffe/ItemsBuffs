@@ -23,10 +23,7 @@ namespace ItemsBuffs.Items.Tools
 {
     public class OrbofLightItem : ModItem
     {
-        public override bool Autoload(ref string name)
-		{
-			return !GetInstance<ItemsBuffsConfigServer>().OrbofLightItem;
-		} 
+     
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Orb of Light");
@@ -52,7 +49,7 @@ namespace ItemsBuffs.Items.Tools
         public override void AddRecipes()
         {
             {
-            if (GetInstance<ItemsBuffsConfigServer>().OrbofLightItem == false)
+            if (GetInstance<ItemsBuffsConfigServer>().OrbofLightItem == true)
             {
                 ModRecipe recipe = new ModRecipe(mod);
                 recipe.AddIngredient(115);

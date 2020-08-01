@@ -10,10 +10,7 @@ namespace ItemsBuffs.Items.Books
 {
     public class NebulaBook : ModItem
     {
-        public override bool Autoload(ref string name)
-		{
-			return !GetInstance<ItemsBuffsConfigServer>().BookCraft;
-		}
+
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Nerfs Book, Magic Class");
@@ -53,12 +50,14 @@ namespace ItemsBuffs.Items.Books
         public override void AddRecipes()
         {
 
-                {
+            if (GetInstance<ItemsBuffsConfigServer>().BookCraft == true)
+            {
                 ModRecipe recipe = new ModRecipe(mod);
+                recipe.AddIngredient(ItemID.Wood, 3);
                 recipe.AddTile(TileID.WorkBenches);
                 recipe.SetResult(this);
                 recipe.AddRecipe();
-                }
             }
         }
     }
+   }

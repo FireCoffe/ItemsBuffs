@@ -60,6 +60,7 @@ namespace ItemsBuffs.Items.Tools
             {
                 ModRecipe recipe = new ModRecipe(mod);
                 recipe.AddIngredient(ItemID.RodofDiscord, 1);
+          //      recipe.AddIngredient(null, "ChaosAuraPotion");
                 recipe.SetResult(this);
                 recipe.AddRecipe();
 

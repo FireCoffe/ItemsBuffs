@@ -10,10 +10,7 @@ namespace ItemsBuffs.Items.Books
 {
     public class VortexBook : ModItem
     {
-        public override bool Autoload(ref string name)
-		{
-			return !GetInstance<ItemsBuffsConfigServer>().BookCraft;
-		}
+
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Nerfs Book, Ammo & ranged weapons");
@@ -37,21 +34,13 @@ namespace ItemsBuffs.Items.Books
         {
             tooltips[0].overrideColor = new Color(105, 252, 182);
         }
-        /*
-        public override bool CanRightClick()
-        {
-            return true;
-        }
-        public override void RightClick(Player player)
-        {
-            int num = Item.NewItem((int)player.position.X, (int)player.position.Y, player.width, player.height, mod.ItemType("ThrowBook"), 1, false, 0, false, false);
-            Main.item[num].Prefix((int)item.prefix);
-            Main.item[num].newAndShiny = false;
-        }*/
+
         public override void AddRecipes()
         {
+            if (GetInstance<ItemsBuffsConfigServer>().BookCraft == true)
             {
                 ModRecipe recipe = new ModRecipe(mod);
+                recipe.AddIngredient(ItemID.Wood, 3);
                 recipe.AddTile(TileID.WorkBenches);
                 recipe.SetResult(this);
                 recipe.AddRecipe();

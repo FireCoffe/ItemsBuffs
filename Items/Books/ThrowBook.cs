@@ -10,10 +10,7 @@ namespace ItemsBuffs.Items.Books
 {
     public class ThrowBook : ModItem //TO DO: remove in 1.4 or keep it as joke
     {
-        public override bool Autoload(ref string name)
-		{
-			return !GetInstance<ItemsBuffsConfigServer>().BookCraft;
-		}
+
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Nerfs Book, of not throwing weapons");
@@ -48,8 +45,10 @@ namespace ItemsBuffs.Items.Books
         }*/
         public override void AddRecipes()
         {
+            if (GetInstance<ItemsBuffsConfigServer>().BookCraft == true)
             {
                 ModRecipe recipe = new ModRecipe(mod);
+                recipe.AddIngredient(ItemID.Wood, 3);
                 recipe.AddTile(TileID.WorkBenches);
                 recipe.SetResult(this);
                 recipe.AddRecipe();

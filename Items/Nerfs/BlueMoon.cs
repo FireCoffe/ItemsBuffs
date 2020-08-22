@@ -9,7 +9,7 @@ namespace ItemsBuffs.Items.Nerfs
 	{
 		public override bool Autoload(ref string name)
 		{
-			return !GetInstance<ItemsBuffsConfigServer>().BlueMoon;
+			return !GetInstance<ItemsBuffsConfigServer>().BlueMoon == false;
 		}
 		public override void SetDefaults(Item item)
 		{

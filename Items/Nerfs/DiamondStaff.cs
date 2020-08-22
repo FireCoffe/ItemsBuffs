@@ -9,7 +9,7 @@ namespace ItemsBuffs.Items.Nerfs
 	{
 	    public override bool Autoload(ref string name)
 		{
-			return !GetInstance<ItemsBuffsConfigServer>().DiamondStaff;
+			return !GetInstance<ItemsBuffsConfigServer>().DiamondStaff == false;
 		}
 		public override void SetDefaults(Item item)
 		{

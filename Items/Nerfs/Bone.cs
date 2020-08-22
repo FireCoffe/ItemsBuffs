@@ -9,7 +9,7 @@ namespace ItemsBuffs.Items.Nerfs
 	{
 		public override bool Autoload(ref string name)
 		{
-			return !GetInstance<ItemsBuffsConfigServer>().Bone;
+			return !GetInstance<ItemsBuffsConfigServer>().Bone == false;
 		}
 		public override void SetDefaults(Item item)
 		{

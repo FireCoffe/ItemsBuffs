@@ -10,7 +10,7 @@ namespace ItemsBuffs.Items.Nerfs
 	{
 		public override bool Autoload(ref string name)
 		{
-			return !GetInstance<ItemsBuffsConfigServer>().VortexBeater;
+			return !GetInstance<ItemsBuffsConfigServer>().VortexBeater == false;
 		}
 		public override void SetDefaults(Item item)
 		{

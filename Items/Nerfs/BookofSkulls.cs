@@ -10,7 +10,7 @@ namespace ItemsBuffs.Items.Nerfs
 	{
 		public override bool Autoload(ref string name)
 		{
-			return !GetInstance<ItemsBuffsConfigServer>().BookofSkulls;
+			return !GetInstance<ItemsBuffsConfigServer>().BookofSkulls == false;
 		}
 		public override void SetDefaults(Item item)
 		{

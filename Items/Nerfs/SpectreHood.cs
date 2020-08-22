@@ -19,7 +19,7 @@ namespace ItemsBuffs.Items.Nerfs
 
         public override bool Autoload(ref string name)
 		{
-			return !GetInstance<ItemsBuffsConfigServer>().SpectreHood;
+			return !GetInstance<ItemsBuffsConfigServer>().SpectreHood == false;
 		}
         public override void ModifyTooltips(Item item, List<TooltipLine> tooltips)
         {

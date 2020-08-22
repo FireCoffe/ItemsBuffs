@@ -9,7 +9,7 @@ namespace ItemsBuffs.Items.Nerfs
 	{
 		public override bool Autoload(ref string name)
 		{
-			return !GetInstance<ItemsBuffsConfigServer>().HeatRay;
+			return !GetInstance<ItemsBuffsConfigServer>().HeatRay == false;
 		}
 		public override void SetDefaults(Item item)
 		{

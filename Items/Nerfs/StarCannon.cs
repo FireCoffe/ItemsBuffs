@@ -10,7 +10,7 @@ namespace ItemsBuffs.Items.Nerfs
 	{
 		public override bool Autoload(ref string name)
 		{
-			return !GetInstance<ItemsBuffsConfigServer>().StarCannon;
+			return !GetInstance<ItemsBuffsConfigServer>().StarCannon == false;
 		}
 		public override void SetDefaults(Item item)
 		{

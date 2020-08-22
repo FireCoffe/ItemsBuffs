@@ -10,7 +10,7 @@ namespace ItemsBuffs.Items.Nerfs
 	{
 	    public override bool Autoload(ref string name)
 		{
-			return !GetInstance<ItemsBuffsConfigServer>().ChlorophyteBullet;
+			return !GetInstance<ItemsBuffsConfigServer>().ChlorophyteBullet == false;
 		}
 		public override void SetDefaults(Item item)
 		{

@@ -312,6 +312,7 @@ using Terraria.ID;
 	//	[i:112]
 		// Similar to Label, this sets the tooltip. Tooltips are useful for slightly longer and more detailed explanations of config options.
 		[Tooltip("Use 4 mana instead of 6 mana")]
+		[DefaultValue(true)]
 		// ReloadRequired hints that if this value is changed, a reload is required for the mod to properly work. 
 		// Failure to properly use ReloadRequired will cause many, many problems including ID desync.
 		[ReloadRequired]
@@ -320,41 +321,49 @@ using Terraria.ID;
 
 		[Label("[i:1324] Bananarang")]
 		[Tooltip("Decreased use time to 7 instead of 13")]
+		[DefaultValue(true)]
 		[ReloadRequired]
 		public bool Bananarang { get; set; }
 
 	/*	[Label("[i:723]  Beam Sword")] enable in 1.4
 		[Tooltip("Use time is decreased to 15 instead of 20")]
+	    [DefaultValue(true)]
 		[ReloadRequired]
 		public bool BeamSword { get; set; } 
 
 		[Label("[i:1123]  Bee Keeper")]
 		[Tooltip("Have autoswing,damage 26, knockback is increased to 5.3 , 1.4")]
+	    [DefaultValue(true)]
 		[ReloadRequired]
 		public bool Beekeeper { get; set; } */
 
 		[Label("[i:1931]  Blizzard Staff")]
 		[Tooltip("Use 5 mana instead of 9")]
+		[DefaultValue(true)]
 		[ReloadRequired]
 		public bool BlizzardStaff { get; set; }
 
 		[Label("[i:163]  Blue Moon")] //remove when 1.4 comes out
 		[Tooltip("Does 30 damage instead of 23 damage")]
+		[DefaultValue(true)]
 		[ReloadRequired]
 		public bool BlueMoon { get; set; }
 
 		[Label("[i:3378]  Bone Javelin")]
 		[Tooltip("does 29 damage instead of 20, 1.4")]
+		[DefaultValue(true)]
 		[ReloadRequired]
 		public bool BoneJavelin { get; set; } 
 
 		[Label("[i:154]  Bone")]
 		[Tooltip("knockback is increased from 2 to 4 and dmg is 22 instead of 20")]
+		[DefaultValue(true)]
 		[ReloadRequired]
 		public bool Bone { get; set; }
 
 		[Label("[i:1313]  Book of Skulls")]
 		[Tooltip("does 35 dmg instead of 29, mana cost is 12 instead of 18, knockback is 6 instead of 3.5")]
+		[DefaultValue(true)]
 		[ReloadRequired]
 		public bool BookofSkulls { get; set; }
 
@@ -385,11 +394,13 @@ using Terraria.ID;
 
 		[Label("[i:1179]  Chlorophyte Bullet")]
 		[Tooltip("it have 15 dmg instead of 10")]
+		[DefaultValue(true)]
 		[ReloadRequired]
 		public bool ChlorophyteBullet { get; set; }
 
 		[Label("[i:1231]  Chlorophyte Drill")]
 		[Tooltip("have 210% pick power instead of 200% pick power")]
+		[DefaultValue(true)]
 		[ReloadRequired]
 		public bool ChlorophyteDrill { get; set; }
 
@@ -400,26 +411,31 @@ using Terraria.ID;
 		
 		[Label("[i:3507] Copper Shortsword")]
 		[Tooltip("does 7 dmg instead of 5 dmg")]
+		[DefaultValue(true)]
 		[ReloadRequired]
 		public bool CopperShortsword { get; set; }
 		
 		[Label("[i:518]  Crystal Storm")] //remove when 1.4 comes out
 		[Tooltip("does 26 dmg instead of 25, use 4 mana instead of 5 mana")]
+		[DefaultValue(true)]
 		[ReloadRequired]
 		public bool CrystalStorm { get; set; }
 
 		[Label("[i:672]  Cutlass")]
 		[Tooltip("does 51 damage instead of 49 dmg , use time is 16 instead of 17")]
+		[DefaultValue(true)]
 		[ReloadRequired]
 		public bool Cutlass { get; set; }
 
 		[Label("[i:272]  Demon Scythe")]
 		[Tooltip("use 10 mana instead of 14 mana")]
+		[DefaultValue(true)]
 		[ReloadRequired]
 		public bool DemonScythe { get; set; }
 
 		[Label("[i:744]  Diamond Staff")]
 		[Tooltip("projectile pierce 4 enemies instead of 2")]
+		[DefaultValue(true)]
 		[ReloadRequired]
 		public bool DiamondStaff { get; set; }
 
@@ -440,6 +456,7 @@ using Terraria.ID;
 
 		[Label("[i:119]  Flamarang")]
 		[Tooltip("does 37 dmg instead of 32")]
+		[DefaultValue(true)]
 		[ReloadRequired]
 		public bool Flamarang { get; set; }
 
@@ -450,41 +467,49 @@ using Terraria.ID;
 
 		[Label("[i:112]  Flower of Fire")]
 		[Tooltip("use 10 mana instead of 15")]
+		[DefaultValue(true)]
 		[ReloadRequired]
 		public bool FlowerofFire { get; set; }
 
 		[Label("[i:726]  Frost Staff")]
 		[Tooltip("does 53 dmg instead of 46 , use 10 mana instead of 14")]
+		[DefaultValue(true)]
 		[ReloadRequired]
 		public bool FrostStaff { get; set; }
 
 		[Label("[i:1336]  Golden Shower")]
 		[Tooltip("projectile have infinite penetration instead of 5 , have 28 dmg instead of 21 dmg")]
+		[DefaultValue(true)]
 		[ReloadRequired]
 		public bool GoldenShower { get; set; }
 
 		[Label("[i:1295]  Heat Ray")] //remove this nerf in 1.4 , Can no longer pierce and hit multiple enemies.
 		[Tooltip("Doesnt use any mana instead of 8 mana")]
+		[DefaultValue(true)]
 		[ReloadRequired]
 		public bool HeatRay { get; set; }
 
 		[Label("[i:2364]  Hornet Staff")]
 		[Tooltip("doesnt use any mana instead of 10 mana")]
+		[DefaultValue(true)]
 		[ReloadRequired]
 		public bool HornetStaff { get; set; }
 
 		[Label("[i:2365]  Imp Staff")] //removed 1.4 nerf Damage decreased from 21 to 17. enable in 1.4
 		[Tooltip("doesnt use any mana instead of 10, does 21 dmg instead of 17 , 1.4")]
+		[DefaultValue(true)]
 		[ReloadRequired]
 		public bool ImpStaff { get; set; } 
 
 		[Label("[i:7]  Iron Hammer")]
 		[Tooltip("Hammer power is 45% instead of 40%")]
+		[DefaultValue(true)]
 		[ReloadRequired]
 		public bool IronHammer { get; set; }
 
 		[Label("[i:1178]  Leaf Blower")]
 		[Tooltip("doesnt use any mana instead of 4")]
+		[DefaultValue(true)]
 		[ReloadRequired]
 		public bool LeafBlower { get; set; }
 
@@ -494,76 +519,91 @@ using Terraria.ID;
            Mana Cost increased from 12 to 18. this nerf to be removed
 		*/
 		[Tooltip("does 32 dmg instead of 27 , use 10 mana instead of 18")]
+		[DefaultValue(true)]
 		[ReloadRequired]
 		public bool MagicMissile { get; set; }
 
 		[Label("[i:3269]  Medusa Head")]
 		[Tooltip("have 45 dmg instead of 40 dmg, use 4 mana instead of 15 , 1.4")]
+		[DefaultValue(true)]
 		[ReloadRequired]
 		public bool MedusaHead { get; set; }
 
-		[Label("[i:2590]  Molotov Cocktail")] //remove crafting nerf or add it
+		[Label("[i:2590]  Molotov Cocktail")]
 		[Tooltip("does 40 dmg instead of 24 dmg")]
+		[DefaultValue(true)]
 		[ReloadRequired]
 		public bool MolotovCocktail { get; set; }
 
 		[Label("[i:122]  Molten Pickaxe")]
 		[Tooltip("does 18 dmg instead of 12 dmg")]
+		[DefaultValue(true)]
 		[ReloadRequired]
 		public bool MoltenPickaxe { get; set; }
 
 		[Label("[i:155]  Muramasa")]
 		[Tooltip("does 22 dmg instead of 21 dmg , knockback 3 instead of 1")]
+		[DefaultValue(true)]
 		[ReloadRequired]
 		public bool Muramasa { get; set; }
 
 		[Label("[i:3476]  Nebula Arcanum")]
 		[Tooltip("does 80 dmg instead of 70 dmg")]
+		[DefaultValue(true)]
 		[ReloadRequired]
 		public bool NebulaArcanum { get; set; }
 
 		[Label("[i:103]  Nightmare Pickaxe")]
 		[Tooltip("does 11 dmg instead of 9")]
+		[DefaultValue(true)]
 		[ReloadRequired]
 		public bool NightmarePickaxe { get; set; }
 
 		[Label("[i:1947]  North Pole")] //remove 1.2 nerf to be done
 		[Tooltip("does 75 dmg instead of 73")]
+		[DefaultValue(true)]
 		[ReloadRequired]
 		public bool NorthPole { get; set; }
 
 		[Label("[i:3540]  Phantasm")]
 		[Tooltip("does 70 dmg instead of 50")]
+		[DefaultValue(true)]
 		[ReloadRequired]
 		public bool Phantasm { get; set; }
 
 		[Label("[i:219]  Phoenix Blaster")]
 		[Tooltip("does 28 dmg instead of 23, does knockback 4 instead of 2")]
+		[DefaultValue(true)]
 		[ReloadRequired]
 		public bool PhoenixBlaster { get; set; }
 
 		[Label("[i:287]  Poisoned Knife")]
 		[Tooltip("does 15 dmg instead of 14dmg")]
+		[DefaultValue(true)]
 		[ReloadRequired]
 		public bool PoisonedKnife { get; set; }
 
 		[Label("[i:1308]  Poison Staff")] //remove in 1.4
 		[Tooltip("does 59 dmg instead of 43,use 12 mana instead of 22 mana")]
+		[DefaultValue(true)]
 		[ReloadRequired]
 		public bool PoisonStaff { get; set; }
 
 		[Label("[i:1122]  Possessed Hatchet")]
 		[Tooltip("does 90 dmg instead of 80 dmg")]
+		[DefaultValue(true)]
 		[ReloadRequired]
 		public bool PossessedHatchet { get; set; }
 
 		[Label("[i:495]  Rainbow Rod")]
 		[Tooltip("use 10 mana instead of 25, does 74 dmg instead of 50, use time 18 instead of 25")]
+		[DefaultValue(true)]
 		[ReloadRequired]
 		public bool RainbowRod { get; set; }
 
 		[Label("[i:1930]  Razorpine")]
 		[Tooltip("does 58 dmg instead of 48 dmg, use 3 mana instead of 5 mana")]
+		[DefaultValue(true)]
 		[ReloadRequired]
 		public bool Razorpine { get; set; }
 		
@@ -574,11 +614,13 @@ using Terraria.ID;
 
 		[Label("[i:3287]  Reds Throw")]
 		[Tooltip("does 180 dmg instead of 70 dmg")]
+		[DefaultValue(true)]
 		[ReloadRequired]
 		public bool RedsThrow { get; set; }
 
 		[Label("[i:1444]  Shadowbeam Staff")]
 		[Tooltip("does 55 dmg instead of 53 dmg , use 6 mana instead of 7 mana")]
+		[DefaultValue(true)]
 		[ReloadRequired]
 		public bool ShadowbeamStaff { get; set; }
 
@@ -589,11 +631,13 @@ using Terraria.ID;
 
 		[Label("[i:1309]  Slime Staff")]
 		[Tooltip("use 0 mana instead of 10")]
+		[DefaultValue(true)]
 		[ReloadRequired]
 		public bool SlimeStaff { get; set; }
 
 		[Label("[i:1503]  Spectre Hood")]
 		[Tooltip("doesnt decrease magic damage by 40% instead does 10% magic dmg and critical strike chance")]
+		[DefaultValue(true)]
 		[ReloadRequired]
 		public bool SpectreHood { get; set; }
 
@@ -604,21 +648,25 @@ using Terraria.ID;
 
 		[Label("[i:213]  Staff of Regrowth")]
 		[Tooltip("does 20 dmg instead of 7 , making staff more useful as melee weapon")]
+		[DefaultValue(true)]
 		[ReloadRequired]
 		public bool StaffofRegrowth { get; set; }
 
 		[Label("[i:197]  Star Cannon")]
 		[Tooltip("does 75 dmg instead of 55 dmg")]
+		[DefaultValue(true)]
 		[ReloadRequired]
 		public bool StarCannon { get; set; }
 
 		[Label("[i:3531]  Stardust Dragon Staff")]
 		[Tooltip("does 60 dmg instead of 40 dmg")]
+		[DefaultValue(true)]
 		[ReloadRequired]
 		public bool StardustDragonStaff { get; set; }
 
 		[Label("[i:220]  Sunfury")] //remove in 1.4
 		[Tooltip("does 40 dmg instead of 35")]
+		[DefaultValue(true)]
 		[ReloadRequired]
 		public bool Sunfury { get; set; }
 
@@ -629,6 +677,7 @@ using Terraria.ID;
 
 		[Label("[i:683]  Unholy Trident")] 
 		[Tooltip("use 14 mana instead of 25")]
+		[DefaultValue(true)]
 		[ReloadRequired]
 		public bool UnholyTrident { get; set; }
 
@@ -643,6 +692,7 @@ Damage increased from 73 to 95. */
 
 		[Label("[i:3288]  Valkyrie Yoyo")]
 		[Tooltip("does 180 dmg instead of 70 , does 8.5 knockback instead of 4.5 knb")]
+		[DefaultValue(true)]
 		[ReloadRequired]
 		public bool ValkyrieYoyo { get; set; }
 
@@ -651,16 +701,19 @@ Damage increased from 73 to 95. */
 		"does 35 dmg instead of 29 dmg")]
 	//\n" +
 		//	test")]
+		[DefaultValue(true)]
 		[ReloadRequired]
 		public bool VampireKnives { get; set; }
 
 		[Label("[i:64]  Vilethorn")]
 		[Tooltip("use 5 mana instead of 10")]
+		[DefaultValue(true)]
 		[ReloadRequired]
 		public bool Vilethorn { get; set; }
 
 		[Label("[i:3475]  Vortex Beater")]
 		[Tooltip("does 70 dmg instead of 50 dmg")]
+		[DefaultValue(true)]
 		[ReloadRequired]
 		public bool VortexBeater { get; set; }
 
